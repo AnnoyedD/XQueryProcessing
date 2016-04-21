@@ -4,49 +4,49 @@ grammar XQuery;
 package edu.ucsd.antlrtutorial.antlrtutorial;
 }
 
-// XQuery
-XQ
-  : Var                                                          //#xqVar
-  | StringConstant                                               //#xqStringConstant
-  | ap                                                           //#xqAp
-  | '(' XQ ')'                                                   //#xqParenExpr
-  | left=XQ ',' right=XQ                                         //#xqConcat
-  | XQ slash=('/'|'//') rp                                       //#xqSlash
-  | '<' open=tagName '>' '{' XQ '}' '</' close=tagName '>'       //#xqTagName
-  | forClause letClause? whereClause? returnClause               //#xqFLWR
-  | letClause XQ                                                 //#xqLet
+// xquery
+xq
+  : Var                                                          #xqVar
+  | StringConstant                                               #xqStringConstant
+  | ap                                                           #xqAp
+  | '(' xq ')'                                                   #xqParenExpr
+  | left=xq ',' right=xq                                         #xqConcat
+  | xq slash=('/'|'//') rp                                       #xqSlash
+  | '<' open=TagName '>' '{' xq '}' '</' close=TagName '>'       #xqTagName
+  | forClause letClause? whereClause? returnClause               #xqFLWR
+  | letClause xq                                                 #xqLet
   ;
 
 // For Clause: for $var1 in $someList, $var2 in $var1)
 forClause
-  : 'for' Var 'in' XQ (',' Var 'in' XQ)*
+  : 'for' Var 'in' xq (',' Var 'in' xq)*
   ;
 
 // Let Clause: let $var1 := "superman", $var2 := "batman", ...
 letClause
-  : 'let' Var ':=' XQ (',' Var ':=' XQ)*
+  : 'let' Var ':=' xq (',' Var ':=' xq)*
   ;
 
 // Where Clause: where $var1 == $var2
 whereClause
-  : 'where' Cond
+  : 'where' cond
   ;
 
 // Return Clause: return $var1
 returnClause
-  : 'return' XQ
+  : 'return' xq
   ;
 
-// Condition
-Cond
-  : left=XQ ('='|'eq')  right=XQ                           //#condValEqual
-  | left=XQ ('=='|'is') right=XQ                           //#condIdEqual
-  | 'empty(' XQ ')'                                        //#condEmpty
-  | 'some' Var 'in' XQ (',' Var 'in' XQ)* 'satisfies' Cond //#condSomeSatis
-  | '(' Cond ')'                                           //#condParenExpr
-  | left=Cond 'and' right=Cond                             //#condAnd
-  | left=Cond 'or'  right=Cond                             //#condOr
-  | 'not ' Cond                                            //#condNot
+// condition
+cond
+  : left=xq ('='|'eq')  right=xq                           #condValEqual
+  | left=xq ('=='|'is') right=xq                           #condIdEqual
+  | 'empty(' xq ')'                                        #condEmpty
+  | 'some' Var 'in' xq (',' Var 'in' xq)* 'satisfies' cond #condSomeSatis
+  | '(' cond ')'                                           #condParenExpr
+  | left=cond 'and' right=cond                             #condAnd
+  | left=cond 'or'  right=cond                             #condOr
+  | 'not ' cond                                            #condNot
   ;
 
 
@@ -57,34 +57,34 @@ ap
 
 // Relative path
 rp
-  : tagName							  //#rpTagName
-  | '*'                               //#rpWildcard
-  | '.'                               //#rpDot
-  | '..'                              //#rpDotDot
-  | 'text()'                          //#rpText
-  | '@' attName                       //#rpAttr
-  | '(' rp ')'                        //#rpParenExpr
-  | left=rp slash=('/'|'//') right=rp //#rpSlash
-  | rp '[' f ']'                      //#rpFilter
-  | left=rp ',' right=rp              //#rpConcat
+  : TagName							  #rpTagName
+  | '*'                               #rpWildcard
+  | '.'                               #rpDot
+  | '..'                              #rpDotDot
+  | 'text()'                          #rpText
+  | '@' TagName                       #rpAttr
+  | '(' rp ')'                        #rpParenExpr
+  | left=rp slash=('/'|'//') right=rp #rpSlash
+  | rp '[' f ']'                      #rpFilter
+  | left=rp ',' right=rp              #rpConcat
   ;
 
 // Path filter
 f
-  : rp                                //#fRp
-  | left=rp ('eq'|'=')  right=rp      //#fValEqual
-  | left=rp ('is'|'==') right=rp      //#fIdEqual
-  | '(' f ')'                         //#fParen
-  | left=f  'and'       right=f       //#fAnd
-  | left=f  'or'        right=f       //#fOr
-  | 'not ' f                          //#fNot
+  : rp                                #fRp
+  | left=rp ('eq'|'=')  right=rp      #fValEqual
+  | left=rp ('is'|'==') right=rp      #fIdEqual
+  | '(' f ')'                         #fParen
+  | left=f  'and'       right=f       #fAnd
+  | left=f  'or'        right=f       #fOr
+  | 'not ' f                          #fNot
   ;
 
 Var
-  : '$' tagName
+  : '$' TagName
   ;
 
-tagName
+TagName
   : Letter LetterOrDigit*
   ;
 

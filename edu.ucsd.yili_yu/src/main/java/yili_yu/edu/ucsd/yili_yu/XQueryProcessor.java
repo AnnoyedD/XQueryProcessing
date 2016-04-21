@@ -1,3 +1,4 @@
+// Generated from edu\u005Cucsd\antlrtutorial\antlrtutorial\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 
 import org.antlr.v4.runtime.ParserRuleContext;

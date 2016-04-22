@@ -17,7 +17,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { }
+	@Override public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) {
+		System.out.println(ctx.getText());
+	}
 	/**
 	 * {@inheritDoc}
 	 *
@@ -30,7 +32,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { }
+	@Override public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
+		System.out.println(ctx.getText());
+	}
 	/**
 	 * {@inheritDoc}
 	 *

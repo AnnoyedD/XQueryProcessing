@@ -1,0 +1,15 @@
+package xml.to.dom;
+
+import javax.lang.model.element.Element;
+
+public class ElementNode {
+	private Element e;
+	 public XMLElement(Element element) {
+	        elem = element;
+	    }
+
+	    public XMLElement(String tagName) {
+	        elem = new Element(tagName);
+	    }
+
+}

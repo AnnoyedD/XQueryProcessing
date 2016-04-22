@@ -1,10 +1,18 @@
 package yili_yu.edu.ucsd.yili_yu;
 
+import java.util.List;
+
 //import ANTLR's runtime libraries
+
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
+import org.w3c.dom.*;
+
+import xml.to.dom.*;
 
 public class XQuery {
+
+
 	public static void main(String[] args) throws Exception {
 		//create a CharStream that reads from standard input
 		ANTLRInputStream input = new ANTLRInputStream(System.in);
@@ -21,7 +29,20 @@ public class XQuery {
 		ParseTreeWalker walker = new ParseTreeWalker();
 		// Walk the tree created during the parse, trigger callbacks
 		walker.walk(new XQueryProcessor(), tree);
-		System.out.println(); // print a \n after translation
+		XMLTree xmlTree = new XMLTree("test.xml");
+		Document doc = xmlTree.start();
+
+		
+		//get root
+		Node root = XMLTreefunction.getRoot(doc);
+		//get children
+		List<Node> children = XMLTreefunction.getChildren(root);
+		for(Node n: children){
+			//get tag
+			String tag = XMLTreefunction.getTag(n);
+			System.out.println("node: "+n.getNodeName()+" tag: "+tag);
+		}
+	 // print a \n after translation
 	}
 }
 

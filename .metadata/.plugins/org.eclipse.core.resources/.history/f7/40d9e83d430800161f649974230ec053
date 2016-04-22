@@ -1,0 +1,36 @@
+package yili_yu.edu.ucsd.yili_yu;
+
+public class XMLTree {
+	private String fileName;
+	public XMLTree(String fileName){
+		this.fileName = fileName;
+	}
+	
+	public void start(){
+		try {
+	    DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+	    dbf.setNamespaceAware(true);
+	   // dbf.setValidating(dtdValidate || xsdValidate);
+	    dbf.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+	    dbf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+	    DocumentBuilder db = dbf.newDocumentBuilder(); 
+	    Document doc = db.parse(new File(args[0]));
+
+
+		System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+
+		if (doc.hasChildNodes()) {
+
+			printNote(doc.getChildNodes());
+
+		}
+
+	    } catch (Exception e) {
+		System.out.println(e.getMessage());
+	    }
+
+	  }
+	}
+
+}

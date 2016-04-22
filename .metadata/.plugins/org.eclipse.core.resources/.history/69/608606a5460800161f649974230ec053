@@ -1,0 +1,12 @@
+package xml.to.dom;
+
+public class ElementNode {
+	 public XMLElement(Element element) {
+	        elem = element;
+	    }
+
+	    public XMLElement(String tagName) {
+	        elem = new Element(tagName);
+	    }
+
+}

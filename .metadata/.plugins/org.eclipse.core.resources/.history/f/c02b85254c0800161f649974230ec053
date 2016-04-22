@@ -1,0 +1,6 @@
+package xml.to.dom;
+import org.w3c.dom.Node;
+public class XMLTreeNode implements IXMLTreeNode{
+
+	
+}

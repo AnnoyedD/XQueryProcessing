@@ -1,0 +1,24 @@
+package xml.to.dom;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+
+public class XMLTreefunction {
+
+	public Node getRoot(Document doc){
+		return (Node)doc.getDocumentElement();
+	}
+	
+	public static List<Node> children(Node parent) {
+		List<Node> retval = new ArrayList<Node>();
+		for (Node childNode = parent.getFirstChild(); childNode != null;) {
+			Node nextChild = childNode.getNextSibling();
+			if (childNode.getNodeType() == Node.ELEMENT_NODE)
+				retval.add(childNode);
+			childNode = nextChild;
+		}
+		return retval;
+	}
+
+}

@@ -1,0 +1,13 @@
+package yili_yu.edu.ucsd.yili_yu;
+
+public class XMLTree {
+	private String fileName;
+	public XMLTree(String fileName){
+		this.fileName = fileName;
+	}
+	
+	public void start(){
+		
+	}
+
+}

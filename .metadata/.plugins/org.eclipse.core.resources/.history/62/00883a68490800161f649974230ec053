@@ -1,0 +1,15 @@
+package xml.to.dom;
+
+import org.w3c.dom.Element;
+
+public class ElementNode {
+	private Element e;
+	 public ElementNode(Element element) {
+	        e = element;
+	    }
+
+	    public ElementNode(String tagName) {
+	        e = new Element(tagName);
+	    }
+
+}

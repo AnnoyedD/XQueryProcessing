@@ -7,7 +7,6 @@ import java.util.List;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
-import org.antlr.v4.runtime.tree.ParseTreeProperty;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
@@ -430,9 +429,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
-		System.out.println("text "+ctx.getText());
-		System.out.println(ctx.toString());
-		System.out.println("first child "+ ctx.children.get(0).getText());
+		
 	}
 	/**
 	 * {@inheritDoc}

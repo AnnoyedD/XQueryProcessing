@@ -430,9 +430,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
-		System.out.println("text "+ctx.getText());
+		System.out.println(ctx.getText());
 		System.out.println(ctx.toString());
-		System.out.println("first child "+ ctx.children.get(0).getText());
+		System.out.println(ctx.children.get(0).getText());
 	}
 	/**
 	 * {@inheritDoc}

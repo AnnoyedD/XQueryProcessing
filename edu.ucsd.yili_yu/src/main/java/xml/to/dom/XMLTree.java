@@ -12,11 +12,10 @@ public class XMLTree {
 	private String fileName;
 	//private Element root;
 	private Document doc;
+	
 	public XMLTree(String fileName) {
 		this.fileName = fileName;
-	}
-
-	public Document start() {
+	
 		try {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			dbf.setNamespaceAware(true);
@@ -40,8 +39,14 @@ public class XMLTree {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		return doc;
+	}
 
+	public Node getRoot(){
+		return (Node)doc.getDocumentElement();
+	}
+
+	public String getFileName(){
+		return fileName;
 	}
 
 	/*

@@ -6,9 +6,7 @@ import java.util.List;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
-import org.antlr.v4.runtime.tree.ErrorNode;
-import org.antlr.v4.runtime.tree.ParseTreeProperty;
-import org.antlr.v4.runtime.tree.TerminalNode;
+import org.antlr.v4.runtime.tree.*;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -23,6 +21,7 @@ import xml.to.dom.*;
  */
 public class XQueryProcessor extends XQueryBaseListener {
 	 ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>();
+	 ArrayList<XMLTree> domList = new ArrayList<>();
 	 /**
 		 * {@inheritDoc}
 		 *
@@ -379,16 +378,51 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterAp(@NotNull XQueryParser.ApContext ctx) {
+		@Override public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) {
+			String nameStr = ctx.getChild(2).toString();
+			String fileName = nameStr.substring(1, nameStr.length()-1);
+			XMLTree curXMLTree = null;
+			for (XMLTree i : domList){
+				if (i.getFileName() == fileName){
+					curXMLTree = i;
+					break;
+				}
+			}
+			if (curXMLTree == null){
+				curXMLTree = new XMLTree(fileName);
+				domList.add(curXMLTree);
+			}
 			
+			ArrayList<Node> root = new ArrayList<>();
+			root.add(curXMLTree.getRoot());
+			
+			ParseTree rp = ctx.getChild(5);
+			values.put(rp, root);
 		}
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void exitAp(@NotNull XQueryParser.ApContext ctx) { }
-
+		@Override public void exitApSlash(@NotNull XQueryParser.ApSlashContext ctx) {
+			ParseTree rp = ctx.getChild(5);
+			ArrayList<Node> result = values.get(rp);
+			values.removeFrom(rp);
+			
+			String nameStr = ctx.getChild(2).toString();
+			String fileName = nameStr.substring(1, nameStr.length()-1);
+			XMLTree curXMLTree = null;
+			for (XMLTree i : domList){
+				if (i.getFileName().equals(fileName)){
+					curXMLTree = i;
+					break;
+				}
+			}
+			result.add(curXMLTree.getRoot());
+			
+			values.put(ctx, result);
+		}
+		
 		/**
 		 * {@inheritDoc}
 		 *

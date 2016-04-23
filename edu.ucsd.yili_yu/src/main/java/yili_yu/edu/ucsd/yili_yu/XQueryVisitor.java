@@ -75,6 +75,14 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	T visitRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx);
 
 	/**
+	 * Visit a parse tree produced by the {@code apSlash}
+	 * labeled alternative in {@link XQueryParser#ap}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitApSlash(@NotNull XQueryParser.ApSlashContext ctx);
+
+	/**
 	 * Visit a parse tree produced by the {@code rpDot}
 	 * labeled alternative in {@link XQueryParser#rp}.
 	 * @param ctx the parse tree
@@ -224,13 +232,6 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx);
-
-	/**
-	 * Visit a parse tree produced by {@link XQueryParser#ap}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAp(@NotNull XQueryParser.ApContext ctx);
 
 	/**
 	 * Visit a parse tree produced by the {@code xqAp}

@@ -82,6 +82,14 @@ public class XQueryBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitApSlash(@NotNull XQueryParser.ApSlashContext ctx) { return visitChildren(ctx); }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitRpDot(@NotNull XQueryParser.RpDotContext ctx) { return visitChildren(ctx); }
 
 	/**
@@ -227,14 +235,6 @@ public class XQueryBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { return visitChildren(ctx); }
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitAp(@NotNull XQueryParser.ApContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}

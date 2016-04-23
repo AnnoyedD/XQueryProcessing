@@ -3,7 +3,7 @@ grammar XQuery;
 // xquery
 xq
   : Var                                                          #xqVar
-  | StringConstant                                               #xqStringConstant
+  | StringConstant			                                     #xqStringConstant
   | ap                                                           #xqAp
   | '(' xq ')'                                                   #xqParenExpr
   | left=xq ',' right=xq                                         #xqConcat
@@ -49,8 +49,7 @@ cond
 
 // Absolute path
 ap
-  : ('doc'|'document') '(' fileName=StringConstant ')' '/' rp
-  | ('doc'|'document') '(' fileName=StringConstant ')' '//' rp
+  : ('doc'|'document') '(' fileName=StringConstant ')' slash=('/'|'//') rp	#apSlash
   ;
 
 // Relative path

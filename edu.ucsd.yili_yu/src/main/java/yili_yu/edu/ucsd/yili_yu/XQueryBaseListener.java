@@ -121,6 +121,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitApSlash(@NotNull XQueryParser.ApSlashContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterRpDot(@NotNull XQueryParser.RpDotContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -362,19 +375,6 @@ public class XQueryBaseListener implements XQueryListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { }
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterAp(@NotNull XQueryParser.ApContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitAp(@NotNull XQueryParser.ApContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -1,4 +1,4 @@
-// Generated from yili_yu/edu/ucsd/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from yili_yu\edu\u005Cucsd\yili_yu\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -102,6 +102,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
@@ -414,6 +427,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitRpSlash(@NotNull XQueryParser.RpSlashContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

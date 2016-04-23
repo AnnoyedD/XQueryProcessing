@@ -1,7 +1,5 @@
 grammar XQuery;
 
-
-
 // xquery
 xq
   : Var                                                          #xqVar
@@ -9,7 +7,8 @@ xq
   | ap                                                           #xqAp
   | '(' xq ')'                                                   #xqParenExpr
   | left=xq ',' right=xq                                         #xqConcat
-  | xq slash=('/'|'//') rp                                       #xqSlash
+  | xq '/' rp                                       			 #xqSlash
+  | xq '//' rp													 #xqSlashSlash
   | '<' open=TagName '>' '{' xq '}' '</' close=TagName '>'       #xqTagName
   | forClause letClause? whereClause? returnClause               #xqFLWR
   | letClause xq                                                 #xqLet
@@ -50,8 +49,8 @@ cond
 
 // Absolute path
 ap
-  : 'doc(' fileName=StringConstant ')' slash=('/'|'//') rp
-  | 'document(' fileName=StringConstant ')' slash=('/'|'//') rp
+  : ('doc'|'document') '(' fileName=StringConstant ')' '/' rp
+  | ('doc'|'document') '(' fileName=StringConstant ')' '//' rp
   ;
 
 // Relative path
@@ -63,7 +62,8 @@ rp
   | 'text()'                          #rpText
   | '@' TagName                       #rpAttr
   | '(' rp ')'                        #rpParenExpr
-  | left=rp slash=('/'|'//') right=rp #rpSlash
+  | left=rp '/' right=rp 			  #rpSlash
+  | left=rp '//' right=rp			  #rpSlashSlash
   | rp '[' f ']'                      #rpFilter
   | left=rp ',' right=rp              #rpConcat
   ;
@@ -76,7 +76,7 @@ f
   | '(' f ')'                         #fParen
   | left=f  'and'       right=f       #fAnd
   | left=f  'or'        right=f       #fOr
-  | 'not ' f                          #fNot
+  | 'not' f                           #fNot
   ;
 
 Var

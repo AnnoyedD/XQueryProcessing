@@ -1,8 +1,13 @@
-package edu.ucsd.antlrtutorial.antlrtutorial;
+package yili_yu.edu.ucsd.yili_yu;
 
 //import ANTLR's runtime libraries
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
+import org.antlr.v4.runtime.tree.gui.TreeViewer;
+
+import java.util.Arrays;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class XQuery {
 	public static void main(String[] args) throws Exception {
@@ -16,6 +21,17 @@ public class XQuery {
 		XQueryParser parser = new XQueryParser(tokens);
 		ParseTree tree = parser.xq(); // begin parsing at init rule
 		System.out.println(tree.toStringTree(parser)); // print LISP-style tree
+		
+		JFrame frame = new JFrame("Antlr AST");
+        JPanel panel = new JPanel();
+        TreeViewer viewr = new TreeViewer(Arrays.asList(
+                parser.getRuleNames()),tree);
+        viewr.setScale(1.5);//scale a little
+        panel.add(viewr);
+        frame.add(panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(200,200);
+        frame.setVisible(true);
 		
 		// Create a generic parse tree walker that can trigger callbacks
 		ParseTreeWalker walker = new ParseTreeWalker();

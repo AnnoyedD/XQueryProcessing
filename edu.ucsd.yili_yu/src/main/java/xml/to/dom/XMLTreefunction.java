@@ -13,8 +13,8 @@ public class XMLTreefunction {
 		return (Node)doc.getDocumentElement();
 	}
 	
-	public static List<Node> getChildren(Node parent) {
-		List<Node> children = new ArrayList<Node>();
+	public static ArrayList<Node> getChildren(Node parent) {
+		ArrayList<Node> children = new ArrayList<Node>();
 		Node childNode = parent.getFirstChild();
 		for (; childNode != null;) {
 			if (childNode.getNodeType() == Node.ELEMENT_NODE)
@@ -36,5 +36,18 @@ public class XMLTreefunction {
 		return n.getNodeName();
 	}
 	
+	public static Node getTxt(Node n){return null;}
+	
+	public static ArrayList<Node> getDescendant(Node subRoot){return getChildren(subRoot);}
+	
+	public static Node attrib(Node n, String attName){return n;} //unsure about the return type
+			
+	public static ArrayList<Node> unique(ArrayList<Node> list){return list;}
+	
+	public static ArrayList<Node> concatenate(ArrayList<Node> listA, ArrayList<Node> listB){return null;}
+	
+	public static boolean filterEq(ArrayList<Node> listA, ArrayList<Node> listB){return true;}
 
+	public static boolean filterIs(ArrayList<Node> listA, ArrayList<Node> listB){return true;}
+	
 }

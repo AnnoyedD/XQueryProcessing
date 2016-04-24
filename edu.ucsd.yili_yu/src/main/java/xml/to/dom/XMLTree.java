@@ -41,8 +41,8 @@ public class XMLTree {
 		}
 	}
 
-	public Node getRoot(){
-		return (Node)doc.getDocumentElement();
+	public Document getDoc(){
+		return doc;
 	}
 
 	public String getFileName(){

@@ -98,19 +98,6 @@ public interface XQueryListener extends ParseTreeListener {
 	void exitXqSlash(@NotNull XQueryParser.XqSlashContext ctx);
 
 	/**
-	 * Enter a parse tree produced by the {@code rpSlashSlash}
-	 * labeled alternative in {@link XQueryParser#rp}.
-	 * @param ctx the parse tree
-	 */
-	void enterRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code rpSlashSlash}
-	 * labeled alternative in {@link XQueryParser#rp}.
-	 * @param ctx the parse tree
-	 */
-	void exitRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx);
-
-	/**
 	 * Enter a parse tree produced by the {@code apSlash}
 	 * labeled alternative in {@link XQueryParser#ap}.
 	 * @param ctx the parse tree

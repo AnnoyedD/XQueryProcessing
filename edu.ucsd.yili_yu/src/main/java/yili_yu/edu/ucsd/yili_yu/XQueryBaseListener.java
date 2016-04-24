@@ -108,19 +108,6 @@ public class XQueryBaseListener implements XQueryListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRpSlashSlash(@NotNull XQueryParser.RpSlashSlashContext ctx) { }
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) { }
 	/**
 	 * {@inheritDoc}

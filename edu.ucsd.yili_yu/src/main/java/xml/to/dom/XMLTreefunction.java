@@ -1,11 +1,15 @@
 package xml.to.dom;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class XMLTreefunction {
 
@@ -38,7 +42,23 @@ public class XMLTreefunction {
 	
 	public static Node getTxt(Node n){return null;}
 	
-	public static ArrayList<Node> getDescendant(Node subRoot){return getChildren(subRoot);}
+	public static ArrayList<Node> getDescendant(Node subRoot){
+		List<Node> descendants = new ArrayList<Node>();
+		Queue<Node> level =  new LinkedList<Node>();
+		level.offer(subRoot);
+		while(!level.isEmpty()){
+			Node curr = level.poll();
+			descendants.add(curr);
+			NodeList next_generation = curr.getChildNodes();
+			if(next_generation!=null){
+				for(int i =0; i < next_generation.getLength(); i++){
+					level.offer(next_generation.item(i));
+				}
+			}
+		}
+		return (ArrayList<Node>) descendants;
+	
+	}
 	
 	public static Node attrib(Node n, String attName){return n;} //unsure about the return type
 			

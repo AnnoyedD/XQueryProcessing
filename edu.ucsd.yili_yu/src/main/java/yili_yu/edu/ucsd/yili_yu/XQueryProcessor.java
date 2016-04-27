@@ -27,20 +27,26 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { }
+		@Override public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { 
+			System.out.println("enterCondValEqual "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void exitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { }
+		@Override public void exitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) {
+			
+		}
 
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { }
+		@Override public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { 
+			System.out.println("enterWhereClause "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -53,20 +59,27 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { }
+		@Override public void enterXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) {
+			System.out.println("enterWhereClause "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void exitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { }
+		@Override public void exitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { 
+			
+		}
 
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) { }
+		@Override public void enterXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
+			//gets the entire query
+			System.out.println("enterXqFLWR "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -80,6 +93,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) {
+			System.out.println("enterRpDotDot "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			ArrayList<Node> result = new ArrayList<>();
 			for (Node i : sub){
@@ -102,7 +116,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFRp(@NotNull XQueryParser.FRpContext ctx) { }
+		@Override public void enterFRp(@NotNull XQueryParser.FRpContext ctx) {
+			System.out.println("enterFRp "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -115,7 +131,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { }
+		@Override public void enterXqSlash(@NotNull XQueryParser.XqSlashContext ctx) {
+			System.out.println("enterXqSlash "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -129,6 +147,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpDot(@NotNull XQueryParser.RpDotContext ctx) {
+			System.out.println("enterRpDot "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			ArrayList<Node> result = new ArrayList<>();
 			for (Node i : sub){
@@ -152,6 +171,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpText(@NotNull XQueryParser.RpTextContext ctx) { 
+			System.out.println("enterRpText: " +ctx.getText() + "getRuleContext: "+ctx.getRuleContext());
 			ArrayList<Node> sub = values.get(ctx);
 			ArrayList<Node> result = new ArrayList<>();
 			for (Node i : sub){
@@ -173,7 +193,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) { }
+		@Override public void enterXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
+			System.out.println("enterXqTagName "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -186,7 +208,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterLetClause(@NotNull XQueryParser.LetClauseContext ctx) { }
+		@Override public void enterLetClause(@NotNull XQueryParser.LetClauseContext ctx) { 
+			System.out.println("enterLetClause "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -200,6 +224,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpConcat(@NotNull XQueryParser.RpConcatContext ctx) { 
+			System.out.println("enterRpConcat "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			values.put(ctx.getChild(0), sub);
 			values.put(ctx.getChild(2), sub);
@@ -226,7 +251,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) { }
+		@Override public void enterFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) {
+			System.out.println("enterFIdEqual "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -239,7 +266,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondOr(@NotNull XQueryParser.CondOrContext ctx) { }
+		@Override public void enterCondOr(@NotNull XQueryParser.CondOrContext ctx) {
+			System.out.println("enterCondOr "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -253,6 +282,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpAttr(@NotNull XQueryParser.RpAttrContext ctx) {
+			System.out.println("enterRpAttr "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			ArrayList<Node> result = new ArrayList<>();
 			String attName = ctx.getChild(1).getText();
@@ -275,7 +305,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) { }
+		@Override public void enterCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) {
+			System.out.println("enterCondEmpty "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -288,7 +320,10 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqVar(@NotNull XQueryParser.XqVarContext ctx) { }
+		@Override public void enterXqVar(@NotNull XQueryParser.XqVarContext ctx) {
+			System.out.println("enterXqVar: "+ctx.getText());
+			
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -301,7 +336,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFNot(@NotNull XQueryParser.FNotContext ctx) { }
+		@Override public void enterFNot(@NotNull XQueryParser.FNotContext ctx) {
+			System.out.println("enterFNot "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -314,7 +351,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) { }
+		@Override public void enterCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) {
+			System.out.println("enterCondSomeSatis "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -327,7 +366,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) { }
+		@Override public void enterCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) { 
+			System.out.println("enterCondIdEqual "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -340,7 +381,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFParen(@NotNull XQueryParser.FParenContext ctx) { }
+		@Override public void enterFParen(@NotNull XQueryParser.FParenContext ctx) { 
+			System.out.println("enterFParen "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -353,7 +396,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFOr(@NotNull XQueryParser.FOrContext ctx) { }
+		@Override public void enterFOr(@NotNull XQueryParser.FOrContext ctx) { 
+			System.out.println("enterFOr "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -366,7 +411,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFValEqual(@NotNull XQueryParser.FValEqualContext ctx) { }
+		@Override public void enterFValEqual(@NotNull XQueryParser.FValEqualContext ctx) { 
+			System.out.println("enterFValEqual "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -379,7 +426,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) { }
+		@Override public void enterRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) { 
+			System.out.println("enterRpWildcard "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -394,7 +443,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqLet(@NotNull XQueryParser.XqLetContext ctx) { }
+		@Override public void enterXqLet(@NotNull XQueryParser.XqLetContext ctx) { 
+			System.out.println("enterXqLet "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -407,7 +458,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { }
+		@Override public void enterXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { 
+			System.out.println("enterXqStringConstant "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -421,9 +474,13 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) {
+			System.out.println("enterApSlash "+ctx.getText());
+			//document("j_caesar.xml")/play
 			String nameStr = ctx.getChild(2).getText();
+			//"j_caesar.xml"
 			String fileName = nameStr.substring(1, nameStr.length()-1);
 			XMLTree curXMLTree = null;
+			
 			for (XMLTree i : domList){
 				if (i.getFileName() == fileName){
 					curXMLTree = i;
@@ -431,6 +488,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 				}
 			}
 			if (curXMLTree == null){
+				System.out.println("shout");
 				curXMLTree = new XMLTree(fileName);
 				domList.add(curXMLTree);
 			}
@@ -444,7 +502,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 			else{
 				result.addAll(XMLTreefunction.getChildren(root));
 			}
-			
+			System.out.println("key: "+ctx.getChild(5).getText());
 			values.put(ctx.getChild(5), result);
 		}
 		/**
@@ -465,6 +523,8 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterXqAp(@NotNull XQueryParser.XqApContext ctx) { 
+			System.out.println("enterXqAp "+ctx.getText());
+			
 			
 		}
 		/**
@@ -485,7 +545,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { }
+		@Override public void enterReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { 
+			System.out.println("enterReturnClause "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -498,7 +560,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) { }
+		@Override public void enterCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) {
+			System.out.println("enterCondParenExpr "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -512,6 +576,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpSlash(@NotNull XQueryParser.RpSlashContext ctx) {
+			System.out.println("enterRpSlash "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			values.put(ctx.getChild(0), sub);
 		}
@@ -534,7 +599,12 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { }
+		@Override public void enterXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) {
+			System.out.println("enterXqSlashSlash "+ctx.getText());
+			
+			
+			
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -547,7 +617,11 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) { }
+		@Override public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
+			
+			System.out.println("enterForClause "+ctx.getText());
+			
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -561,14 +635,17 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpTagName(@NotNull XQueryParser.RpTagNameContext ctx) {
+			System.out.println("enterRpTagName "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
-			ArrayList<Node> result = new ArrayList<>();
+			System.out.println("sub.count"+sub.size());
+			ArrayList<Node> result = new ArrayList<>();  
 			String tagName = ctx.getText();
 			for (Node i : sub){
 				if (XMLTreefunction.getTag(i).equals(tagName)){
 					result.add(i);
 				}
 			}
+			//System.out.println("tag's child :"+ctx.getChild(0).getText());
 			values.put(ctx, result);
 		}
 		/**
@@ -585,7 +662,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondAnd(@NotNull XQueryParser.CondAndContext ctx) { }
+		@Override public void enterCondAnd(@NotNull XQueryParser.CondAndContext ctx) { 
+			System.out.println("enterCondAnd "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -599,6 +678,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpFilter(@NotNull XQueryParser.RpFilterContext ctx) {
+			System.out.println("enterRpFilter "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			values.put(ctx.getChild(0), sub);
 		}
@@ -621,7 +701,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterXqConcat(@NotNull XQueryParser.XqConcatContext ctx) { }
+		@Override public void enterXqConcat(@NotNull XQueryParser.XqConcatContext ctx) {
+			System.out.println("enterXqConcat "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -635,6 +717,7 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 * <p>The default implementation does nothing.</p>
 		 */
 		@Override public void enterRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) { 
+			System.out.println("enterRpParenExpr "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			values.put(ctx.getChild(1), sub);
 		}
@@ -657,7 +740,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterCondNot(@NotNull XQueryParser.CondNotContext ctx) { }
+		@Override public void enterCondNot(@NotNull XQueryParser.CondNotContext ctx) { 
+			System.out.println("enterCondNot "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -670,7 +755,9 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterFAnd(@NotNull XQueryParser.FAndContext ctx) { }
+		@Override public void enterFAnd(@NotNull XQueryParser.FAndContext ctx) {
+			System.out.println("enterFAnd "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
@@ -683,19 +770,25 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
+		@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { 
+			System.out.println("enterEveryRule "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
+		@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) {
+			System.out.println("exitEveryRule "+ctx.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *
 		 * <p>The default implementation does nothing.</p>
 		 */
-		@Override public void visitTerminal(@NotNull TerminalNode node) { }
+		@Override public void visitTerminal(@NotNull TerminalNode node) { 
+			System.out.println("visitTerminal "+node.getText());
+		}
 		/**
 		 * {@inheritDoc}
 		 *

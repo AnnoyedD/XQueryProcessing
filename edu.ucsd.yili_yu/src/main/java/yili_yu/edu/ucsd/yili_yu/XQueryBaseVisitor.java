@@ -1,4 +1,4 @@
-// Generated from yili_yu\edu\u005Cucsd\yili_yu\XQuery.g4 by ANTLR 4.3
+// Generated from yili_yu/edu/ucsd/yili_yu/XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;

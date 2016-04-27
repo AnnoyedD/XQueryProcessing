@@ -5,6 +5,8 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.Arrays;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -12,7 +14,9 @@ import javax.swing.JPanel;
 public class XQuery {
 	public static void main(String[] args) throws Exception {
 		//create a CharStream that reads from standard input
-		ANTLRInputStream input = new ANTLRInputStream(System.in);
+		File file = new File("querySample.txt");
+		 FileInputStream fis = new FileInputStream(file);
+		ANTLRInputStream input = new ANTLRInputStream(fis);
 		//create a lexer that feeds off of input CharStream
 		XQueryLexer lexer = new XQueryLexer(input);
 		//create a buffer of tokens pulled from the lexer
@@ -20,9 +24,9 @@ public class XQuery {
 		//create a parser that feeds off the tokens buffer
 		XQueryParser parser = new XQueryParser(tokens);
 		ParseTree tree = parser.xq(); // begin parsing at init rule
-		System.out.println(tree.toStringTree(parser)); // print LISP-style tree
+		//System.out.println(tree.toStringTree(parser)); // print LISP-style tree
 		
-		JFrame frame = new JFrame("Antlr AST");
+		/*JFrame frame = new JFrame("Antlr AST");
         JPanel panel = new JPanel();
         TreeViewer viewr = new TreeViewer(Arrays.asList(
                 parser.getRuleNames()),tree);
@@ -31,12 +35,13 @@ public class XQuery {
         frame.add(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(200,200);
-        frame.setVisible(true);
+        frame.setVisible(true);*/
 		
 		// Create a generic parse tree walker that can trigger callbacks
 		ParseTreeWalker walker = new ParseTreeWalker();
 		// Walk the tree created during the parse, trigger callbacks
-		walker.walk(new XQueryProcessor(), tree);
+		XQueryProcessor xqprocessor= new XQueryProcessor();
+		walker.walk(xqprocessor, tree);
 		System.out.println(); // print a \n after translation
 	}
 }

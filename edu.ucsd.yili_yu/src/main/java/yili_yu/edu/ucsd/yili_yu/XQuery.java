@@ -15,7 +15,7 @@ public class XQuery {
 	public static void main(String[] args) throws Exception {
 		//create a CharStream that reads from standard input
 		File file = new File("querySample.txt");
-		 FileInputStream fis = new FileInputStream(file);
+		FileInputStream fis = new FileInputStream(file);
 		ANTLRInputStream input = new ANTLRInputStream(fis);
 		//create a lexer that feeds off of input CharStream
 		XQueryLexer lexer = new XQueryLexer(input);
@@ -26,16 +26,16 @@ public class XQuery {
 		ParseTree tree = parser.xq(); // begin parsing at init rule
 		//System.out.println(tree.toStringTree(parser)); // print LISP-style tree
 		
-		/*JFrame frame = new JFrame("Antlr AST");
-        JPanel panel = new JPanel();
-        TreeViewer viewr = new TreeViewer(Arrays.asList(
-                parser.getRuleNames()),tree);
-        viewr.setScale(1.5);//scale a little
-        panel.add(viewr);
-        frame.add(panel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(200,200);
-        frame.setVisible(true);*/
+//		JFrame frame = new JFrame("Antlr AST");
+//        JPanel panel = new JPanel();
+//        TreeViewer viewr = new TreeViewer(Arrays.asList(
+//                parser.getRuleNames()),tree);
+//        viewr.setScale(1.5);//scale a little
+//        panel.add(viewr);
+//        frame.add(panel);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.setSize(200,200);
+//        frame.setVisible(true);
 		
 		// Create a generic parse tree walker that can trigger callbacks
 		ParseTreeWalker walker = new ParseTreeWalker();

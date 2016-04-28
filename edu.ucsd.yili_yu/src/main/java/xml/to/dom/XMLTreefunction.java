@@ -1,31 +1,26 @@
 package xml.to.dom;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+import org.w3c.dom.*;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 public class XMLTreefunction {
 
 	public static Node getRoot(Document doc){
+//		System.out.println("doc.getDocumentElement() "+doc.getDocumentElement());
+//		System.out.println("doc "+doc.getDocumentElement().getFirstChild().getTextContent()
+//				+"doc.getDocumentElement().getFirstChild() "+doc.getDocumentElement().getFirstChild().getNodeName());
 		return (Node)doc.getDocumentElement();
 	}
 	
 	public static ArrayList<Node> getChildren(Node parent) {
-		ArrayList<Node> children = new ArrayList<Node>();
-		Node childNode = parent.getFirstChild();
-		for (; childNode != null;) {
-			if (childNode.getNodeType() == Node.ELEMENT_NODE)
-				children.add(childNode);
-			childNode = childNode.getNextSibling();;
+		
+		ArrayList<Node> childNodes = (ArrayList<Node>) parent.getChildNodes();
+		for(Node n: childNodes){
+			if(n.getNodeType()!=Node.ELEMENT_NODE)
+				childNodes.remove(n);
 		}
-		return children;
+		return childNodes;
 	}
 	
 	public static Node getParent(Node child) {
@@ -40,7 +35,16 @@ public class XMLTreefunction {
 		return n.getNodeName();
 	}
 	
-	public static Node getTxt(Node n){return null;}
+	public static Node getTxt(Node n){
+	
+		NodeList nl = n.getChildNodes();
+		for(int i =0; i<nl.getLength();i++){
+			if(nl.item(i).getNodeType()== Node.TEXT_NODE)
+				System.out.println("getTxt "+nl.item(i).getTextContent());
+				return nl.item(i);
+		}
+		return null;
+	}
 	
 	public static ArrayList<Node> getDescendant(Node subRoot){
 		List<Node> descendants = new ArrayList<Node>();
@@ -56,15 +60,27 @@ public class XMLTreefunction {
 				}
 			}
 		}
+		System.out.println("descendants "+descendants.size());
 		return (ArrayList<Node>) descendants;
 	
 	}
 	
-	public static Node attrib(Node n, String attName){return n;} //unsure about the return type
+	public static Node attrib(Node n, String attName){
+		Node attribute = n.getAttributes().getNamedItem(attName);
+		return attribute;
+	} //unsure about the return type
 			
-	public static ArrayList<Node> unique(ArrayList<Node> list){return list;}
+	public static ArrayList<Node> unique(ArrayList<Node> list){
+		return list = new ArrayList<Node>(new LinkedHashSet<Node>(list));
+		
+	}
 	
-	public static ArrayList<Node> concatenate(ArrayList<Node> listA, ArrayList<Node> listB){return null;}
+	public static ArrayList<Node> concatenate(ArrayList<Node> listA, ArrayList<Node> listB){
+		ArrayList<Node> newList = new ArrayList<Node>(listA);
+		newList.addAll(listB);
+		return newList;
+		
+	}
 	
 	public static boolean filterEq(ArrayList<Node> listA, ArrayList<Node> listB){return true;}
 

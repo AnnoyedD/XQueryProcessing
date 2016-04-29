@@ -1,4 +1,4 @@
-// Generated from yili_yu/edu/ucsd/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from yili_yu\edu\u005Cucsd\yili_yu\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
@@ -96,6 +96,17 @@ public interface XQueryListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitXqSlash(@NotNull XQueryParser.XqSlashContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link XQueryParser#varBind}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarBind(@NotNull XQueryParser.VarBindContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link XQueryParser#varBind}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarBind(@NotNull XQueryParser.VarBindContext ctx);
 
 	/**
 	 * Enter a parse tree produced by the {@code apSlash}

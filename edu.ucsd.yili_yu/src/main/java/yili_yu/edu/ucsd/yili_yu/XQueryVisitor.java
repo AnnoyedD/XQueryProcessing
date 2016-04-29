@@ -1,4 +1,4 @@
-// Generated from yili_yu/edu/ucsd/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from yili_yu\edu\u005Cucsd\yili_yu\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
@@ -65,6 +65,13 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx);
+
+	/**
+	 * Visit a parse tree produced by {@link XQueryParser#varBind}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVarBind(@NotNull XQueryParser.VarBindContext ctx);
 
 	/**
 	 * Visit a parse tree produced by the {@code apSlash}

@@ -16,12 +16,12 @@ xq
 
 // For Clause: for $var1 in $someList, $var2 in $var1)
 forClause
-  : 'for' Var 'in' xq (',' Var 'in' xq)*
+  : 'for' varBind (',' varBind)*
   ;
 
 // Let Clause: let $var1 := "superman", $var2 := "batman", ...
 letClause
-  : 'let' Var ':=' xq (',' Var ':=' xq)*
+  : 'let' varBind (',' varBind)*
   ;
 
 // Where Clause: where $var1 == $var2
@@ -39,13 +39,17 @@ cond
   : left=xq ('='|'eq')  right=xq                           #condValEqual
   | left=xq ('=='|'is') right=xq                           #condIdEqual
   | 'empty(' xq ')'                                        #condEmpty
-  | 'some' Var 'in' xq (',' Var 'in' xq)* 'satisfies' cond #condSomeSatis
+  | 'some' varBind (',' varBind)* 'satisfies' cond 		   #condSomeSatis
   | '(' cond ')'                                           #condParenExpr
   | left=cond 'and' right=cond                             #condAnd
   | left=cond 'or'  right=cond                             #condOr
   | 'not ' cond                                            #condNot
   ;
 
+// variable binding
+varBind
+  : Var ('in'|':=') xq
+  ;
 
 // Absolute path
 ap

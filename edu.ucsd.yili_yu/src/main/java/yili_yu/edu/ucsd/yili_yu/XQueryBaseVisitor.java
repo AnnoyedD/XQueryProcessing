@@ -1,4 +1,4 @@
-// Generated from yili_yu/edu/ucsd/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from yili_yu\edu\u005Cucsd\yili_yu\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
@@ -67,6 +67,14 @@ public class XQueryBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { return visitChildren(ctx); }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitVarBind(@NotNull XQueryParser.VarBindContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}

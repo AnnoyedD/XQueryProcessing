@@ -1,8 +1,7 @@
 // Generated from edu\u005Cucsd\antlrtutorial\antlrtutorial\XQuery.g4 by ANTLR 4.3
 package yili_yu.edu.ucsd.yili_yu;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
@@ -20,8 +19,9 @@ import xml.to.dom.*;
  * of the available methods.
  */
 public class XQueryProcessor extends XQueryBaseListener {
-	 ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>();
+	 ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>(); //Return values, [ACT1,ACT2,ACT3...]
 	 ArrayList<XMLTree> domList = new ArrayList<>();
+	 HashMap<String,Node> context = new HashMap<>(); //Binding variables, ["a":ACT1,"b":SPEAKER2...]
 	    /**
 		 * {@inheritDoc}
 		 *
@@ -852,6 +852,16 @@ public class XQueryProcessor extends XQueryBaseListener {
 					subRes.addAll(sub);
 				}
 				values.put(ctx.getChild(2), subRes);
+			}
+		}
+		
+		public void checkXqType(@NotNull ParseTree tree){
+			ParseTreeWalker walker = new ParseTreeWalker();
+			if ((tree instanceof XQueryParser.XqFLWRContext) || (tree instanceof XQueryParser.XqLetContext)){
+				walker.walk(this, tree.getChild(0));
+			}
+			else {
+				walker.walk(this, tree);
 			}
 		}
 }

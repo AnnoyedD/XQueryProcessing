@@ -45,13 +45,9 @@ public class XQuery {
         frame.paint(g2d); 
         ImageIO.write(img,"jpg", new File("long.jpg"));
 		*/
-        System.out.println("========"+tree.getText());
-		// Create a generic parse tree walker that can trigger callbacks
-		//ParseTreeWalker walker = new ParseTreeWalker();
-		// Walk the tree created during the parse, trigger callbacks
-		//XQueryProcessor xqprocessor= new XQueryProcessor();
-		//walker.walk(xqprocessor, tree);
+
+		XQueryProcessor xqprocessor= new XQueryProcessor();
+		xqprocessor.checkXqType(tree);
 		//System.out.println(); // print a \n after translation
 	}
 }
-

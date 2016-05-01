@@ -13,97 +13,51 @@ import org.w3c.dom.Node;
 
 import xml.to.dom.*;
 
-/**
- * This class provides an empty implementation of {@link XQueryListener},
- * which can be extended to create a listener which only needs to handle a subset
- * of the available methods.
- */
 public class XQueryProcessor extends XQueryBaseListener {
 	 ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>(); //Return values, [ACT1,ACT2,ACT3...]
 	 ArrayList<XMLTree> domList = new ArrayList<>();
 	 HashMap<String,Node> context = new HashMap<>(); //Binding variables, ["a":ACT1,"b":SPEAKER2...]
-	    /**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+	    
 		@Override public void enterVarBind(@NotNull XQueryParser.VarBindContext ctx) { }
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
-		@Override public void exitVarBind(@NotNull XQueryParser.VarBindContext ctx) { }
-	    /**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
+		@Override public void exitVarBind(@NotNull XQueryParser.VarBindContext ctx) { 
+			ParseTree target = ctx.getChild(2);
+			ArrayList<Node> sub = values.get(target);
+			values.put(ctx, sub);
+			values.removeFrom(target);
+		}
+	    
 		@Override public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { 
 			System.out.println("enterCondValEqual "+ctx.getText());
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
 		@Override public void exitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) {
 			
 		}
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { 
 			System.out.println("enterWhereClause "+ctx.getText());
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+
 		@Override public void exitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { }
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) {
 			System.out.println("enterWhereClause "+ctx.getText());
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+
 		@Override public void exitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { 
 			
 		}
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
 			//gets the entire query
 			System.out.println("enterXqFLWR "+ctx.getText());
+			
+			
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+
 		@Override public void exitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) { }
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) {
 			System.out.println("enterRpDotDot "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
@@ -114,30 +68,17 @@ public class XQueryProcessor extends XQueryBaseListener {
 			XMLTreefunction.unique(result);
 			values.put(ctx, result);
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
 		@Override public void exitRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) { 
 			interDataTrans(ctx.getParent());
 		}
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterFRp(@NotNull XQueryParser.FRpContext ctx) {
 			System.out.println("enterFRp "+ctx.getText());
 			ArrayList<Node> sub = values.get(ctx);
 			values.put(ctx.getChild(0), sub);
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
 		@Override public void exitFRp(@NotNull XQueryParser.FRpContext ctx) {
 			ParseTree target = ctx.getChild(0);
 			ArrayList<Node> result = values.get(target);
@@ -214,6 +155,8 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 */
 		@Override public void enterXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
 			System.out.println("enterXqTagName "+ctx.getText());
+			
+			
 		}
 		/**
 		 * {@inheritDoc}
@@ -572,13 +515,10 @@ public class XQueryProcessor extends XQueryBaseListener {
 			System.out.println(result.size());
 		}
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
 		@Override public void enterReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { 
 			System.out.println("enterReturnClause "+ctx.getText());
+			
+			
 		}
 		/**
 		 * {@inheritDoc}
@@ -644,21 +584,40 @@ public class XQueryProcessor extends XQueryBaseListener {
 		 */
 		@Override public void exitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { }
 
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
 		@Override public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
-			
 			System.out.println("enterForClause "+ctx.getText());
-			
+		
+			ParseTree firstVarBind = ctx.getChild(1);
+			forHelper(firstVarBind, 3); //3 is the index of the next varBind
 		}
-		/**
-		 * {@inheritDoc}
-		 *
-		 * <p>The default implementation does nothing.</p>
-		 */
+		
+		private void manulWalk(ParseTree tree){
+			ParseTreeWalker walker = new ParseTreeWalker();
+			walker.walk(this, tree);
+		}
+		
+		private void forHelper(ParseTree tree, int idx){
+			manulWalk(tree);
+			
+			String key = tree.getChild(0).getText();
+			System.out.println("============"+key+"===============");
+			
+			ArrayList<Node> sub = values.get(tree);
+			for (Node i : sub){
+				context.put(key, i);
+				
+				if (tree.getParent().getChildCount()>idx){ //check whether the next varBind exist
+					forHelper(tree.getParent().getChild(idx), idx+2);
+				}
+				else{
+					manulWalk(tree.getParent().getParent().getChild(1)); //If no more varBind, traverse letClause|whereClause|returnClause
+				}
+				
+				context.remove(key);
+			}
+		}
+		
 		@Override public void exitForClause(@NotNull XQueryParser.ForClauseContext ctx) { }
 
 		/**

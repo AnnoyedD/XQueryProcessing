@@ -56,7 +56,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return visit(ctx.getChild(0)); 
 	}
 
-	@Override public ArrayList<Node> visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) {
+		 ArrayList<Node> xq_list = visit(ctx.getChild(0));
+		  ArrayList<Node> slash_list = slashHelper(xq_list);
+		  values.put(ctx.getChild(2), slash_list);
+		  ArrayList<Node> rp_list = visit(ctx.getChild(2));
+		  return rp_list;
+	}
 
 	@Override public ArrayList<Node> visitVarBind(@NotNull XQueryParser.VarBindContext ctx) { 
 		System.out.println("visitVarBind");
@@ -159,7 +165,11 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override public ArrayList<Node> visitCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) { return visitChildren(ctx); }
 
-	@Override public ArrayList<Node> visitXqVar(@NotNull XQueryParser.XqVarContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqVar(@NotNull XQueryParser.XqVarContext ctx) {
+		Node inode = context.get(ctx.getText());
+		ArrayList<Node> singletonList = (ArrayList<Node>)Collections.singletonList(inode);
+		return singletonList;
+	}
 
 	@Override public ArrayList<Node> visitFNot(@NotNull XQueryParser.FNotContext ctx) { 
 		System.out.println("visitFNot "+ctx.getText());
@@ -250,7 +260,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return visit(ctx.getChild(2)); 
 	}
 
-	@Override public ArrayList<Node> visitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) {
+		  ArrayList<Node> xq_list = visit(ctx.getChild(0));
+		  ArrayList<Node> slashslash_list = slashSlashHelper(xq_list);
+		  values.put(ctx.getChild(2), slashslash_list);
+		  ArrayList<Node> rp_list = visit(ctx.getChild(2));
+		  return rp_list;
+		}
 
 	@Override public ArrayList<Node> visitForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
 		System.out.println("visitForClause");
@@ -273,7 +289,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 			else{
 				int count = tree.getParent().getChildCount(); 
 				
-				manulWalk(tree.getParent().getParent().getChild(1)); //If no more varBind, traverse letClause|whereClause|returnClause
+				//manulWalk(tree.getParent().getParent().getChild(1)); //If no more varBind, traverse letClause|whereClause|returnClause
 			}
 			
 			context.remove(key);

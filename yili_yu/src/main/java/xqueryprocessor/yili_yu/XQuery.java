@@ -31,22 +31,22 @@ public class XQuery {
 		XQueryParser parser = new XQueryParser(tokens);
 		ParseTree tree = parser.xq(); // begin parsing at xq rule
 		
-		/*JFrame frame = new JFrame("Antlr AST");
-        JPanel panel = new JPanel();
-        TreeViewer viewr = new TreeViewer(Arrays.asList(
-                parser.getRuleNames()),tree);
-        viewr.setScale(1.2);//scale a little
-        panel.add(viewr);
-        frame.add(panel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1400,700);
-        frame.setVisible(true);
-        
-        BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
-        Graphics2D g2d = img.createGraphics(); 
-        frame.paint(g2d); 
-        ImageIO.write(img,"jpg", new File("long.jpg"));
-		*/
+//		JFrame frame = new JFrame("Antlr AST");
+//        JPanel panel = new JPanel();
+//        TreeViewer viewr = new TreeViewer(Arrays.asList(
+//                parser.getRuleNames()),tree);
+//        viewr.setScale(1.2);//scale a little
+//        panel.add(viewr);
+//        frame.add(panel);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.setSize(1400,700);
+//        frame.setVisible(true);
+//        
+//        BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
+//        Graphics2D g2d = img.createGraphics(); 
+//        frame.paint(g2d); 
+//        ImageIO.write(img,"jpg", new File("long.jpg"));
+		
 		
 		MyVisitor eval = new MyVisitor();
 		eval.visit(tree);

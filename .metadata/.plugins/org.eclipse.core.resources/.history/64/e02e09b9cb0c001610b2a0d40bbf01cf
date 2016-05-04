@@ -1,0 +1,8 @@
+<result>{
+for $a in document("test.xml")//TITLE,
+
+return <who>{$sp/SPEAKER/text()}</who>,
+       <when>{<act>{$a/title/text()}</act>,
+             <scene>{$sc/title/text()}</scene>}
+       <when>
+}</result>

@@ -1,0 +1,5 @@
+<result>{
+for $a in document("test.xml")//PLAY,
+
+return $a/text()
+}</result>

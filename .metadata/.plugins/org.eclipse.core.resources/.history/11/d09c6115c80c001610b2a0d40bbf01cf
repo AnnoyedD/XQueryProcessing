@@ -1,0 +1,46 @@
+package xml.to.dom;
+import org.w3c.dom.*;
+public class myNamedNodeMap implements NamedNodeMap {
+
+	@Override
+	public Node setNamedItem(Node arg) throws DOMException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Node removeNamedItem(String name) throws DOMException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Node item(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getLength() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Node getNamedItemNS(String namespaceURI, String localName) throws DOMException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Node setNamedItemNS(Node arg) throws DOMException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Node removeNamedItemNS(String namespaceURI, String localName) throws DOMException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

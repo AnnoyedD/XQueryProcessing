@@ -12,7 +12,9 @@ public class XMLTree {
 	private String fileName;
 	//private Element root;
 	private Document doc;
-	
+	public Document getDocument(){
+		return doc;
+	}
 	public XMLTree(String fileName) {
 		this.fileName = fileName;
 	

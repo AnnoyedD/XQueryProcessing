@@ -17,14 +17,18 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>(); //Return values, [ACT1,ACT2,ACT3...]
 	ArrayList<XMLTree> domList = new ArrayList<>();
 	HashMap<String,Node> context = new HashMap<>(); //Binding variables, ["a":ACT1,"b":SPEAKER2...]
-	
+	private XMLTree curXMLTree = null;
+	private Document inDoc = null;
+	private Document outDoc = null;//makeElement(outDoc)
 	@Override public ArrayList<Node> visitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { 
 		return visitChildren(ctx); 
 	}
 
 	@Override public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { return visitChildren(ctx); }
 
-	@Override public ArrayList<Node> visitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { 
+		return visit(ctx.getChild(1));
+	}
 
 	@Override public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) { 
 		System.out.println("visitXqFLWR");
@@ -74,7 +78,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		
 		String nameStr = ctx.getChild(2).getText();
 		String fileName = nameStr.substring(1, nameStr.length()-1);
-		XMLTree curXMLTree = null;
+		curXMLTree = null;
 		
 		for (XMLTree i : domList){
 			if (i.getFileName().equals(fileName)){
@@ -89,7 +93,8 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		}
 		
 		ArrayList<Node> root = new ArrayList<>();
-		root.add(XMLTreefunction.getRoot(curXMLTree.getDoc()));
+		inDoc = curXMLTree.getDoc();
+		root.add(XMLTreefunction.getRoot(inDoc));
 		
 		if (ctx.slash.getText().equals("/")){
 			values.put(ctx.getChild(5), slashHelper(root));
@@ -128,7 +133,9 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return result; 
 	}
 
-	@Override public ArrayList<Node> visitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
+		return visitChildren(ctx);
+		}
 
 	@Override public ArrayList<Node> visitLetClause(@NotNull XQueryParser.LetClauseContext ctx) { return visitChildren(ctx); }
 
@@ -228,10 +235,16 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		values.removeFrom(ctx);
 		return result;
 	}
+	
 
 	@Override public ArrayList<Node> visitXqLet(@NotNull XQueryParser.XqLetContext ctx) { return visitChildren(ctx); }
 
-	@Override public ArrayList<Node> visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) {
+		Node text_node = XMLTreefunction.makeText(ctx.getText(), inDoc);
+		ArrayList<Node> textNode = new ArrayList<Node>();
+		textNode.add(text_node);
+		return textNode;
+	}
 
 	@Override public ArrayList<Node> visitXqAp(@NotNull XQueryParser.XqApContext ctx) { return visitChildren(ctx); }
 

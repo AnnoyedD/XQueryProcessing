@@ -152,7 +152,27 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return result;
 	}
 
-	@Override public ArrayList<Node> visitFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) {
+		//return visitChildren(ctx); 
+				ArrayList<Node> left = visit(ctx.getChild(0));
+				ArrayList<Node> right = visit(ctx.getChild(2));
+				ArrayList<Node> result = new ArrayList<Node>();
+				
+				if(left==null && right ==null){
+					result.add(null);
+					return result;
+				}
+				for(Node l: left){
+					for(Node r: right){
+						if(l.equals(r)){
+							result.add(null);
+							return result;
+						}
+					}
+				}
+				return result;
+		
+	}
 
 	@Override public ArrayList<Node> visitCondOr(@NotNull XQueryParser.CondOrContext ctx) { return visitChildren(ctx); }
 
@@ -226,7 +246,26 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return left; //left size==0: indicating false
 	}
 
-	@Override public ArrayList<Node> visitFValEqual(@NotNull XQueryParser.FValEqualContext ctx) { return visitChildren(ctx); }
+	@Override public ArrayList<Node> visitFValEqual(@NotNull XQueryParser.FValEqualContext ctx) {
+		//return visitChildren(ctx); 
+		ArrayList<Node> left = visit(ctx.getChild(0));
+		ArrayList<Node> right = visit(ctx.getChild(2));
+		ArrayList<Node> result = new ArrayList<Node>();
+		
+		if(left==null && right ==null){
+			result.add(null);
+			return result;
+		}
+		for(Node l: left){
+			for(Node r: right){
+				if(l.isEqualNode(r)){
+					result.add(null);
+					return result;
+				}
+			}
+		}
+		return result;
+	}
 
 	@Override public ArrayList<Node> visitRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) { 
 		System.out.println("visitRpWildcard "+ctx.getText());

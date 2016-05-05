@@ -1,15 +1,9 @@
 package xml;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+
+import org.w3c.dom.*;
 
 public class XMLTreefunction {
 
@@ -88,19 +82,10 @@ public class XMLTreefunction {
 	} // unsure about the return type
 
 	public static ArrayList<Node> unique(ArrayList<Node> list) {
-		return list;
+		Set<Node> s = new HashSet<Node>(list);
+		ArrayList<Node> uniqueList = new ArrayList<Node>();
+		uniqueList.addAll(s);
+		return uniqueList;
 	}
-
-	public static ArrayList<Node> concatenate(ArrayList<Node> listA, ArrayList<Node> listB) {
-		return null;
-	}
-
-	public static boolean filterEq(ArrayList<Node> listA, ArrayList<Node> listB) {
-		return true;
-	}
-
-	public static boolean filterIs(ArrayList<Node> listA, ArrayList<Node> listB) {
-		return true;
-	}
-
+	
 }

@@ -36,11 +36,15 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return result;
 	}
 
-	@Override
-	public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
-		// todo
-		System.out.println("visitWhereClause" + ctx.getText());
-		return visitChildren(ctx);
+	@Override public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { 
+		System.out.println("visitWhereClause");
+		
+		ArrayList<Node> result = visit(ctx.getChild(1));
+		if (result.size()>0){
+			ParseTree parent = ctx.getParent();
+			visit(parent.getChild(parent.getChildCount()-1));
+		}
+		return null;//return visitChildren(ctx); 
 	}
 
 	@Override
@@ -49,11 +53,18 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return visit(ctx.getChild(1));
 	}
 
-	@Override
-	public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
-		System.out.println("visitXqFLWR" + ctx.getText());
-
-		return visit(ctx.getChild(0));
+	@Override public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) { 
+		System.out.println("visitXqFLWR");
+		
+		ParseTree res = ctx.getChild(ctx.getChildCount()-1);
+		values.put(res, new ArrayList<Node>());
+		
+		visit(ctx.getChild(0));
+		
+		ArrayList<Node> result = values.get(res);
+		values.removeFrom(res);
+		
+		return result;
 	}
 
 	@Override
@@ -92,10 +103,39 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return rp_list;
 	}
 
-	@Override
-	public ArrayList<Node> visitVarBind(@NotNull XQueryParser.VarBindContext ctx) {
-		System.out.println("visitVarBind" + ctx.getText());
-		return visitChildren(ctx);
+
+	@Override public ArrayList<Node> visitVarBind(@NotNull XQueryParser.VarBindContext ctx) { 
+		System.out.println("visitVarBind");
+		
+		ArrayList<Node> result = visit(ctx.getChild(2));
+		
+		String key = ctx.getChild(0).getText();
+		System.out.println("Variable binding: "+key);
+		
+		ParseTree parent = ctx.getParent();
+		int childCount = parent.getChildCount();
+		int idx = whichChild(parent, ctx);
+		
+		for (Node i : result){
+			context.put(key, i);
+			if (childCount>idx+2){ //check whether the next varBind exist
+				visit(parent.getChild(idx+2));
+			}
+			else{
+				bindHelper(ctx);
+			}
+			context.remove(key);
+		} 
+		return null;
+	}
+	
+	private int whichChild(ParseTree parent, ParseTree child){
+		int childCount = parent.getChildCount();
+		for (int i=0;i<childCount;i++){
+			if (parent.getChild(i).equals(child))
+				return i;
+		}
+		return -1;
 	}
 
 	@Override
@@ -171,10 +211,12 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return ret_list;
 	}
 
-	@Override
-	public ArrayList<Node> visitLetClause(@NotNull XQueryParser.LetClauseContext ctx) {
-		//todo
-		return visitChildren(ctx);
+
+	@Override public ArrayList<Node> visitLetClause(@NotNull XQueryParser.LetClauseContext ctx) { 
+		System.out.println("visitLetClause");
+		
+		visit(ctx.getChild(1));
+		return null;
 	}
 
 	@Override
@@ -248,12 +290,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return result;
 	}
 
-	@Override
-	public ArrayList<Node> visitXqVar(@NotNull XQueryParser.XqVarContext ctx) {
-		System.out.println("visitXqVar" + ctx.getText());
+	
+	@Override public ArrayList<Node> visitXqVar(@NotNull XQueryParser.XqVarContext ctx) { 
 		Node inode = context.get(ctx.getText());
-		ArrayList<Node> singletonList = (ArrayList<Node>) Collections.singletonList(inode);
+		ArrayList<Node> singletonList = new ArrayList<>();
+		singletonList.add(inode);
 		return singletonList;
+
 	}
 
 	@Override
@@ -272,10 +315,16 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		}
 	}
 
-	@Override
-	public ArrayList<Node> visitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) {
-		System.out.println("visitCondSomeSatis " + ctx.getText());
-		return visitChildren(ctx);
+
+	@Override public ArrayList<Node> visitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) { 
+		System.out.println("visitCondSomeSatis");
+		
+		values.put(ctx, new ArrayList<Node>());
+		visit(ctx.getChild(0));
+		ArrayList<Node> result = values.get(ctx);
+		values.removeFrom(ctx);
+		
+		return result; 
 	}
 
 	@Override
@@ -340,10 +389,15 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return result;
 	}
 
-	@Override
-	public ArrayList<Node> visitXqLet(@NotNull XQueryParser.XqLetContext ctx) {
-		System.out.println("visitXqLet " + ctx.getText());
-		return visitChildren(ctx);
+	@Override public ArrayList<Node> visitXqLet(@NotNull XQueryParser.XqLetContext ctx) { 
+		System.out.println("visitXqLet");
+		
+		values.put(ctx, new ArrayList<Node>());
+		visit(ctx.getChild(0));
+		
+		ArrayList<Node> result = values.get(ctx);
+		values.removeFrom(ctx);
+		return result; 
 	}
 
 	@Override
@@ -407,35 +461,32 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return rp_list;
 	}
 
-	@Override
-	public ArrayList<Node> visitForClause(@NotNull XQueryParser.ForClauseContext ctx) {
-		System.out.println("visitForClause" + ctx.getText());
-
-		bindHelper(ctx.getChild(1), 3);// 3 indicates the index of the next
-										// brother
-		return visitChildren(ctx);
+	@Override public ArrayList<Node> visitForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
+		System.out.println("visitForClause");
+		
+		visit(ctx.getChild(1));
+		return null;
 	}
 
-	private void bindHelper(ParseTree tree, int idx) {
-		String key = tree.getChild(0).getText();
-		System.out.println("============" + key + "===============");
-
-		ArrayList<Node> sub = values.get(tree);
-		for (Node i : sub) {
-			context.put(key, i);
-
-			if (tree.getParent().getChildCount() > idx) { // check whether the
-															// next varBind
-															// exist
-				bindHelper(tree.getParent().getChild(idx), idx + 2);
-			} else {
-				int count = tree.getParent().getChildCount();
-
-				// manulWalk(tree.getParent().getParent().getChild(1)); //If no
-				// more varBind, traverse letClause|whereClause|returnClause
+	private void bindHelper(ParseTree tree){
+		ParseTree parent = tree.getParent();
+		String flag = parent.getChild(0).getText();
+		ParseTree grand = parent.getParent();
+		if (flag.equals("some")){
+			ArrayList<Node> result = visit(grand.getChild(2));
+			if (result.size()>0){
+				values.put(grand, result);
 			}
-
-			context.remove(key);
+		}
+		else if ((flag.equals("let")) && (grand.getChildCount()==2)){
+			ArrayList<Node> sub = visit(grand.getChild(1));
+			ArrayList<Node> result = values.get(grand);
+			result.addAll(sub);
+			values.put(grand, result);
+		}
+		else{
+			int idx = whichChild(grand, parent);
+			visit(grand.getChild(idx+1));
 		}
 	}
 
@@ -550,6 +601,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return left;// left size >0: indicating true
 	}
 
+	@Override public ArrayList<Node> visitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx) { 
+		System.out.println("visitSomeClause");
+		
+		visit(ctx.getChild(1));
+		return null;
+	}
+	
 	private ArrayList<Node> slashHelper(ArrayList<Node> prec) {
 		ArrayList<Node> result = new ArrayList<>();
 		for (Node i : prec) {

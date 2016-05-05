@@ -162,9 +162,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
-		//todo
-		System.out.println("visitXqTagName" + ctx.getText());
-		return visitChildren(ctx);
+		System.out.println("visitXqTagName " + ctx.getText());
+		String tagName = ctx.getChild(1).getText();
+		ArrayList<Node> xq_children_list = visit(ctx.getChild(4));
+		Node node = XMLTreefunction.makeElement(tagName, xq_children_list, outDoc);
+		ArrayList<Node> ret_list = new ArrayList<Node>();
+		ret_list.add(node);
+		return ret_list;
 	}
 
 	@Override

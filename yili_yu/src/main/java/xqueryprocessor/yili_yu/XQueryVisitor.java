@@ -74,6 +74,13 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	T visitVarBind(@NotNull XQueryParser.VarBindContext ctx);
 
 	/**
+	 * Visit a parse tree produced by {@link XQueryParser#someClause}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx);
+
+	/**
 	 * Visit a parse tree produced by the {@code apSlash}
 	 * labeled alternative in {@link XQueryParser#ap}.
 	 * @param ctx the parse tree

@@ -121,6 +121,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSomeClause(@NotNull XQueryParser.SomeClauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) { }
 	/**
 	 * {@inheritDoc}

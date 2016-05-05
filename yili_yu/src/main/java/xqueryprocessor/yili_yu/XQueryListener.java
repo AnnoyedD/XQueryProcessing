@@ -109,6 +109,17 @@ public interface XQueryListener extends ParseTreeListener {
 	void exitVarBind(@NotNull XQueryParser.VarBindContext ctx);
 
 	/**
+	 * Enter a parse tree produced by {@link XQueryParser#someClause}.
+	 * @param ctx the parse tree
+	 */
+	void enterSomeClause(@NotNull XQueryParser.SomeClauseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link XQueryParser#someClause}.
+	 * @param ctx the parse tree
+	 */
+	void exitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx);
+
+	/**
 	 * Enter a parse tree produced by the {@code apSlash}
 	 * labeled alternative in {@link XQueryParser#ap}.
 	 * @param ctx the parse tree

@@ -4,6 +4,7 @@ package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import org.antlr.v4.runtime.tree.gui.TreeViewer;
+import org.w3c.dom.Node;
 
 import xml.*;
 
@@ -12,6 +13,7 @@ import java.io.FileInputStream;
 import java.util.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 import javax.imageio.ImageIO;
 
 import java.awt.image.BufferedImage;
@@ -20,7 +22,7 @@ import java.awt.Graphics2D;
 public class XQuery {
 	public static void main(String[] args) throws Exception {
 		//create a CharStream that reads from standard input
-		File file = new File("querySample.txt");
+		File file = new File("querySample2.txt");
 		FileInputStream fis = new FileInputStream(file);
 		ANTLRInputStream input = new ANTLRInputStream(fis);
 		//create a lexer that feeds off of input CharStream
@@ -49,7 +51,8 @@ public class XQuery {
 		
 		
 		MyVisitor eval = new MyVisitor();
-		eval.visit(tree);
+		ArrayList<Node> result = eval.visit(tree);
+		eval.printResult(result);
 	}
 }
 

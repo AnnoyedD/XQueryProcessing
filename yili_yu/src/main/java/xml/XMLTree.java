@@ -1,8 +1,6 @@
 package xml;
 
 import java.io.File;
-import java.io.FileReader;
-import java.io.InputStream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,6 +12,31 @@ public class XMLTree {
 	private Document doc;
 	public Document getDocument(){
 		return doc;
+	}
+	public XMLTree(){
+		try {
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			dbf.setNamespaceAware(true);
+			// dbf.setValidating(dtdValidate || xsdValidate);
+			dbf.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+			dbf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+			DocumentBuilder db = dbf.newDocumentBuilder();
+			doc = db.newDocument();
+			//root = doc.getDocumentElement();
+			
+			// System.out.println("Root element :" +
+			// doc.getDocumentElement().getNodeName());
+
+			// if (doc.hasChildNodes()) {
+
+			// printNote(doc.getChildNodes());
+
+			// }
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 	public XMLTree(String fileName) {
 		this.fileName = fileName;

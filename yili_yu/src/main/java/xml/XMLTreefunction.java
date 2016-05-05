@@ -15,7 +15,7 @@ public class XMLTreefunction {
 		ArrayList<Node> children = new ArrayList<Node>();
 		Node childNode = parent.getFirstChild();
 		for (; childNode != null;) {
-			if (childNode.getNodeType() == Node.ELEMENT_NODE)
+			//if (childNode.getNodeType() == Node.ELEMENT_NODE)
 				children.add(childNode);
 			childNode = childNode.getNextSibling();
 			;
@@ -36,9 +36,9 @@ public class XMLTreefunction {
 	}
 
 	public static Node getTxt(Node n) {
-		if(n.getNodeType() == Node.TEXT_NODE)
+		//if(n.getNodeType() == Node.TEXT_NODE)
 			return n;
-		return null;
+		//return null;
 	}
 
 	public static Node makeText(String str, Document inDoc) {	
@@ -47,11 +47,15 @@ public class XMLTreefunction {
 
 	public static Node makeElement(String name, ArrayList<Node> nodeList, Document outDoc) {
 		Node element_node = outDoc.createElement(name);
+		
 		for (Node n : nodeList) {
+			System.out.println("n "+n.toString());
 			if (n != null && n.getNodeType() != Node.DOCUMENT_NODE) {
 				boolean deep = true;
 				Node child = outDoc.importNode(n, deep);
+				System.out.println("make element "+child.toString());
 				element_node.appendChild(child);
+				System.out.println("element_node "+element_node.getFirstChild().toString());
 			}
 		}
 		return element_node;

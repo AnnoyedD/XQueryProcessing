@@ -241,7 +241,11 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	@Override
 	public ArrayList<Node> visitCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) {
 		System.out.println("visitCondEmpty" + ctx.getText());
-		return visitChildren(ctx);
+		ArrayList<Node> xq_list = visit(ctx.getChild(1));
+		ArrayList<Node> result = new ArrayList<Node>();
+		if (xq_list.size()==0)
+			result.add(null);
+		return result;
 	}
 
 	@Override

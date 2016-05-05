@@ -250,13 +250,9 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override public ArrayList<Node> visitReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { 	
 		System.out.println("visitReturnClause");
-		ArrayList<Node> old_list = values.get(ctx);	
-		ArrayList<Node> append_list = visit(ctx.getChild(1));
-		ArrayList<Node> new_list = new ArrayList<Node>(old_list);
-		new_list.addAll(append_list);
-		values.removeFrom(ctx);
-		values.put(ctx, new_list);
-		return null;
+		//return visitChildren(ctx); 
+		ArrayList<Node> return_list = values.get(ctx.getText());
+		
 	}
 
 	@Override public ArrayList<Node> visitCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) { return visitChildren(ctx); }

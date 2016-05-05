@@ -47,8 +47,8 @@ public class XMLTreefunction {
 		return null;
 	}
 
-	public static Node makeText(String str, Document inDoc) {	
-		return inDoc.createTextNode(str);
+	public static Node makeText(String str, Document doc) {	
+		return doc.createTextNode(str);
 	}
 
 	public static Node makeElement(String name, ArrayList<Node> nodeList, Document outDoc) {

@@ -39,11 +39,15 @@ cond
   : left=xq ('='|'eq')  right=xq                           #condValEqual
   | left=xq ('=='|'is') right=xq                           #condIdEqual
   | 'empty(' xq ')'                                        #condEmpty
-  | 'some' varBind ( ',' varBind )* 'satisfies' cond 	   #condSomeSatis
+  | someClause 'satisfies' cond 	   					   #condSomeSatis
   | '(' cond ')'                                           #condParenExpr
   | left=cond 'and' right=cond                             #condAnd
   | left=cond 'or'  right=cond                             #condOr
   | 'not ' cond                                            #condNot
+  ;
+
+someClause
+  : 'some' varBind ( ',' varBind )*
   ;
 
 //bind $var

@@ -511,3 +511,1160 @@ org.xml.sax.SAXParseException: The markup in the document following the root ele
 2016-05-04 17:08:29,385 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
 2016-05-04 17:08:29,386 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-05-04 17:08:29,386 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:09:46,917 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:09:46,919 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:09:46,919 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:09:46,920 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:09:46,922 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:12:32,833 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:12:32,834 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:12:32,834 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:12:32,835 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:12:32,836 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:12:48,479 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:12:48,480 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:12:48,480 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:12:48,481 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:12:48,481 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:13:37,924 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:13:37,925 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:13:37,925 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:13:37,926 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:13:37,926 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:14:23,168 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:14:23,172 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:14:23,172 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:14:23,175 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:14:23,175 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:14:48,360 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:14:48,361 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:14:48,361 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:14:48,362 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:14:48,362 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:21:13,164 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:21:13,166 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:13,166 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:21:13,166 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:13,166 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:21:22,021 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:21:22,023 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:22,023 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:21:22,024 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:22,024 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:21:55,106 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:21:55,108 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:55,108 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:21:55,109 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:21:55,109 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:22:20,285 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:22:20,286 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:22:20,286 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:22:20,287 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:22:20,287 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:50:40,115 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:50:40,118 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:50:40,118 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:50:40,120 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:50:40,120 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:51:31,084 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:51:31,085 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:31,085 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:51:31,086 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:31,086 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:51:45,653 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:51:45,654 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:45,654 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:51:45,654 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:45,654 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:51:54,862 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:51:54,865 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:54,865 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:51:54,865 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:51:54,866 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:52:14,726 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:52:14,727 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:14,727 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:52:14,729 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:14,729 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:52:42,589 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:52:42,590 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:42,590 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:52:42,591 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:42,592 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:52:45,424 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:52:45,425 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:45,426 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:52:45,427 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:52:45,428 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:53:59,658 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:53:59,659 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:53:59,659 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:53:59,659 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:53:59,659 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:54:18,314 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:54:18,315 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:18,315 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:54:18,317 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:18,317 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:54:22,794 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:54:22,795 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:22,796 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:54:22,796 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:22,796 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:54:26,048 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:54:26,051 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:26,051 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:54:26,052 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:26,052 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:54:46,135 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:54:46,136 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:46,136 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:54:46,137 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:54:46,137 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:55:35,983 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:55:35,984 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:35,985 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:55:35,987 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:35,988 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:55:41,110 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:55:41,111 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:41,111 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:55:41,112 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:41,112 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:55:44,195 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:55:44,195 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:44,196 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:55:44,197 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:55:44,197 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:56:17,528 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:56:17,529 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:56:17,529 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:56:17,530 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:56:17,530 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:56:37,975 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:56:37,976 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:56:37,976 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:56:37,977 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:56:37,978 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:02,770 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:02,771 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:02,771 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:02,772 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:02,772 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:18,791 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:18,793 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:18,793 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:18,795 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:18,796 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:28,094 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:28,102 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:28,102 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:28,103 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:28,103 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:38,413 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:38,414 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:38,414 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:38,415 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:38,415 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:42,227 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:42,228 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:42,229 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:42,231 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:42,232 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:57:56,614 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:57:56,615 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:56,615 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:57:56,615 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:57:56,615 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:58:03,241 [Worker-63] ERROR o.e.r.c.maven.MavenPomXmlAdvisor - Could not read pom.xml file of dependency :DependencyInfo{/Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu, PROJECT, {PROJECT_NAME=yili_yu}}
+org.xml.sax.SAXParseException: The markup in the document following the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257) ~[na:1.8.0_91]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_91]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.8.0_91]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.readModelFromFile(MavenPomXmlAdvisor.java:68) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.doSuggest(MavenPomXmlAdvisor.java:53) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.AbstractProjectCoordinateAdvisor.suggest(AbstractProjectCoordinateAdvisor.java:24) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.ProjectCoordinateAdvisorService.suggest(ProjectCoordinateAdvisorService.java:50) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:109) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:1) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService.suggest(EclipseProjectCoordinateAdvisorService.java:141) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:195) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:130) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:104) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.toUniqueName(ProjectCoordinateProvider.java:205) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:42) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-05-04 17:58:50,731 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:58:50,733 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:58:50,734 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:58:50,734 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:58:50,734 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:58:56,090 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:58:56,090 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:58:56,091 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:58:56,091 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:58:56,091 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:59:02,858 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:59:02,859 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:02,859 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:59:02,861 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:02,861 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:59:38,794 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:59:38,795 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:38,796 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:59:38,796 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:38,796 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 17:59:57,019 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 17:59:57,020 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:57,020 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 17:59:57,021 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 17:59:57,021 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:00:04,379 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:00:04,380 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:04,380 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:00:04,381 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:04,381 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:00:09,028 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:00:09,029 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:09,029 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:00:09,030 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:09,030 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:00:24,207 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:00:24,208 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:24,208 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:00:24,209 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:00:24,209 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:01:20,386 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:01:20,387 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:20,387 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:01:20,388 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:20,388 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:01:32,759 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:01:32,761 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:32,761 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:01:32,762 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:32,762 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:01:43,884 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:01:43,885 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:43,885 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:01:43,886 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:43,886 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:01:51,673 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:01:51,673 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:51,674 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:01:51,675 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:51,675 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:01:57,263 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:01:57,264 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:57,264 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:01:57,264 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:01:57,264 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:02:07,727 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:02:07,729 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:07,729 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:02:07,729 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:07,729 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:02:21,637 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:02:21,638 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:21,638 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:02:21,639 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:21,639 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:02:31,368 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:02:31,369 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:31,369 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:02:31,369 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:31,369 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:02:37,602 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:02:37,603 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:37,603 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:02:37,604 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:02:37,605 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:03:39,389 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:03:39,391 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:03:39,391 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:03:39,392 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:03:39,392 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:05:13,489 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:05:13,490 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:13,490 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:05:13,490 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:13,490 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:05:17,113 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:05:17,114 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:17,114 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:05:17,114 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:17,114 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:05:55,379 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:05:55,380 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:55,380 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:05:55,381 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:05:55,381 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:06:52,345 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:06:52,345 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:06:52,345 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:06:52,346 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:06:52,346 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:07:12,214 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:07:12,215 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:07:12,215 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:07:12,215 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:07:12,216 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:07:31,829 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:07:31,830 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:07:31,830 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:07:31,831 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:07:31,831 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:08:48,573 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:08:48,574 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:08:48,574 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:08:48,574 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:08:48,575 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:09:52,119 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:09:52,120 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:09:52,120 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:09:52,121 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:09:52,121 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:10:11,750 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:10:11,751 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:10:11,751 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:10:11,753 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:10:11,753 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:11:44,895 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:11:44,896 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:11:44,896 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:11:44,897 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:11:44,897 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:18:34,909 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:18:34,910 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:18:34,910 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:18:34,911 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:18:34,911 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:19:16,964 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:19:16,965 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:16,965 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:19:16,966 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:16,966 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:19:22,861 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:19:22,863 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:22,863 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:19:22,863 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:22,863 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:19:43,717 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:19:43,719 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:43,719 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:19:43,721 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:43,721 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:19:59,294 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:19:59,295 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:59,295 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:19:59,295 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:19:59,295 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:20:31,480 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:20:31,481 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:20:31,481 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:20:31,482 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:20:31,482 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:20:48,902 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:20:48,903 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:20:48,903 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:20:48,903 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:20:48,903 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:21:55,915 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:21:55,916 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:21:55,917 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:21:55,917 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:21:55,917 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:22:06,590 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:22:06,592 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:06,592 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:22:06,593 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:06,593 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:22:19,574 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:22:19,575 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:19,575 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:22:19,576 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:19,576 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:22:25,283 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:22:25,284 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:25,284 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:22:25,285 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:22:25,285 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:23:04,384 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:23:04,385 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:04,385 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:23:04,386 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:04,386 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:23:16,506 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:23:16,507 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:16,508 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:23:16,508 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:16,508 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:23:37,209 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:23:37,210 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:37,210 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:23:37,210 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:23:37,210 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:24:53,823 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:24:53,824 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:24:53,824 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:24:53,825 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:24:53,825 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:27:33,098 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:27:33,099 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:27:33,099 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:27:33,100 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:27:33,100 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:27:41,761 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:27:41,762 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:27:41,762 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:27:41,762 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:27:41,762 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:28:05,009 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:28:05,010 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:28:05,010 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:28:05,011 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:28:05,011 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:29:14,300 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:29:14,301 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:14,301 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:29:14,301 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:14,301 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:29:20,510 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:29:20,511 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:20,511 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:29:20,512 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:20,512 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:29:38,754 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:29:38,755 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:38,755 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:29:38,755 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:38,755 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:29:45,500 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:29:45,501 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:45,501 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:29:45,501 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:29:45,502 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:30:25,747 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:30:25,748 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:30:25,748 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:30:25,749 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:30:25,749 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:32:09,403 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:32:09,404 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:09,404 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:32:09,404 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:09,405 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:32:26,436 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:32:26,436 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:26,436 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:32:26,437 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:26,437 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:32:29,477 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:32:29,479 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:29,479 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:32:29,480 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:32:29,480 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:52:22,940 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:52:22,944 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:22,945 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:52:22,946 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:22,947 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:52:39,238 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:52:39,238 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:39,238 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:52:39,239 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:39,239 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:52:46,363 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:52:46,364 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:46,364 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:52:46,364 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:46,364 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:52:55,527 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:52:55,529 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:55,529 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:52:55,529 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:52:55,530 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:53:12,351 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:53:12,352 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:53:12,352 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:53:12,353 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:53:12,353 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 18:53:26,242 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 18:53:26,243 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:53:26,243 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 18:53:26,244 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 18:53:26,244 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:23:51,518 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:23:51,522 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:23:51,522 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:23:51,523 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:23:51,524 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:24:07,308 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:24:07,309 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:07,309 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:24:07,310 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:07,310 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:24:23,441 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:24:23,442 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:23,442 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:24:23,442 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:23,443 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:24:34,196 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:24:34,196 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:34,196 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:24:34,197 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:34,197 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:24:58,012 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:24:58,013 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:58,013 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:24:58,014 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:24:58,014 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:25:23,203 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:25:23,203 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:23,203 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:25:23,204 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:23,204 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:25:34,322 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:25:34,323 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:34,323 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:25:34,323 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:34,324 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:25:56,225 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:25:56,226 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:56,226 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:25:56,226 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:25:56,226 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:26:28,690 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:26:28,691 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:26:28,691 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:26:28,692 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:26:28,692 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:26:42,194 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:26:42,196 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:26:42,196 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:26:42,196 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:26:42,197 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:27:14,091 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:27:14,092 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:27:14,092 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:27:14,093 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:27:14,093 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:28:43,344 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:28:43,369 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Processing grammar: xqueryprocessor/yili_yu/XQuery.g4
+2016-05-04 19:28:43,734 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:28:43,734 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:28:43,735 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:28:43,735 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:28:49,955 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-04 19:28:49,956 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:28:49,956 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-04 19:28:49,957 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 19:28:49,957 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-04 19:28:55,053 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-05-05 09:32:45,642 [Worker-129] ERROR o.e.r.c.maven.MavenPomXmlAdvisor - Could not read pom.xml file of dependency :DependencyInfo{/Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu, PROJECT, {PROJECT_NAME=yili_yu}}
+org.xml.sax.SAXParseException: The markup in the document following the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257) ~[na:1.8.0_91]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_91]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.8.0_91]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.readModelFromFile(MavenPomXmlAdvisor.java:68) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.doSuggest(MavenPomXmlAdvisor.java:53) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.AbstractProjectCoordinateAdvisor.suggest(AbstractProjectCoordinateAdvisor.java:24) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.ProjectCoordinateAdvisorService.suggest(ProjectCoordinateAdvisorService.java:50) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:109) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:1) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService.suggest(EclipseProjectCoordinateAdvisorService.java:141) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:195) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:130) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:104) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.toUniqueName(ProjectCoordinateProvider.java:205) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:42) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-05-05 09:32:59,175 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:32:59,177 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:32:59,177 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:32:59,178 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:32:59,178 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:33:05,774 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:33:05,775 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:05,775 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:33:05,775 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:05,775 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:33:16,437 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:33:16,437 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:16,438 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:33:16,438 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:16,438 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:33:28,488 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:33:28,491 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:28,491 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:33:28,499 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:28,499 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:33:35,430 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:33:35,431 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:35,431 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:33:35,432 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:33:35,432 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:35:01,033 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:35:01,034 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:01,034 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:35:01,035 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:01,035 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:35:24,822 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:35:24,823 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:24,823 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:35:24,823 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:24,823 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:35:34,972 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:35:34,972 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:34,973 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:35:34,975 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:34,975 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:35:49,925 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:35:49,928 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:49,928 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:35:49,930 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:49,930 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:35:59,337 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:35:59,338 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:59,338 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:35:59,338 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:35:59,338 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:36:07,630 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:36:07,631 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:07,631 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:36:07,631 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:07,631 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:36:19,621 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:36:19,633 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:19,633 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:36:19,634 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:19,634 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:36:36,526 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:36:36,527 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:36,527 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:36:36,527 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:36,527 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:36:54,306 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:36:54,306 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:54,306 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:36:54,306 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:36:54,306 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:37:07,249 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:37:07,250 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:07,250 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:37:07,250 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:07,250 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:37:24,204 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:37:24,205 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:24,205 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:37:24,205 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:24,205 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:37:42,010 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:37:42,011 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:42,011 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:37:42,012 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:37:42,012 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:38:11,462 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:38:11,463 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:38:11,463 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:38:11,464 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:38:11,464 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:39:04,367 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:39:04,369 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:04,370 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:39:04,371 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:04,371 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:39:11,542 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:39:11,543 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:11,543 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:39:11,544 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:11,544 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:39:44,951 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:39:44,952 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:44,952 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:39:44,953 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:39:44,953 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:40:31,217 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:40:31,218 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:40:31,218 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:40:31,219 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:40:31,219 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:40:39,733 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:40:39,733 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:40:39,733 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:40:39,734 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:40:39,734 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:41:07,033 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:41:07,033 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:07,033 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:41:07,034 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:07,034 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:41:12,278 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:41:12,278 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:12,278 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:41:12,279 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:12,279 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:41:39,151 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:41:39,152 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:39,152 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:41:39,153 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:41:39,153 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:42:47,645 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:42:47,645 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:42:47,645 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:42:47,646 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:42:47,646 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:43:02,927 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:43:02,928 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:02,928 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:43:02,928 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:02,928 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:43:37,544 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:43:37,544 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:37,544 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:43:37,545 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:37,545 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:43:58,680 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:43:58,680 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:58,680 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:43:58,681 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:43:58,681 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:47:07,485 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:47:07,486 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:47:07,486 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:47:07,486 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:47:07,486 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:47:14,212 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:47:14,212 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:47:14,212 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:47:14,213 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:47:14,213 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:48:40,282 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:48:40,283 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:48:40,283 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:48:40,284 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:48:40,284 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:48:56,255 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:48:56,257 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:48:56,257 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:48:56,258 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:48:56,258 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:49:24,288 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:49:24,288 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:49:24,288 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:49:24,289 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:49:24,289 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:52:14,256 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:52:14,257 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:52:14,257 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:52:14,257 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:52:14,257 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:53:22,719 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:53:22,720 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:53:22,720 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:53:22,720 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:53:22,720 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:56:06,876 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:56:06,876 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:56:06,877 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:56:06,877 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:56:06,877 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:06,760 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:06,760 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:06,761 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:06,761 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:06,761 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:09,042 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:09,043 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:09,043 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:09,043 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:09,043 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:25,676 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:25,676 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:25,677 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:25,677 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:25,677 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:28,309 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:28,313 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:28,313 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:28,313 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:28,314 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:31,507 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:31,508 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:31,508 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:31,508 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:31,508 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:58:40,226 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:58:40,227 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:40,227 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:58:40,227 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:58:40,227 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:59:06,890 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:59:06,904 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:59:06,904 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:59:06,905 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:59:06,905 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 09:59:41,684 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 09:59:41,685 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:59:41,685 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 09:59:41,685 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 09:59:41,685 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:02:12,623 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:02:12,623 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:02:12,623 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:02:12,624 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:02:12,624 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:03:10,732 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:03:10,733 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:03:10,733 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:03:10,734 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:03:10,734 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:04:28,538 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:04:28,539 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:04:28,539 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:04:28,539 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:04:28,539 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:06:42,406 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:06:42,406 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:06:42,406 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:06:42,407 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:06:42,407 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:06:53,424 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:06:53,424 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:06:53,424 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:06:53,425 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:06:53,425 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:09:26,462 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:09:26,463 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:26,463 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:09:26,463 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:26,463 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:09:29,711 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:09:29,711 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:29,711 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:09:29,711 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:29,711 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:09:51,940 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:09:51,941 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:51,941 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:09:51,941 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:09:51,941 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:10:10,101 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:10:10,101 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:10:10,101 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:10:10,102 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:10:10,102 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:13:10,539 [Worker-136] ERROR o.e.r.c.maven.MavenPomXmlAdvisor - Could not read pom.xml file of dependency :DependencyInfo{/Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu, PROJECT, {PROJECT_NAME=yili_yu}}
+org.xml.sax.SAXParseException: The markup in the document following the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257) ~[na:1.8.0_91]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_91]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.8.0_91]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.readModelFromFile(MavenPomXmlAdvisor.java:68) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.doSuggest(MavenPomXmlAdvisor.java:53) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.AbstractProjectCoordinateAdvisor.suggest(AbstractProjectCoordinateAdvisor.java:24) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.ProjectCoordinateAdvisorService.suggest(ProjectCoordinateAdvisorService.java:50) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:109) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:1) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService.suggest(EclipseProjectCoordinateAdvisorService.java:141) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:195) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:130) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:104) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.toUniqueName(ProjectCoordinateProvider.java:205) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:42) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-05-05 10:13:12,960 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:13:12,961 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:13:12,961 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:13:12,961 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:13:12,961 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:13:28,452 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:13:28,453 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:13:28,453 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:13:28,453 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:13:28,453 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:14:07,295 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:14:07,296 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:07,296 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:14:07,296 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:07,296 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:14:12,609 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:14:12,610 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:12,610 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:14:12,610 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:12,610 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:14:30,813 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:14:30,814 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:30,814 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:14:30,815 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:14:30,815 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:17:31,461 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:17:31,462 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:17:31,462 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:17:31,462 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:17:31,462 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:18:31,862 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:18:31,863 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:18:31,863 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:18:31,863 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:18:31,863 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:18:42,862 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:18:42,862 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:18:42,862 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:18:42,863 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:18:42,863 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:19:47,258 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:19:47,258 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:19:47,258 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:19:47,258 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:19:47,258 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:21:44,901 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:21:44,901 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:21:44,901 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:21:44,901 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:21:44,901 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:32:19,432 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:32:19,433 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:32:19,433 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:32:19,433 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:32:19,433 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:34:02,254 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:34:02,255 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:34:02,255 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:34:02,255 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:34:02,255 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:34:32,242 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:34:32,242 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:34:32,242 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:34:32,242 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:34:32,242 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:36:29,670 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:36:29,670 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:36:29,670 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:36:29,671 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:36:29,671 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:38:26,562 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:38:26,563 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:38:26,563 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:38:26,564 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:38:26,564 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:40:06,133 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:40:06,133 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:40:06,134 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:40:06,134 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:40:06,134 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:40:37,755 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:40:37,756 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:40:37,756 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:40:37,756 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:40:37,756 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:44:23,887 [Worker-154] ERROR o.e.r.c.maven.MavenPomXmlAdvisor - Could not read pom.xml file of dependency :DependencyInfo{/Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu, PROJECT, {PROJECT_NAME=yili_yu}}
+org.xml.sax.SAXParseException: The markup in the document following the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257) ~[na:1.8.0_91]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_91]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.8.0_91]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.readModelFromFile(MavenPomXmlAdvisor.java:68) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.maven.MavenPomXmlAdvisor.doSuggest(MavenPomXmlAdvisor.java:53) ~[org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.AbstractProjectCoordinateAdvisor.suggest(AbstractProjectCoordinateAdvisor.java:24) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.ProjectCoordinateAdvisorService.suggest(ProjectCoordinateAdvisorService.java:50) [org.eclipse.recommenders.coordinates_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:109) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService$2.load(EclipseProjectCoordinateAdvisorService.java:1) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806) [com.google.guava_15.0.0.v201403281430.jar:na]
+	at org.eclipse.recommenders.coordinates.rcp.EclipseProjectCoordinateAdvisorService.suggest(EclipseProjectCoordinateAdvisorService.java:141) [org.eclipse.recommenders.coordinates.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:195) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:130) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.resolve(ProjectCoordinateProvider.java:104) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.ProjectCoordinateProvider.toUniqueName(ProjectCoordinateProvider.java:205) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:42) [org.eclipse.recommenders.models.rcp_2.2.4.v20150914-0857.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-05-05 10:45:07,250 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:45:07,251 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:45:07,251 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:45:07,251 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:45:07,251 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:47:15,332 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:47:15,332 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:47:15,332 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:47:15,333 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:47:15,333 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:48:43,600 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:48:43,600 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:48:43,600 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:48:43,601 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:48:43,601 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:51:04,640 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:51:04,640 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:51:04,641 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:51:04,641 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:51:04,641 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:58:43,337 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:58:43,338 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:58:43,338 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:58:43,339 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:58:43,340 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 10:59:12,057 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 10:59:12,058 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:59:12,058 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 10:59:12,059 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 10:59:12,059 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:06:19,116 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:06:19,117 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:06:19,117 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:06:19,118 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:06:19,118 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:09:15,839 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:09:15,840 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:15,840 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:09:15,841 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:15,841 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:09:26,214 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:09:26,215 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:26,215 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:09:26,215 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:26,215 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:09:30,567 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:09:30,568 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:30,568 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:09:30,568 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:09:30,568 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:11:00,366 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:11:00,366 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:00,366 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:11:00,367 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:00,367 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:11:09,028 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:11:09,028 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:09,028 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:11:09,029 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:09,029 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:11:37,260 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:11:37,262 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:37,262 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:11:37,263 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:11:37,263 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:13:49,674 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:13:49,675 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:13:49,675 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:13:49,676 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:13:49,676 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:13:53,060 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:13:53,060 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:13:53,060 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:13:53,060 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:13:53,060 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:14:45,200 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:14:45,201 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:14:45,201 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:14:45,201 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:14:45,201 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:15:10,706 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:15:10,706 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:15:10,707 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:15:10,707 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:15:10,707 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:15:37,444 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:15:37,445 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:15:37,445 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:15:37,445 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:15:37,445 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:16:03,623 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:16:03,623 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:16:03,623 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:16:03,624 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:16:03,624 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:17:13,916 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:17:13,916 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:17:13,916 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:17:13,916 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:17:13,916 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:18:38,324 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:18:38,325 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:18:38,325 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:18:38,325 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:18:38,325 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:19:15,962 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:19:15,962 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:19:15,963 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:19:15,963 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:19:15,963 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:20:23,192 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:20:23,193 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:20:23,194 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:20:23,194 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:20:23,194 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:21:06,710 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:21:06,711 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:21:06,711 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:21:06,712 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:21:06,712 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:21:20,197 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:21:20,197 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:21:20,197 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:21:20,198 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:21:20,198 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:22:25,584 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:22:25,585 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:22:25,585 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:22:25,585 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:22:25,585 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:22:37,048 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:22:37,049 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:22:37,049 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:22:37,049 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:22:37,049 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:23:51,239 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:23:51,240 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:23:51,240 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:23:51,253 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:23:51,253 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:23:53,419 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:23:53,420 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:23:53,420 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:23:53,420 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:23:53,420 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:24:24,402 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:24:24,403 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:24,403 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:24:24,404 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:24,404 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:24:49,501 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:24:49,503 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:49,503 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:24:49,504 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:49,504 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 12:24:58,318 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 12:24:58,320 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:58,320 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 12:24:58,321 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 12:24:58,321 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources
+2016-05-05 15:47:40,029 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - ANTLR 4: Processing source directory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/java
+2016-05-05 15:47:40,033 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 15:47:40,033 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/main/resources
+2016-05-05 15:47:40,033 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 15:47:40,034 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/yushen/Documents/grad/SanDiego/cse232B/XQueryProcessing/yili_yu/src/test/resources

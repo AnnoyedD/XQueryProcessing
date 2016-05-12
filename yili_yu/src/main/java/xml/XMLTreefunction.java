@@ -48,13 +48,13 @@ public class XMLTreefunction {
 		Node element_node = outDoc.createElement(name);
 
 		for (Node n : nodeList) {
-			System.out.println("n " + n.toString());
+			//System.out.println("n " + n.toString());
 			if (n != null && n.getNodeType() != Node.DOCUMENT_NODE) {
 				boolean deep = true;
 				Node child = outDoc.importNode(n, deep);
-				System.out.println("make element " + child.toString());
+				//System.out.println("make element " + child.toString());
 				element_node.appendChild(child);
-				System.out.println("element_node " + element_node.getFirstChild().toString());
+				//System.out.println("element_node " + element_node.getFirstChild().toString());
 			}
 		}
 		return element_node;
@@ -86,10 +86,11 @@ public class XMLTreefunction {
 	} // unsure about the return type
 
 	public static ArrayList<Node> unique(ArrayList<Node> list) {
-		 System.out.println("=============Not unique.size"+list.size());
+		//System.out.println("=============Not unique.size"+list.size());
 		ArrayList<Node> uniqueList = new ArrayList<Node>();
-		boolean notUnique = false;
+		boolean notUnique;
 		for(Node l: list){
+			notUnique = false;
 			for(Node u: uniqueList){
 				if(l.isEqualNode(u)){
 					notUnique = true;
@@ -98,7 +99,7 @@ public class XMLTreefunction {
 			}
 			if(!notUnique) uniqueList.add(l);
 		}	
-		System.out.println("=============== unique.size" + uniqueList.size());
+		//System.out.println("=============== unique.size" + uniqueList.size());
 		return uniqueList;
 	}
 

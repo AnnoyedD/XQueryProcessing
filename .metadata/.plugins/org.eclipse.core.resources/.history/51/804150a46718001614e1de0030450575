@@ -636,6 +636,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 			if (filter.size() > 0) {// filter size==0:false;filter size>0: true
 				result.add(i);
 			}
+		
 		}
 
 		return result;

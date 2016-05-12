@@ -627,15 +627,17 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		ArrayList<Node> temp = visit(ctx.getChild(0));
 
 		ArrayList<Node> result = new ArrayList<>();
+		ArrayList<Node> single = new ArrayList<>();
 		for (Node i : temp) {
 			ArrayList<Node> children = new ArrayList<Node>();
 			children.addAll(XMLTreefunction.getChildren(i));
-			
-			values.put(ctx.getChild(2), children);
+			single.addAll(children);
+			values.put(ctx.getChild(2), single);
 			ArrayList<Node> filter = visit(ctx.getChild(2));
 			if (filter.size() > 0) {// filter size==0:false;filter size>0: true
 				result.add(i);
 			}
+		
 		}
 
 		return result;

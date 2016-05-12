@@ -104,7 +104,14 @@ public class XMLTreefunction {
 		
 		Map<Integer, Node> map = new HashMap<Integer, Node>();
 		for(Node l: list){
-			if(!map.containsKey(l.hashCode())){
+			if(map.containsKey(l.hashCode())){
+				if(!map.get(l.hashCode()).isEqualNode(l))
+					uniqueList.add(l);
+				else{
+					map.put(l.hashCode(), l);
+				}
+					
+			}else{
 				map.put(l.hashCode(), l);
 				uniqueList.add(l);
 			}

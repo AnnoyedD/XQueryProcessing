@@ -88,27 +88,11 @@ public class XMLTreefunction {
 	public static ArrayList<Node> unique(ArrayList<Node> list) {
 		//System.out.println("=============Not unique.size"+list.size());
 		ArrayList<Node> uniqueList = new ArrayList<Node>();
-		/*boolean notUnique;
+		Map<Node, Integer> map = new HashMap<Node, Integer>();
 		for(Node l: list){
-			notUnique = false;
-			for(Node u: uniqueList){
-				//if(l.isEqualNode(u)){
-				if(l.isSameNode(u)){
-					notUnique = true;
-					break;
-				}
-			}
-			if(!notUnique) uniqueList.add(l);
+			if(map.containsKey(key))
 		}	
-		//System.out.println("=============== unique.size" + uniqueList.size());*/
-		
-		Map<Integer, Node> map = new HashMap<Integer, Node>();
-		for(Node l: list){
-			if(!map.containsKey(l.hashCode())){
-				map.put(l.hashCode(), l);
-				uniqueList.add(l);
-			}
-		}
+		//System.out.println("=============== unique.size" + uniqueList.size());
 		return uniqueList;
 		
 	}

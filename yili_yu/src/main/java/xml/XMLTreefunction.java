@@ -2,7 +2,6 @@ package xml;
 
 import java.util.*;
 
-
 import org.w3c.dom.*;
 
 public class XMLTreefunction {
@@ -15,8 +14,8 @@ public class XMLTreefunction {
 		ArrayList<Node> children = new ArrayList<Node>();
 		Node childNode = parent.getFirstChild();
 		for (; childNode != null;) {
-			//if (childNode.getNodeType() == Node.ELEMENT_NODE)
-				children.add(childNode);
+			// if (childNode.getNodeType() == Node.ELEMENT_NODE)
+			children.add(childNode);
 			childNode = childNode.getNextSibling();
 			;
 		}
@@ -36,30 +35,31 @@ public class XMLTreefunction {
 	}
 
 	public static Node getTxt(Node n) {
-		//if(n.getNodeType() == Node.TEXT_NODE)
-			return n;
-		//return null;
+		// if(n.getNodeType() == Node.TEXT_NODE)
+		return n;
+		// return null;
 	}
 
-	public static Node makeText(String str, Document inDoc) {	
+	public static Node makeText(String str, Document inDoc) {
 		return inDoc.createTextNode(str);
 	}
 
 	public static Node makeElement(String name, ArrayList<Node> nodeList, Document outDoc) {
 		Node element_node = outDoc.createElement(name);
-		
+
 		for (Node n : nodeList) {
-			System.out.println("n "+n.toString());
+			System.out.println("n " + n.toString());
 			if (n != null && n.getNodeType() != Node.DOCUMENT_NODE) {
 				boolean deep = true;
 				Node child = outDoc.importNode(n, deep);
-				System.out.println("make element "+child.toString());
+				System.out.println("make element " + child.toString());
 				element_node.appendChild(child);
-				System.out.println("element_node "+element_node.getFirstChild().toString());
+				System.out.println("element_node " + element_node.getFirstChild().toString());
 			}
 		}
 		return element_node;
 	}
+
 	public static ArrayList<Node> getDescendant(Node subRoot) {
 		List<Node> descendants = new ArrayList<Node>();
 		Queue<Node> level = new LinkedList<Node>();
@@ -86,10 +86,20 @@ public class XMLTreefunction {
 	} // unsure about the return type
 
 	public static ArrayList<Node> unique(ArrayList<Node> list) {
-		Set<Node> s = new HashSet<Node>(list);
+		 System.out.println("=============Not unique.size"+list.size());
 		ArrayList<Node> uniqueList = new ArrayList<Node>();
-		uniqueList.addAll(s);
+		boolean notUnique = false;
+		for(Node l: list){
+			for(Node u: uniqueList){
+				if(l.isEqualNode(u)){
+					notUnique = true;
+					break;
+				}
+			}
+			if(!notUnique) uniqueList.add(l);
+		}	
+		System.out.println("=============== unique.size" + uniqueList.size());
 		return uniqueList;
 	}
-	
+
 }

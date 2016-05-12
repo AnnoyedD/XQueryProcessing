@@ -79,55 +79,53 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
-		// System.out.println("visitWhereClause"+ctx.getText());
+		//System.out.println("visitWhereClause"+ctx.getText());
 		context_where.clear();
-		// key: var in where
-		for (String k : context_let.keySet()) {
-			if (ctx.getText().contains(k + "/")) {
-				System.out.println(" k" + k + " context_let.get(k) " + context_let.get(k).size());
+		//key: var in where
+		for(String k: context_let.keySet()){
+			if(ctx.getText().contains(k+"/")){
+				System.out.println(" k"+k+" context_let.get(k) "+context_let.get(k).size());
+				
 				ArrayList<Node> tmp = new ArrayList<Node>(context_let.get(k));
-				context_where.put(k, tmp);
-				// System.out.println("k "+k+" context_where.get(k)
-				// "+context_where.get(k).size());
+				context_where.put(k,tmp);
+				//System.out.println("k "+k+" context_where.get(k) "+context_where.get(k).size());
 			}
 		}
 		ArrayList<String> context_where_keys = new ArrayList<>();
 		int i = 0;
 		context_where_keys.addAll(context_where.keySet());
 		whereHelper(context_where_keys, i, ctx);
-
+		
 		/*
-		 * ArrayList<Node> result = visit(ctx.getChild(1));
-		 * 
-		 * if (result.size() > 0) { ParseTree parent = ctx.getParent();
-		 * visit(parent.getChild(parent.getChildCount() - 1)); }
-		 */
+		ArrayList<Node> result = visit(ctx.getChild(1));
+
+		if (result.size() > 0) {
+			ParseTree parent = ctx.getParent();
+			visit(parent.getChild(parent.getChildCount() - 1));
+		}*/
 		return null;// return visitChildren(ctx);
 	}
-
-	private void whereHelper(ArrayList<String> context_where_keys, int i,
-			@NotNull XQueryParser.WhereClauseContext ctx) {
-		if (i < context_where_keys.size()) {
-			// System.out.println("context_where_keys.get(i)
-			// "+context_where_keys.get(i));
+	
+	private void whereHelper(ArrayList<String> context_where_keys, int i, @NotNull XQueryParser.WhereClauseContext ctx){
+		if(i<context_where_keys.size()){
+			//System.out.println("context_where_keys.get(i) "+context_where_keys.get(i));
 			String key_i = context_where_keys.get(i);
-			// System.out.println(key_i + "
-			// context_where.get(key_i)"+context_where.get(key_i).size());
-			for (Node k_node : context_where.get(key_i)) {
+			//System.out.println(key_i + " context_where.get(key_i)"+context_where.get(key_i).size());
+			for(Node k_node: context_where.get(key_i)){
 				context.put(key_i, k_node);
-				whereHelper(context_where_keys, i + 1, ctx);
+				whereHelper(context_where_keys,i+1,ctx);
 				context.remove(key_i);
 			}
-		} else {
-			// System.out.println("$sc"+context.get("$sc").getNodeName());
-			// System.out.println("$sp"+context.get("$sp").getNodeName());
-			ArrayList<Node> result = visit(ctx.getChild(1));
+		}else{
+		//System.out.println("$sc"+context.get("$sc").getNodeName());
+		//System.out.println("$sp"+context.get("$sp").getNodeName());
+		ArrayList<Node> result = visit(ctx.getChild(1));
 
-			if (result.size() > 0) {
-				System.out.println("ya");
-				ParseTree parent = ctx.getParent();
-				visit(parent.getChild(parent.getChildCount() - 1));
-			}
+		if (result.size() > 0) {
+			System.out.println("ya");
+			ParseTree parent = ctx.getParent();
+			visit(parent.getChild(parent.getChildCount() - 1));
+		}
 		}
 	}
 

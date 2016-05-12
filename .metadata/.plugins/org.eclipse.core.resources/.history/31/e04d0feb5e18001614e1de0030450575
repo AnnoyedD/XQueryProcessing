@@ -85,6 +85,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		for (String k : context_let.keySet()) {
 			if (ctx.getText().contains(k + "/")) {
 				System.out.println(" k" + k + " context_let.get(k) " + context_let.get(k).size());
+
 				ArrayList<Node> tmp = new ArrayList<Node>(context_let.get(k));
 				context_where.put(k, tmp);
 				// System.out.println("k "+k+" context_where.get(k)

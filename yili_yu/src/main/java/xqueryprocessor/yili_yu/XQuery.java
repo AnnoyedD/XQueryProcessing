@@ -3,26 +3,21 @@ package xqueryprocessor.yili_yu;
 //import ANTLR's runtime libraries
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
-import org.antlr.v4.runtime.tree.gui.TreeViewer;
-
-import xml.*;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.*;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.imageio.ImageIO;
-
-import java.awt.image.BufferedImage;
-import java.awt.Graphics2D;
 
 import org.w3c.dom.*;
 
 public class XQuery {
 	public static void main(String[] args) throws Exception {
 		//create a CharStream that reads from standard input
-		File file = new File("querySample2.txt");
+		Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the file name for XQuery: ");
+        String inFileName = scanner.nextLine();
+		File file = new File(inFileName);
+		
 		FileInputStream fis = new FileInputStream(file);
 		ANTLRInputStream input = new ANTLRInputStream(fis);
 		//create a lexer that feeds off of input CharStream

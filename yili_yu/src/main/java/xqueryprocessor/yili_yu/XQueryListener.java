@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
@@ -376,6 +376,17 @@ public interface XQueryListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link XQueryParser#letVarBind}.
+	 * @param ctx the parse tree
+	 */
+	void enterLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link XQueryParser#letVarBind}.
+	 * @param ctx the parse tree
+	 */
+	void exitLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx);
 
 	/**
 	 * Enter a parse tree produced by the {@code xqAp}

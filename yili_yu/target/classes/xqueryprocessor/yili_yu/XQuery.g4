@@ -21,7 +21,7 @@ forClause
 
 // Let Clause: let $var1 := "superman", $var2 := "batman", ...
 letClause
-  : 'let' varBind ( ',' varBind )*
+  : 'let' letVarBind ( ',' letVarBind )*
   ;
 
 // Where Clause: where $var1 == $var2
@@ -52,7 +52,11 @@ someClause
 
 //bind $var
 varBind
-  : Var ('in'|':=') xq				 
+  : Var 'in' xq				 
+  ;
+
+letVarBind
+  : Var ':=' xq
   ;
 
 // Absolute path

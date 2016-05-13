@@ -21,45 +21,50 @@ import org.w3c.dom.*;
 
 public class XQuery {
 	public static void main(String[] args) throws Exception {
-		//create a CharStream that reads from standard input
 		Scanner scanner = new Scanner(System.in);
-		
 		System.out.println("Enter the file name for XQuery: ");
+		String inFileName = scanner.nextLine();
+		System.out.println("Whether to show the XQuery tree [y/n]: ");
+		String toShow = scanner.nextLine();
 		
-		 String inFileName = scanner.nextLine();
-		System.out.println(System.currentTimeMillis());
-		 File file = new File(inFileName);
+		long start_time = System.currentTimeMillis();
+		
+		File file = new File(inFileName);
 		FileInputStream fis = new FileInputStream(file);
 		ANTLRInputStream input = new ANTLRInputStream(fis);
-		//create a lexer that feeds off of input CharStream
 		XQueryLexer lexer = new XQueryLexer(input);
-		//create a buffer of tokens pulled from the lexer
 		CommonTokenStream tokens = new CommonTokenStream(lexer);
-		//create a parser that feeds off the tokens buffer
 		XQueryParser parser = new XQueryParser(tokens);
 		ParseTree tree = parser.xq(); // begin parsing at xq rule
-		/*
-		JFrame frame = new JFrame("Antlr AST");
-        JPanel panel = new JPanel();
-        TreeViewer viewr = new TreeViewer(Arrays.asList(
-                parser.getRuleNames()),tree);
-        viewr.setScale(1.2);//scale a little
-        panel.add(viewr);
-        frame.add(panel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1400,700);
-        frame.setVisible(true);
-        
-        BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
-        Graphics2D g2d = img.createGraphics(); 
-        frame.paint(g2d); 
-        ImageIO.write(img,"jpg", new File("long.jpg"));
-		*/
 		
 		MyVisitor eval = new MyVisitor();
 		ArrayList<Node> result = eval.visit(tree);
+
+		long end_time = System.currentTimeMillis();
+		System.out.println("Time to process the XQuery (in ms): "+(end_time-start_time));
+		
 		eval.generateResult(result);
+
 		System.out.println("SUCCESS!");
+		
+		if (toShow.equals("y")){
+			JFrame frame = new JFrame("Antlr AST");
+	        JPanel panel = new JPanel();
+	        TreeViewer viewr = new TreeViewer(Arrays.asList(
+	                parser.getRuleNames()),tree);
+	        viewr.setScale(1.2);//scale a little
+	        panel.add(viewr);
+	        frame.add(panel);
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.setSize(1400,700);
+	        frame.setVisible(true);
+	        
+	        //save the image
+	        //BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
+	        //Graphics2D g2d = img.createGraphics(); 
+	        //frame.paint(g2d); 
+	        //ImageIO.write(img,"jpg", new File("long.jpg"));
+		}
 	}
 }
 

@@ -28,7 +28,8 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	HashMap<String, Node> context = new HashMap<>(); // Binding variables,
 														// ["a":ACT1,"b":SPEAKER2...]
 	HashMap<String, ArrayList<Node>> context_let = new HashMap<>();
-	HashMap<String, ArrayList<Node>> context_where = new HashMap<>();
+	HashMap<String, ArrayList<Node>> context_temp = new HashMap<>();
+	
 	private XMLTree inXMLTree = null;
 	private Document inDoc = null;
 	private XMLTree outXMLTree = null;
@@ -39,7 +40,6 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		try {
 
 			Scanner scanner = new Scanner(System.in);
-			System.out.println(System.currentTimeMillis());
 			System.out.println("Enter the file name for result: ");
 			String resFile = scanner.nextLine();
 
@@ -57,7 +57,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx) {
-		System.out.println("visitLetVarBind");
+		//System.out.println("visitLetVarBind");
 		ArrayList<Node> result = visit(ctx.getChild(2));
 		String key = ctx.getChild(0).getText();
 		context_let.put(key, result);
@@ -80,55 +80,55 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	@Override
 	public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
 		// System.out.println("visitWhereClause"+ctx.getText());
-		context_where.clear();
-		// key: var in where
+		//context_temp.clear();
+		ArrayList<String> where_keys = new ArrayList<>();
 		for (String k : context_let.keySet()) {
-			if (ctx.getText().contains(k + "/")) {
-				System.out.println(" k" + k + " context_let.get(k) " + context_let.get(k).size());
-				ArrayList<Node> tmp = new ArrayList<Node>(context_let.get(k));
-				context_where.put(k, tmp);
-				// System.out.println("k "+k+" context_where.get(k)
-				// "+context_where.get(k).size());
+			if (ctx.getText().contains(k + "/") || ctx.getText().contains(k + " ")) {
+				where_keys.add(k);
+				context_temp.put(k, new ArrayList<Node>());
 			}
 		}
-		ArrayList<String> context_where_keys = new ArrayList<>();
-		int i = 0;
-		context_where_keys.addAll(context_where.keySet());
-		whereHelper(context_where_keys, i, ctx);
-
-		/*
-		 * ArrayList<Node> result = visit(ctx.getChild(1));
-		 * 
-		 * if (result.size() > 0) { ParseTree parent = ctx.getParent();
-		 * visit(parent.getChild(parent.getChildCount() - 1)); }
-		 */
+		
+		boolean flag = whereHelper(where_keys, 0, ctx);
+		
+		for (String k : where_keys){
+			context_let.remove(k);
+			context_let.put(k, XMLTreefunction.unique(context_temp.get(k)));
+		}
+		
+		if (flag){
+			ParseTree parent = ctx.getParent();
+			visit(parent.getChild(parent.getChildCount()-1));
+		}
 		return null;// return visitChildren(ctx);
 	}
 
-	private void whereHelper(ArrayList<String> context_where_keys, int i,
-			@NotNull XQueryParser.WhereClauseContext ctx) {
-		if (i < context_where_keys.size()) {
-			// System.out.println("context_where_keys.get(i)
-			// "+context_where_keys.get(i));
-			String key_i = context_where_keys.get(i);
-			// System.out.println(key_i + "
-			// context_where.get(key_i)"+context_where.get(key_i).size());
-			for (Node k_node : context_where.get(key_i)) {
-				context.put(key_i, k_node);
-				whereHelper(context_where_keys, i + 1, ctx);
-				context.remove(key_i);
-			}
-		} else {
-			// System.out.println("$sc"+context.get("$sc").getNodeName());
-			// System.out.println("$sp"+context.get("$sp").getNodeName());
-			ArrayList<Node> result = visit(ctx.getChild(1));
-
-			if (result.size() > 0) {
-				System.out.println("ya");
-				ParseTree parent = ctx.getParent();
-				visit(parent.getChild(parent.getChildCount() - 1));
+	private boolean whereHelper(ArrayList<String> keyVal, int i, XQueryParser.WhereClauseContext ctx){
+		boolean flag = false;
+		if (i<keyVal.size()){
+			String key = keyVal.get(i);
+			ArrayList<Node> nodes = context_let.get(key);
+			for (Node n : nodes){
+				context.put(key, n);
+				if (whereHelper(keyVal, i+1, ctx)) flag = true;
+				context.remove(key);
 			}
 		}
+		else{
+			ArrayList<Node> result = visit(ctx.getChild(1));
+			if (result.size()>0){
+				flag = true;
+				ArrayList<Node> res;
+				for (String k : keyVal){
+					res = new ArrayList<Node>(context_temp.get(k));
+					res.add(context.get(k));
+					context_temp.put(k, res);
+				}
+				return true;
+			}
+			return false;
+		}
+		return flag;
 	}
 
 	@Override

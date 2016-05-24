@@ -1,0 +1,4 @@
+<result>{
+for $a in document("j_caesar.xml")//PLAY,
+$a/text()
+}</result>

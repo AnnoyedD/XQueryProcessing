@@ -1,0 +1,81 @@
+package xml.to.dom;
+
+import java.util.*;
+import org.w3c.dom.*;
+
+
+public class XMLTreefunction {
+
+	public static Node getRoot(Document doc){
+//		System.out.println("doc.getDocumentElement() "+doc.getDocumentElement());
+//		System.out.println("doc "+doc.getDocumentElement().getFirstChild().getTextContent()
+//				+"doc.getDocumentElement().getFirstChild() "+doc.getDocumentElement().getFirstChild().getNodeName());
+		return (Node)doc.getDocumentElement();
+	}
+	
+	public static ArrayList<Node> getChildren(Node parent) {
+		
+		ArrayList<Node> childNodes = (ArrayList<Node>) parent.getChildNodes();
+		for(Node n: childNodes){
+			if(n.getNodeType()!=Node.ELEMENT_NODE)
+				childNodes.remove(n);
+		}
+		return childNodes;
+	}
+	
+	public static Node getParent(Node child) {
+		Node parent = child.getParentNode();
+		while (parent.getNodeType() != Node.ELEMENT_NODE) {
+			parent = parent.getParentNode();
+		}
+		return parent;
+	}
+	
+	public static String getTag(Node n) {
+		return n.getNodeName();
+	}
+	
+	public static Node getTxt(Node n){
+	
+		NodeList nl = n.getChildNodes();
+		for(int i =0; i<nl.getLength();i++){
+			if(nl.item(i).getNodeType()== Node.TEXT_NODE)
+				System.out.println("getTxt "+nl.item(i).getTextContent());
+				return nl.item(i);
+		}
+		return null;
+	}
+	
+	public static ArrayList<Node> getDescendant(Node subRoot){
+		List<Node> descendants = new ArrayList<Node>();
+		Queue<Node> level =  new LinkedList<Node>();
+		level.offer(subRoot);
+		while(!level.isEmpty()){
+			Node curr = level.poll();
+			descendants.add(curr);
+			NodeList next_generation = curr.getChildNodes();
+			if(next_generation!=null){
+				for(int i =0; i < next_generation.getLength(); i++){
+					level.offer(next_generation.item(i));
+				}
+			}
+		}
+		System.out.println("descendants "+descendants.size());
+		return (ArrayList<Node>) descendants;
+	
+	}
+	
+	public static String attrib(Node n, String attName){
+		 String key = n.getAttributes().getNamedItem(attName).getNodeValue();
+		return key;
+	} //unsure about the return type
+			
+	public static ArrayList<Node> unique(ArrayList<Node> list){return list;}
+	
+	public static ArrayList<Node> concatenate(ArrayList<Node> listA, ArrayList<Node> listB){return null;}
+	
+	public static boolean filterEq(ArrayList<Node> listA, ArrayList<Node> listB){return true;}
+
+	public static boolean filterIs(ArrayList<Node> listA, ArrayList<Node> listB){return true;}
+	
+}

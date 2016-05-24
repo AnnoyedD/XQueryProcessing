@@ -1,0 +1,8 @@
+package xml.to.dom;
+import org.w3c.dom.*;
+public class myNamedNodeMap implements NamedNodeMap {
+
+	public Node getNamedItem(String name){
+		return 
+	}
+}

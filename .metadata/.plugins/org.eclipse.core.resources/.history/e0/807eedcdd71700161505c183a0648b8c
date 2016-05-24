@@ -1,0 +1,103 @@
+package xml;
+
+import java.util.*;
+
+import org.w3c.dom.*;
+
+public class XMLTreefunction {
+
+	public static Node getRoot(Document doc) {
+		return (Node) doc.getDocumentElement();
+	}
+
+	public static ArrayList<Node> getChildren(Node parent) {
+		ArrayList<Node> children = new ArrayList<Node>();
+		Node childNode = parent.getFirstChild();
+		for (; childNode != null;) {
+			// if (childNode.getNodeType() == Node.ELEMENT_NODE)
+			children.add(childNode);
+			childNode = childNode.getNextSibling();
+			;
+		}
+		return children;
+	}
+
+	public static Node getParent(Node child) {
+		Node parent = child.getParentNode();
+		while (parent.getNodeType() != Node.ELEMENT_NODE) {
+			parent = parent.getParentNode();
+		}
+		return parent;
+	}
+
+	public static String getTag(Node n) {
+		return n.getNodeName();
+	}
+
+	public static Node getTxt(Node n) {
+		// if(n.getNodeType() == Node.TEXT_NODE)
+		return n;
+		// return null;
+	}
+
+	public static Node makeText(String str, Document inDoc) {
+		return inDoc.createTextNode(str);
+	}
+
+	public static Node makeElement(String name, ArrayList<Node> nodeList, Document outDoc) {
+		Node element_node = outDoc.createElement(name);
+
+		for (Node n : nodeList) {
+			System.out.println("n " + n.toString());
+			if (n != null && n.getNodeType() != Node.DOCUMENT_NODE) {
+				boolean deep = true;
+				Node child = outDoc.importNode(n, deep);
+				System.out.println("make element " + child.toString());
+				element_node.appendChild(child);
+				System.out.println("element_node " + element_node.getFirstChild().toString());
+			}
+		}
+		return element_node;
+	}
+
+	public static ArrayList<Node> getDescendant(Node subRoot) {
+		List<Node> descendants = new ArrayList<Node>();
+		Queue<Node> level = new LinkedList<Node>();
+		level.offer(subRoot);
+		while (!level.isEmpty()) {
+			Node curr = level.poll();
+			descendants.add(curr);
+			NodeList next_generation = curr.getChildNodes();
+			if (next_generation != null) {
+				for (int i = 0; i < next_generation.getLength(); i++) {
+					level.offer(next_generation.item(i));
+				}
+			}
+		}
+		return (ArrayList<Node>) descendants;
+
+	}
+
+	public static Node attrib(Node n, String attName) {
+		if ((n.getNodeType() == Node.ATTRIBUTE_NODE) && (n.getNodeValue().equals(attName))) {
+			return n;
+		}
+		return null;
+	} // unsure about the return type
+
+	public static ArrayList<Node> unique(ArrayList<Node> list) {
+		// System.out.println("=============Not unique.size"+list.size());
+		ArrayList<Node> uniqueList = new ArrayList<Node>();
+		for(Node l: list){
+			for(Node u: uniqueList){
+				if(l.isEqualNode(u)){
+					break;
+				}
+			}
+			uniqueList.add(l);
+		}	
+		System.out.println("=============== unique.size" + uniqueList.size());
+		return uniqueList;
+	}
+
+}

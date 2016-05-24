@@ -1,0 +1,3 @@
+for $s in document("j_caesar.xml")/play
+where $s/title = 'la'
+return ../title

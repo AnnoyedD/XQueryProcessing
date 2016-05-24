@@ -1,0 +1,1227 @@
+// Generated from edu\u005Cucsd\antlrtutorial\antlrtutorial\XQuery.g4 by ANTLR 4.3
+package yili_yu.edu.ucsd.yili_yu;
+
+import java.util.*;
+
+import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.misc.NotNull;
+import org.antlr.v4.runtime.tree.*;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+
+import xml.to.dom.*;
+
+/**
+ * This class provides an empty implementation of {@link XQueryListener}, which
+ * can be extended to create a listener which only needs to handle a subset of
+ * the available methods.
+ */
+public class XQueryProcessor extends XQueryBaseListener {
+	// var: $a,
+	Map<String, Stack<ArrayList<Node>>> varMap = new HashMap<String, Stack<ArrayList<Node>>>();
+
+	ParseTreeProperty<ArrayList<Node>> values = new ParseTreeProperty<>();
+	ArrayList<XMLTree> domList = new ArrayList<>();
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) {
+		System.out.println("enterCondValEqual " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) {
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
+		System.out.println("enterWhereClause " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) {
+		System.out.println("enterWhereClause " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) {
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
+		// gets the entire query
+		System.out.println("enterXqFLWR " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) {
+		System.out.println("enterRpDotDot " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		ArrayList<Node> result = new ArrayList<>();
+		for (Node i : sub) {
+			result.add(XMLTreefunction.getParent(XMLTreefunction.getParent(i)));
+		}
+		XMLTreefunction.unique(result);
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) {
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFRp(@NotNull XQueryParser.FRpContext ctx) {
+		System.out.println("enterFRp " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFRp(@NotNull XQueryParser.FRpContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqSlash(@NotNull XQueryParser.XqSlashContext ctx) {
+		System.out.println("enterXqSlash " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpDot(@NotNull XQueryParser.RpDotContext ctx) {
+		System.out.println("enterRpDot " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		ArrayList<Node> result = new ArrayList<>();
+		for (Node i : sub) {
+			result.add(XMLTreefunction.getParent(i));
+		}
+		XMLTreefunction.unique(result);
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpDot(@NotNull XQueryParser.RpDotContext ctx) {
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpText(@NotNull XQueryParser.RpTextContext ctx) {
+		System.out.println("enterRpText: " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		ArrayList<Node> result = new ArrayList<>();
+		for (Node i : sub) {
+			result.add(XMLTreefunction.getTxt(i));
+
+		}
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpText(@NotNull XQueryParser.RpTextContext ctx) {
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
+		System.out.println("enterXqTagName " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterLetClause(@NotNull XQueryParser.LetClauseContext ctx) {
+		System.out.println("enterLetClause " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitLetClause(@NotNull XQueryParser.LetClauseContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpConcat(@NotNull XQueryParser.RpConcatContext ctx) {
+		System.out.println("enterRpConcat " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		values.put(ctx.getChild(0), sub);
+		values.put(ctx.getChild(2), sub);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpConcat(@NotNull XQueryParser.RpConcatContext ctx) {
+		ParseTree target = ctx.getChild(0);
+		ArrayList<Node> result = values.get(target);
+		values.removeFrom(target);
+		target = ctx.getChild(2);
+		result.addAll(values.get(target));
+		values.removeFrom(target);
+		values.put(ctx, result);
+
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) {
+		System.out.println("enterFIdEqual " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondOr(@NotNull XQueryParser.CondOrContext ctx) {
+		System.out.println("enterCondOr " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondOr(@NotNull XQueryParser.CondOrContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpAttr(@NotNull XQueryParser.RpAttrContext ctx) {
+		System.out.println("enterRpAttr " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		ArrayList<Node> result = new ArrayList<>();
+		String attName = ctx.getChild(1).getText();
+		for (Node i : sub) {
+			result.add(XMLTreefunction.attrib(i, attName));
+		}
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpAttr(@NotNull XQueryParser.RpAttrContext ctx) {
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) {
+		System.out.println("enterCondEmpty " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqVar(@NotNull XQueryParser.XqVarContext ctx) {
+		System.out.println("enterXqVar: " + ctx.getText());
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqVar(@NotNull XQueryParser.XqVarContext ctx) {
+		System.out.println("exitXqVar: " + ctx.getText());
+		values.put(ctx, varMap.get(ctx.getText()).peek());
+		varBind(ctx);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFNot(@NotNull XQueryParser.FNotContext ctx) {
+		System.out.println("enterFNot " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFNot(@NotNull XQueryParser.FNotContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) {
+		System.out.println("enterCondSomeSatis " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) {
+		System.out.println("enterCondIdEqual " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFParen(@NotNull XQueryParser.FParenContext ctx) {
+		System.out.println("enterFParen " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFParen(@NotNull XQueryParser.FParenContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFOr(@NotNull XQueryParser.FOrContext ctx) {
+		System.out.println("enterFOr " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFOr(@NotNull XQueryParser.FOrContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFValEqual(@NotNull XQueryParser.FValEqualContext ctx) {
+		System.out.println("enterFValEqual " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFValEqual(@NotNull XQueryParser.FValEqualContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) {
+		System.out.println("enterRpWildcard " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) {
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqLet(@NotNull XQueryParser.XqLetContext ctx) {
+		System.out.println("enterXqLet " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqLet(@NotNull XQueryParser.XqLetContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) {
+		System.out.println("enterXqStringConstant " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterApSlash(@NotNull XQueryParser.ApSlashContext ctx) {
+		System.out.println("enterApSlash " + ctx.getText());
+		// document("j_caesar.xml")/play
+		String nameStr = ctx.getChild(2).getText();
+		// "j_caesar.xml"
+		String fileName = nameStr.substring(1, nameStr.length() - 1);
+		XMLTree curXMLTree = null;
+
+		for (XMLTree i : domList) {
+			if (i.getFileName() == fileName) {
+				curXMLTree = i;
+				break;
+			}
+		}
+		if (curXMLTree == null) {
+			System.out.println("shout");
+			curXMLTree = new XMLTree(fileName);
+			domList.add(curXMLTree);
+		}
+
+		ArrayList<Node> result = new ArrayList<>();
+		Node root = XMLTreefunction.getRoot(curXMLTree.getDoc());
+
+		if (ctx.slash.getText().equals("//")) {
+			result.addAll(XMLTreefunction.getDescendant(root));
+		} else {
+			result.addAll(XMLTreefunction.getChildren(root));
+		}
+		System.out.println("key: " + ctx.getChild(5).getText());
+		values.put(ctx.getChild(5), result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitApSlash(@NotNull XQueryParser.ApSlashContext ctx) {
+		System.out.println("exitApSlash " + ctx.getText());
+		ParseTree target = ctx.getChild(5);
+		ArrayList<Node> result = values.get(target);
+		System.out.println("result size: " + result.size());
+		values.removeFrom(target);
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqAp(@NotNull XQueryParser.XqApContext ctx) {
+		System.out.println("enterXqAp " + ctx.getText());
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqAp(@NotNull XQueryParser.XqApContext ctx) {
+		System.out.println("exitXqAp " + ctx.getText());
+		ParseTree target = ctx.getChild(0);
+		ArrayList<Node> result = values.get(target);
+		values.removeFrom(target);
+		values.put(ctx, result);
+		System.out.println(result.size());
+		varBind(ctx);
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) {
+		System.out.println("enterReturnClause " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) {
+		System.out.println("enterCondParenExpr " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpSlash(@NotNull XQueryParser.RpSlashContext ctx) {
+		System.out.println("enterRpSlash " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		values.put(ctx.getChild(0), sub);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpSlash(@NotNull XQueryParser.RpSlashContext ctx) {
+		ParseTree target = ctx.getChild(2);
+		ArrayList<Node> result = values.get(target);
+		values.removeFrom(target);
+		values.put(ctx, result);
+
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) {
+		System.out.println("enterXqSlashSlash " + ctx.getText());
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterForClause(@NotNull XQueryParser.ForClauseContext ctx) {
+
+		System.out.println("enterForClause " + ctx.getText());
+		for (int i = 0; i < ctx.getChildCount(); i++) {
+			if (ctx.getChild(i).getText().equals("in")) {
+				String var = ctx.getChild(i - 1).getText();
+				System.out.println("variable " + var);
+				if (!varMap.containsKey(var)) {
+					Stack<ArrayList<Node>> stackOfRes = new Stack<ArrayList<Node>>();
+					ArrayList<Node> list = new ArrayList<Node>();
+					stackOfRes.push(list);
+					varMap.put(var, stackOfRes);
+				} else {
+					Stack<ArrayList<Node>> stackOfRes = varMap.remove(var);
+					stackOfRes.push(new ArrayList<Node>());
+					varMap.put(var, stackOfRes);
+				}
+			}
+		}
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitForClause(@NotNull XQueryParser.ForClauseContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpTagName(@NotNull XQueryParser.RpTagNameContext ctx) {
+		System.out.println("enterRpTagName " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		System.out.println("sub.count" + sub.size());
+		ArrayList<Node> result = new ArrayList<>();
+		String tagName = ctx.getText();
+		for (Node i : sub) {
+			if (XMLTreefunction.getTag(i).equals(tagName)) {
+				result.add(i);
+			}
+		}
+		// System.out.println("tag's child :"+ctx.getChild(0).getText());
+		values.put(ctx, result);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpTagName(@NotNull XQueryParser.RpTagNameContext ctx) {
+		System.out.println("exitRpTagName " + ctx.getText());
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondAnd(@NotNull XQueryParser.CondAndContext ctx) {
+		System.out.println("enterCondAnd " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondAnd(@NotNull XQueryParser.CondAndContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpFilter(@NotNull XQueryParser.RpFilterContext ctx) {
+		System.out.println("enterRpFilter " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		values.put(ctx.getChild(0), sub);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpFilter(@NotNull XQueryParser.RpFilterContext ctx) {
+		ParseTree target = ctx.getChild(2);
+		ArrayList<Node> result = values.get(target);
+		values.removeFrom(target);
+		values.put(ctx, result);
+
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterXqConcat(@NotNull XQueryParser.XqConcatContext ctx) {
+		System.out.println("enterXqConcat " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitXqConcat(@NotNull XQueryParser.XqConcatContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) {
+		System.out.println("enterRpParenExpr " + ctx.getText());
+		ArrayList<Node> sub = values.get(ctx);
+		values.put(ctx.getChild(1), sub);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) {
+		ParseTree target = ctx.getChild(1);
+		ArrayList<Node> result = values.get(target);
+		values.removeFrom(target);
+		values.put(ctx, result);
+
+		interDataTrans(ctx.getParent());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterCondNot(@NotNull XQueryParser.CondNotContext ctx) {
+		System.out.println("enterCondNot " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitCondNot(@NotNull XQueryParser.CondNotContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterFAnd(@NotNull XQueryParser.FAndContext ctx) {
+		System.out.println("enterFAnd " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitFAnd(@NotNull XQueryParser.FAndContext ctx) {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void enterEveryRule(@NotNull ParserRuleContext ctx) {
+		System.out.println("enterEveryRule " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void exitEveryRule(@NotNull ParserRuleContext ctx) {
+		System.out.println("exitEveryRule " + ctx.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void visitTerminal(@NotNull TerminalNode node) {
+		System.out.println("visitTerminal " + node.getText());
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>
+	 * The default implementation does nothing.
+	 * </p>
+	 */
+	@Override
+	public void visitErrorNode(@NotNull ErrorNode node) {
+	}
+
+	private void varBind(@NotNull ParserRuleContext ctx) {
+
+		ParserRuleContext xqParent = ctx.getParent();
+		if (xqParent != null) {
+			int ctxIndex = -1;
+			for (int i = 0; i < xqParent.getChildCount(); i++) {
+				if (xqParent.getChild(i).getText().equals(ctx.getText()))
+					ctxIndex = i;
+			}
+			System.out.println("ctxIndex " + ctxIndex);
+			if (ctxIndex != -1) {
+				// ctx is xq
+				if (ctxIndex >= 3 && xqParent.getChild(ctxIndex - 3).getText().equals("for")) {
+					// ctx is xq
+					// xq's child ap will give xp the result
+					ArrayList<Node> xqChildRes = values.get(ctx);
+					String var = xqParent.getChild(ctxIndex - 2).getText();
+					System.out.println("For clause VarBind find var " + var);
+					Stack<ArrayList<Node>> stack = varMap.remove(var);
+					ArrayList<Node> result = stack.pop();
+					result = xqChildRes;
+					stack.push(result);
+					varMap.put(var, stack);
+
+					//// print test
+					System.out.println("test varbind " + var + " num of arraylist in stack " + varMap.get(var).size());
+					for (int listNum = 0; listNum < varMap.get(var).size(); listNum++) {
+						for (int e = 0; e < varMap.get(var).elementAt(listNum).size(); e++) {
+							System.out.print(varMap.get(var).elementAt(listNum).get(e).getNodeName() + "   ");
+						}
+						System.out.println();
+					}
+					System.out.println();
+
+				} else if (ctxIndex >= 0 && ctxIndex< xqParent.getChildCount() && xqParent.getChild(ctxIndex + 1).getText().equals("//")) {
+
+					ArrayList<Node> xqChildRes = values.get(ctx);
+					ParseTree var = xqParent.getChild(ctxIndex + 2);
+					System.out.println("// VarBind find var " + var);
+					values.put(var, xqChildRes);
+					//// print test
+					System.out.println("test varbind " + var + " num of arraylist in stack " + values.get(var).size());
+					for (int listNum = 0; listNum < varMap.get(var).size(); listNum++) {
+						for (int e = 0; e < varMap.get(var).elementAt(listNum).size(); e++) {
+							System.out.print(varMap.get(var).elementAt(listNum).get(e).getNodeName() + "   ");
+						}
+						System.out.println();
+					}
+					System.out.println();
+
+				}
+			}
+		}
+	}
+
+
+	private void interDataTrans(@NotNull ParserRuleContext ctx) {
+		System.out.println("interDataTrans " + ctx.getText());
+		if (ctx.getChildCount() >= 3 && (ctx.getChild(1).getText().equals("/") || ctx.getChild(1).getText().equals("//")
+				|| ctx.getChild(1).getText().equals("["))) {
+			ArrayList<Node> sub = values.get(ctx.getChild(0));
+			ArrayList<Node> subRes = new ArrayList<>();
+			if (ctx.getChild(1).getText().equals("/")) {
+				for (Node i : sub) {
+					subRes.addAll(XMLTreefunction.getChildren(i));
+				}
+			}
+			if (ctx.getChild(1).getText().equals("//")) {
+				for (Node i : sub) {
+					subRes.addAll(XMLTreefunction.getDescendant(i));
+				}
+				System.out.println("subRes count " + subRes.size());
+				values.put(ctx.getChild(1), subRes);
+			}
+			if (ctx.getChild(1).getText().equals("[")) {
+				subRes.addAll(sub);
+			}
+			System.out.println("subRes count " + subRes.size());
+			values.put(ctx.getChild(2), subRes);
+		}
+	}
+}

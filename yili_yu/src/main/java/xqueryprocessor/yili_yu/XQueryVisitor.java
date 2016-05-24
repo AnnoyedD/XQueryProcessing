@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
@@ -168,6 +168,14 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	T visitXqVar(@NotNull XQueryParser.XqVarContext ctx);
 
 	/**
+	 * Visit a parse tree produced by the {@code xqJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx);
+
+	/**
 	 * Visit a parse tree produced by the {@code fNot}
 	 * labeled alternative in {@link XQueryParser#f}.
 	 * @param ctx the parse tree
@@ -182,6 +190,13 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx);
+
+	/**
+	 * Visit a parse tree produced by {@link XQueryParser#indexing}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIndexing(@NotNull XQueryParser.IndexingContext ctx);
 
 	/**
 	 * Visit a parse tree produced by the {@code condIdEqual}
@@ -253,6 +268,14 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitXqAp(@NotNull XQueryParser.XqApContext ctx);
+
+	/**
+	 * Visit a parse tree produced by the {@code xqImpJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx);
 
 	/**
 	 * Visit a parse tree produced by {@link XQueryParser#returnClause}.

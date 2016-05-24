@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
@@ -261,6 +261,19 @@ public interface XQueryListener extends ParseTreeListener {
 	void exitXqVar(@NotNull XQueryParser.XqVarContext ctx);
 
 	/**
+	 * Enter a parse tree produced by the {@code xqJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void enterXqJoin(@NotNull XQueryParser.XqJoinContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code xqJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void exitXqJoin(@NotNull XQueryParser.XqJoinContext ctx);
+
+	/**
 	 * Enter a parse tree produced by the {@code fNot}
 	 * labeled alternative in {@link XQueryParser#f}.
 	 * @param ctx the parse tree
@@ -285,6 +298,17 @@ public interface XQueryListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link XQueryParser#indexing}.
+	 * @param ctx the parse tree
+	 */
+	void enterIndexing(@NotNull XQueryParser.IndexingContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link XQueryParser#indexing}.
+	 * @param ctx the parse tree
+	 */
+	void exitIndexing(@NotNull XQueryParser.IndexingContext ctx);
 
 	/**
 	 * Enter a parse tree produced by the {@code condIdEqual}
@@ -400,6 +424,19 @@ public interface XQueryListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitXqAp(@NotNull XQueryParser.XqApContext ctx);
+
+	/**
+	 * Enter a parse tree produced by the {@code xqImpJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void enterXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code xqImpJoin}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void exitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx);
 
 	/**
 	 * Enter a parse tree produced by {@link XQueryParser#returnClause}.

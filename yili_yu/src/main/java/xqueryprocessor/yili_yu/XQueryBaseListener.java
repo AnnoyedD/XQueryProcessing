@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -277,6 +277,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterFNot(@NotNull XQueryParser.FNotContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -297,6 +310,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIndexing(@NotNull XQueryParser.IndexingContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIndexing(@NotNull XQueryParser.IndexingContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
@@ -414,6 +440,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitXqAp(@NotNull XQueryParser.XqApContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

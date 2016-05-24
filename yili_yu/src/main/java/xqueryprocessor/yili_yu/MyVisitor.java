@@ -34,6 +34,12 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	private Document inDoc = null;
 	private XMLTree outXMLTree = null;
 	private Document outDoc = null;
+	
+	@Override public ArrayList<Node> visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { return visitChildren(ctx); }
+	
+	@Override public ArrayList<Node> visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { return visitChildren(ctx); }
+
+	@Override public ArrayList<Node> visitIndexing(@NotNull XQueryParser.IndexingContext ctx) { return visitChildren(ctx); }
 
 	public void generateResult(ArrayList<Node> result) {
 		outDoc.appendChild(result.get(0));

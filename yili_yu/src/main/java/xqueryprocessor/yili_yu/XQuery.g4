@@ -12,6 +12,12 @@ xq
   | '<' open=TagName '>' '{' xq '}' '</' close=TagName '>'       #xqTagName
   | forClause letClause? whereClause? returnClause               #xqFLWR
   | letClause xq                                                 #xqLet
+  | 'join(' xq ')'												 #xqJoin
+  | xq ',' xq ',' '[' indexing ']' ',' '[' indexing ']' 	 	 #xqImpJoin
+  ;
+
+indexing
+  : StringConstant ( ',' StringConstant )*
   ;
 
 // For Clause: for $var1 in $someList, $var2 in $var1)
@@ -38,12 +44,12 @@ returnClause
 cond
   : left=xq ('='|'eq')  right=xq                           #condValEqual
   | left=xq ('=='|'is') right=xq                           #condIdEqual
-  | 'empty(' xq ')'                                        #condEmpty
+  | 'empty (' xq ')'                                        #condEmpty
   | someClause 'satisfies' cond 	   					   #condSomeSatis
   | '(' cond ')'                                           #condParenExpr
   | left=cond 'and' right=cond                             #condAnd
   | left=cond 'or'  right=cond                             #condOr
-  | 'not ' cond                                            #condNot
+  | 'not' cond                                            #condNot
   ;
 
 someClause

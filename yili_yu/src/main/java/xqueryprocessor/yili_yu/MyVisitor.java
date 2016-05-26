@@ -29,17 +29,106 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 														// ["a":ACT1,"b":SPEAKER2...]
 	HashMap<String, ArrayList<Node>> context_let = new HashMap<>();
 	HashMap<String, ArrayList<Node>> context_temp = new HashMap<>();
-	
+
 	private XMLTree inXMLTree = null;
 	private Document inDoc = null;
 	private XMLTree outXMLTree = null;
 	private Document outDoc = null;
-	
-	@Override public ArrayList<Node> visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { return visitChildren(ctx); }
-	
-	@Override public ArrayList<Node> visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { return visitChildren(ctx); }
 
-	@Override public ArrayList<Node> visitIndexing(@NotNull XQueryParser.IndexingContext ctx) { return visitChildren(ctx); }
+	@Override
+	public ArrayList<Node> visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) {
+		System.out.println("visitXqJoin " + ctx.getText());
+		return visit(ctx.getChild(1));
+	}
+
+	private HashMap<String, List<Node>> getHashMap(ArrayList<Node> leftTuples, ArrayList<Integer> left_attr_index) {
+		HashMap<String, List<Node>> map = new HashMap<String, List<Node>>();
+		for (Node tuple : leftTuples) {
+			//combine all key attributes together into key
+			String key = "";
+			ArrayList<Node> children = XMLTreefunction.getChildren(tuple);
+			for (int attr_i : left_attr_index) {
+				key += children.get(attr_i).getTextContent();
+			}
+			
+			
+			if (map.containsKey(key)) {
+				map.get(key).add(tuple);
+			} else {
+				List<Node> value = new ArrayList<Node>();
+				value.add(tuple);
+				map.put(key, value);
+			}
+		}
+		return map;
+	}
+
+	private ArrayList<Integer> getAttributesIndex(ArrayList<Node> left_attributes, Node tuple) {
+		ArrayList<Integer> left_index = new ArrayList<Integer>(left_attributes.size());
+		ArrayList<Node> sampleChildren = XMLTreefunction.getChildren(tuple);
+		for (int i = 0; i < left_index.size(); i++) {
+			String left_att = left_attributes.get(i).getNodeName();
+			for (int c = 0; c < sampleChildren.size(); c++) {
+				if (sampleChildren.get(c).getNodeName().equals(left_att)) {
+					left_index.add(c);
+					break;
+				}
+			}
+		}
+		return left_index;
+	}
+
+	@Override
+	public ArrayList<Node> visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) {
+		ArrayList<Node> result = new ArrayList<Node>();
+		ArrayList<Node> leftTuples = visit(ctx.getChild(0));
+		ArrayList<Node> rightTuples = visit(ctx.getChild(2));
+		ArrayList<Node> left_attributes = visit(ctx.getChild(5));
+		ArrayList<Node> right_attributes = visit(ctx.getChild(9));
+		if (left_attributes.size() != right_attributes.size()) {
+			System.out.println("error in indexes for join");
+			System.exit(-1);
+		}
+		
+		//index of each attr's position in children of a sample tuple
+		ArrayList<Integer> left_index = getAttributesIndex(left_attributes, leftTuples.get(0));
+		ArrayList<Integer> right_index = getAttributesIndex(right_attributes, rightTuples.get(0));	
+		
+		//key is the combinations of all minor keys
+		HashMap<String, List<Node>> leftMap = getHashMap(leftTuples, left_index);
+		
+		for (int rNode = 0; rNode < rightTuples.size(); rNode++) {
+			Node rTuple = rightTuples.get(rNode);
+			//combine all key attributes together into rkey
+			String rkey = "";
+			int rAttr_index = -1;
+			ArrayList<Node> childrenrTuple = XMLTreefunction.getChildren(rTuple);
+			for(int varIndex = 0; varIndex<right_index.size();varIndex++){
+				rAttr_index = right_index.get(varIndex);
+				rkey += childrenrTuple.get(rAttr_index).getTextContent();
+			}
+	
+			if (leftMap.containsKey(rkey)) {
+				List<Node> values = leftMap.get(rkey);
+				//join each n in values with rTuple; 
+				//add their children together 
+				//make a new element
+				for(Node n: values){
+					ArrayList<Node> n_children = XMLTreefunction.getChildren(n);
+					n_children.addAll(XMLTreefunction.getChildren(rTuple));
+					Node newTuple = XMLTreefunction.makeElement("tuple", n_children, outDoc);
+					result.add(newTuple);
+				}
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public ArrayList<Node> visitIndexing(@NotNull XQueryParser.IndexingContext ctx) {
+		return visitChildren(ctx);
+
+	}
 
 	public void generateResult(ArrayList<Node> result) {
 		outDoc.appendChild(result.get(0));
@@ -63,7 +152,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx) {
-		//System.out.println("visitLetVarBind");
+		// System.out.println("visitLetVarBind");
 		ArrayList<Node> result = visit(ctx.getChild(2));
 		String key = ctx.getChild(0).getText();
 		context_let.put(key, result);
@@ -86,7 +175,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	@Override
 	public ArrayList<Node> visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) {
 		// System.out.println("visitWhereClause"+ctx.getText());
-		//context_temp.clear();
+		// context_temp.clear();
 		ArrayList<String> where_keys = new ArrayList<>();
 		for (String k : context_let.keySet()) {
 			if (ctx.getText().contains(k + "/") || ctx.getText().contains(k + " ")) {
@@ -94,38 +183,38 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				context_temp.put(k, new ArrayList<Node>());
 			}
 		}
-		
+
 		boolean flag = whereHelper(where_keys, 0, ctx);
-		
-		for (String k : where_keys){
+
+		for (String k : where_keys) {
 			context_let.remove(k);
 			context_let.put(k, XMLTreefunction.unique(context_temp.get(k)));
 		}
-		
-		if (flag){
+
+		if (flag) {
 			ParseTree parent = ctx.getParent();
-			visit(parent.getChild(parent.getChildCount()-1));
+			visit(parent.getChild(parent.getChildCount() - 1));
 		}
 		return null;// return visitChildren(ctx);
 	}
 
-	private boolean whereHelper(ArrayList<String> keyVal, int i, XQueryParser.WhereClauseContext ctx){
+	private boolean whereHelper(ArrayList<String> keyVal, int i, XQueryParser.WhereClauseContext ctx) {
 		boolean flag = false;
-		if (i<keyVal.size()){
+		if (i < keyVal.size()) {
 			String key = keyVal.get(i);
 			ArrayList<Node> nodes = context_let.get(key);
-			for (Node n : nodes){
+			for (Node n : nodes) {
 				context.put(key, n);
-				if (whereHelper(keyVal, i+1, ctx)) flag = true;
+				if (whereHelper(keyVal, i + 1, ctx))
+					flag = true;
 				context.remove(key);
 			}
-		}
-		else{
+		} else {
 			ArrayList<Node> result = visit(ctx.getChild(1));
-			if (result.size()>0){
+			if (result.size() > 0) {
 				flag = true;
 				ArrayList<Node> res;
-				for (String k : keyVal){
+				for (String k : keyVal) {
 					res = new ArrayList<Node>(context_temp.get(k));
 					res.add(context.get(k));
 					context_temp.put(k, res);
@@ -636,7 +725,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		for (Node i : temp) {
 			ArrayList<Node> children = new ArrayList<Node>();
 			children.addAll(XMLTreefunction.getChildren(i));
-			
+
 			values.put(ctx.getChild(2), children);
 			ArrayList<Node> filter = visit(ctx.getChild(2));
 			if (filter.size() > 0) {// filter size==0:false;filter size>0: true

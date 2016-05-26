@@ -1,0 +1,11 @@
+for $tuple in join(for $sc in document("j_caesar.xml")//SCENE,
+					   $sp in $sc//SPEAKER
+				   return <tuple> {<sc> {$sc} </sc>, <sp> {$sp} </sp>} </tuple>,
+				   
+				   for $sscc in document("j_caesar.xml")/ACT,
+					   $sspp in $sc//SPEAKER
+				   return <tuple> {<sscc> {$sscc} </sscc>, <sspp> {$sspp} </sspp>} </tuple>,
+				   
+				   [sp], [sspp]
+				   )
+return <result>{$tuple}</result>

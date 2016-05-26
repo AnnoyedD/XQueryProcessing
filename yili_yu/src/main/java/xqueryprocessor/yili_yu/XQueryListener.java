@@ -426,14 +426,12 @@ public interface XQueryListener extends ParseTreeListener {
 	void exitXqAp(@NotNull XQueryParser.XqApContext ctx);
 
 	/**
-	 * Enter a parse tree produced by the {@code xqImpJoin}
-	 * labeled alternative in {@link XQueryParser#xq}.
+	 * Enter a parse tree produced by {@link XQueryParser#xqImpJoin}.
 	 * @param ctx the parse tree
 	 */
 	void enterXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code xqImpJoin}
-	 * labeled alternative in {@link XQueryParser#xq}.
+	 * Exit a parse tree produced by {@link XQueryParser#xqImpJoin}.
 	 * @param ctx the parse tree
 	 */
 	void exitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx);

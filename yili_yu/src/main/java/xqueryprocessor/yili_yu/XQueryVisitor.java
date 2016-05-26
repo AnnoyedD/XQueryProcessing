@@ -270,8 +270,7 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	T visitXqAp(@NotNull XQueryParser.XqApContext ctx);
 
 	/**
-	 * Visit a parse tree produced by the {@code xqImpJoin}
-	 * labeled alternative in {@link XQueryParser#xq}.
+	 * Visit a parse tree produced by {@link XQueryParser#xqImpJoin}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */

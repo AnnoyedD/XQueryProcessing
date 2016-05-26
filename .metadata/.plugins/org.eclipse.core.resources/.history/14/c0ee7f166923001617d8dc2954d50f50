@@ -1,0 +1,12 @@
+for $tuple in join(for $aa in document("j_caesar.xml")/ACT,
+					   $sspp in $aa//SPEAKER
+				   where $aa/TITLE = "ACT I" 
+				   return <tuple> {<aa> {$aa} </aa>, <sspp> {$sspp} </sspp>} </tuple>,
+				   for $aa in document("j_caesar.xml")/ACT,
+					   $s in $a//SPEAKER
+				   where $a/TITLE = "ACT II" 
+				   return <tuple> {<a> {$a} </a>, <sspp> {$sspp} </sspp>} </tuple>,
+				  
+				   [sp], [sspp]
+				   )
+return <result>{$tuple}</result>

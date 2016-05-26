@@ -38,6 +38,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	@Override
 	public ArrayList<Node> visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) {
 		System.out.println("visitXqJoin " + ctx.getText());
+		System.out.println(ctx.getChild(1).getText());
 		return visit(ctx.getChild(1));
 	}
 
@@ -78,13 +79,29 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		return left_index;
 	}
 
+	private void print(ArrayList<Node> list, String name){
+		if(list == null){
+			System.out.println(name+" list is null");
+			return;
+		}
+		if(list.size()==0) System.out.println(name+" list is empty");
+		for(Node n: list){
+			System.out.println(n.getNodeName());
+		}
+	}
 	@Override
 	public ArrayList<Node> visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) {
+		System.out.println("visitXqImpJoin "+ ctx.getText());
 		ArrayList<Node> result = new ArrayList<Node>();
+	
 		ArrayList<Node> leftTuples = visit(ctx.getChild(0));
+		print(leftTuples, "leftTuples");
 		ArrayList<Node> rightTuples = visit(ctx.getChild(2));
+		print(rightTuples, "rightTuples");
 		ArrayList<Node> left_attributes = visit(ctx.getChild(5));
+		print(left_attributes, "left_attributes");
 		ArrayList<Node> right_attributes = visit(ctx.getChild(9));
+		print(right_attributes, "right_attributes");
 		if (left_attributes.size() != right_attributes.size()) {
 			System.out.println("error in indexes for join");
 			System.exit(-1);
@@ -107,8 +124,9 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				rAttr_index = right_index.get(varIndex);
 				rkey += childrenrTuple.get(rAttr_index).getTextContent();
 			}
-	
+	        System.out.println("rkey "+rkey);
 			if (leftMap.containsKey(rkey)) {
+				System.out.println("left map contains key");
 				List<Node> values = leftMap.get(rkey);
 				//join each n in values with rTuple; 
 				//add their children together 
@@ -121,13 +139,22 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				}
 			}
 		}
+		print(result, "result");
 		return result;
 	}
 
 	@Override
 	public ArrayList<Node> visitIndexing(@NotNull XQueryParser.IndexingContext ctx) {
-		return visitChildren(ctx);
-
+		//return visitChildren(ctx);
+		
+		ArrayList<Node> result = new ArrayList<Node>();
+		List<String> items = Arrays.asList(ctx.getText().split("\\s*,\\s*"));
+        for(String s: items){
+        	Node n = XMLTreefunction.makeText(s, inDoc);
+        	result.add(n);
+        
+        }
+        return result;
 	}
 
 	public void generateResult(ArrayList<Node> result) {
@@ -234,7 +261,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
-		// System.out.println("visitXqFLWR");
+		System.out.println("visitXqFLWR");
 
 		ParseTree res = ctx.getChild(ctx.getChildCount() - 1);
 		values.put(res, new ArrayList<Node>());

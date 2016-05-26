@@ -12,12 +12,15 @@ xq
   | '<' open=TagName '>' '{' xq '}' '</' close=TagName '>'       #xqTagName
   | forClause letClause? whereClause? returnClause               #xqFLWR
   | letClause xq                                                 #xqLet
-  | 'join(' xq ')'												 #xqJoin
-  | xq ',' xq ',' '[' indexing ']' ',' '[' indexing ']' 	 	 #xqImpJoin
+  | 'join(' xqImpJoin ')'									     #xqJoin
   ;
-
+  
+xqImpJoin
+  : xq ':' xq ':' '[' indexing ']' ':' '[' indexing ']' 
+  ;
+  
 indexing
-  : StringConstant ( ',' StringConstant )*
+  : TagName ( ',' TagName )*
   ;
 
 // For Clause: for $var1 in $someList, $var2 in $var1)

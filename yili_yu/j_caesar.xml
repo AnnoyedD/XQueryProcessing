@@ -250,7 +250,7 @@ CASSIUS, and CASCA; a great crowd following, among
 them a Soothsayer</STAGEDIR>
 
 <SPEECH>
-<SPEAKER>CAESAR</SPEAKER>
+<SPEAKER>BRUTUS</SPEAKER>
 <LINE>Calpurnia!</LINE>
 </SPEECH>
 
@@ -1295,7 +1295,7 @@ CASCA, with his sword drawn, and CICERO</STAGEDIR>
 <STAGEDIR>Enter BRUTUS</STAGEDIR>
 
 <SPEECH>
-<SPEAKER>BRUTUS</SPEAKER>
+<SPEAKER>FLAVIUS</SPEAKER>
 <LINE>What, Lucius, ho!</LINE>
 <LINE>I cannot, by the progress of the stars,</LINE>
 <LINE>Give guess how near to day. Lucius, I say!</LINE>
@@ -1318,7 +1318,7 @@ CASCA, with his sword drawn, and CICERO</STAGEDIR>
 </SPEECH>
 
 <SPEECH>
-<SPEAKER>LUCIUS</SPEAKER>
+<SPEAKER>First Commoner</SPEAKER>
 <LINE>I will, my lord.</LINE>
 </SPEECH>
 

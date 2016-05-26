@@ -1,0 +1,4 @@
+for $aa in document("j_caesar.xml")//ACT,
+					   $sspp in $aa//SPEAKER
+				   where $aa/TITLE eq "ACT I" 
+				   return <tuple> {<aa> {$aa} </aa>, <sspp> {$sspp} </sspp>} </tuple>

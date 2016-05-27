@@ -58,11 +58,12 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				// System.out.println(attr+" attr");
 				Node attrNode = children.get(attr);
 				//text content of attrNode
-				lkey += attrNode.getTextContent();
+				String tmp = attrNode.getTextContent();
 				//children of attrNode
 				for(Node c: XMLTreefunction.getChildren(attrNode)){
-					lkey+=c.getNodeName();
+					tmp+=c.getNodeName();
 				}
+				lkey += tmp;
 			}
 
 			int key = lkey.hashCode();
@@ -155,11 +156,12 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 			for (int attr : right_index) {
 				Node attrNode = children.get(attr);
 				//text content of attrNode
-				key += attrNode.getTextContent();
+				String tmp = attrNode.getTextContent();
 				//children of attrNode
 				for(Node c: XMLTreefunction.getChildren(attrNode)){
-					key+=c.getNodeName();
+					tmp+=c.getNodeName();
 				}
+				key += tmp;
 			}
 
 		
@@ -349,11 +351,9 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		values.removeFrom(res);
 		if (result.size() == 0)
 			System.out.println("visitXqFLWR is empty");
-		 System.out.println("return visitXqFLWR "+result.size());
+		 System.out.println("return visitXqFLWR ");
 			for(Node r: result){
-				System.out.println(r.getNodeName());
 				for(Node c: XMLTreefunction.getChildren(r)){
-					System.out.println(c.getNodeName());
 					for(Node cc: XMLTreefunction.getChildren(c)){
 						System.out.println(cc.getNodeName());
 					}

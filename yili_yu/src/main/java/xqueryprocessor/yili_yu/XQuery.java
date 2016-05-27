@@ -8,6 +8,7 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 import xml.*;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileInputStream;
 import java.util.*;
 import javax.swing.JFrame;
@@ -29,6 +30,7 @@ public class XQuery {
 		
 		long start_time = System.currentTimeMillis();
 		
+		//read XQuery and rewrite
 		File file = new File(inFileName);
 		FileInputStream fis = new FileInputStream(file);
 		ANTLRInputStream input = new ANTLRInputStream(fis);
@@ -36,10 +38,37 @@ public class XQuery {
 		CommonTokenStream tokens = new CommonTokenStream(lexer);
 		XQueryParser parser = new XQueryParser(tokens);
 		ParseTree tree = parser.xq(); // begin parsing at xq rule
+
+		if (toShow.equals("y")){
+			JFrame frame = new JFrame("Antlr AST");
+	        JPanel panel = new JPanel();
+	        TreeViewer viewr = new TreeViewer(Arrays.asList(parser.getRuleNames()),tree);
+	        viewr.setScale(1.2);//scale a little
+	        panel.add(viewr);
+	        frame.add(panel);
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.setSize(1400,700);
+	        frame.setVisible(true);
+		}
+		
+		MyRewrittor rewtr = new MyRewrittor();
+		String newQuery = rewtr.visit(tree);
+		
+		File file2 = new File("temp.txt");
+		FileOutputStream fos = new FileOutputStream(file2);
+		fos.write(newQuery.getBytes());
+	
+		//evaluate
+		FileInputStream fis2 = new FileInputStream(file2);
+		ANTLRInputStream input2 = new ANTLRInputStream(fis2);
+		XQueryLexer lexer2 = new XQueryLexer(input2);
+		CommonTokenStream tokens2 = new CommonTokenStream(lexer2);
+		XQueryParser parser2 = new XQueryParser(tokens2);
+		ParseTree tree2 = parser2.xq(); // begin parsing at xq rule
 		
 		MyVisitor eval = new MyVisitor();
 		ArrayList<Node> result = eval.visit(tree);
-
+		
 		long end_time = System.currentTimeMillis();
 		System.out.println("Time to process the XQuery (in ms): "+(end_time-start_time));
 		
@@ -50,20 +79,13 @@ public class XQuery {
 		if (toShow.equals("y")){
 			JFrame frame = new JFrame("Antlr AST");
 	        JPanel panel = new JPanel();
-	        TreeViewer viewr = new TreeViewer(Arrays.asList(
-	                parser.getRuleNames()),tree);
+	        TreeViewer viewr = new TreeViewer(Arrays.asList(parser2.getRuleNames()),tree2);
 	        viewr.setScale(1.2);//scale a little
 	        panel.add(viewr);
 	        frame.add(panel);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.setSize(1400,700);
 	        frame.setVisible(true);
-	        
-	        //save the image
-	        //BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
-	        //Graphics2D g2d = img.createGraphics(); 
-	        //frame.paint(g2d); 
-	        //ImageIO.write(img,"jpg", new File("long.jpg"));
 		}
 	}
 }

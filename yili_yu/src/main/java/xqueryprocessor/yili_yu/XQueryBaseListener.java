@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 
 import org.antlr.v4.runtime.ParserRuleContext;

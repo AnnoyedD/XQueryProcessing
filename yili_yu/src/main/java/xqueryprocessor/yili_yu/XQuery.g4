@@ -16,7 +16,7 @@ xq
   ;
   
 xqImpJoin
-  : xq ':' xq ':' '[' indexing ']' ':' '[' indexing ']' 
+  : xq ',' xq ',' '[' indexing ']' ',' '[' indexing ']' 
   ;
   
 indexing

@@ -338,7 +338,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
-		System.out.println("visitXqFLWR");
+		//System.out.println("visitXqFLWR");
 
 		ParseTree res = ctx.getChild(ctx.getChildCount() - 1);
 		values.put(res, new ArrayList<Node>());

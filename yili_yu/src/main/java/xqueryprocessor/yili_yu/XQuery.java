@@ -43,12 +43,17 @@ public class XQuery {
 			JFrame frame = new JFrame("Antlr AST");
 	        JPanel panel = new JPanel();
 	        TreeViewer viewr = new TreeViewer(Arrays.asList(parser.getRuleNames()),tree);
-	        viewr.setScale(1.2);//scale a little
+	        viewr.setScale(0.8);//scale a little
 	        panel.add(viewr);
 	        frame.add(panel);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.setSize(1400,700);
 	        frame.setVisible(true);
+	        //save the image
+	        BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
+	        Graphics2D g2d = img.createGraphics(); 
+	        frame.paint(g2d); 
+	        ImageIO.write(img,"jpg", new File("old.jpg"));
 		}
 		
 		MyRewrittor rewtr = new MyRewrittor();
@@ -67,7 +72,7 @@ public class XQuery {
 		ParseTree tree2 = parser2.xq(); // begin parsing at xq rule
 		
 		MyVisitor eval = new MyVisitor();
-		ArrayList<Node> result = eval.visit(tree);
+		ArrayList<Node> result = eval.visit(tree2);
 		
 		long end_time = System.currentTimeMillis();
 		System.out.println("Time to process the XQuery (in ms): "+(end_time-start_time));
@@ -80,12 +85,17 @@ public class XQuery {
 			JFrame frame = new JFrame("Antlr AST");
 	        JPanel panel = new JPanel();
 	        TreeViewer viewr = new TreeViewer(Arrays.asList(parser2.getRuleNames()),tree2);
-	        viewr.setScale(1.2);//scale a little
+	        viewr.setScale(0.8);//scale a little
 	        panel.add(viewr);
 	        frame.add(panel);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.setSize(1400,700);
 	        frame.setVisible(true);
+	        //save the image
+	        BufferedImage img = new BufferedImage(frame.getWidth(), frame.getHeight(), BufferedImage.TYPE_INT_RGB);
+	        Graphics2D g2d = img.createGraphics(); 
+	        frame.paint(g2d); 
+	        ImageIO.write(img,"jpg", new File("new.jpg"));
 		}
 	}
 }

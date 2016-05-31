@@ -84,7 +84,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		}
 		
 		if (flag){
-			String returnString = "return "+rewriteReturn(ctx.getChild(2).getChild(1), tupleAttr);
+			String returnString = "return "+rewriteReturn(ctx.getChild(2).getChild(1), forList, tupleAttr);
 			
 			generateVarTree(forList);
 			
@@ -168,23 +168,38 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		return false;
 	}
 	
-	private String rewriteReturn(ParseTree ctx, HashSet<String> tupleAttr){
+	private String rewriteReturn(ParseTree ctx, ArrayList<ParseTree> forList, HashSet<String> tupleAttr){
 		String str = ctx.getText();
 		if (ctx.getChildCount()==9){
-			return "<"+ctx.getChild(1)+">{"+rewriteReturn(ctx.getChild(4), tupleAttr)+"}</"+ctx.getChild(7)+">";
+			return "<"+ctx.getChild(1)+">{"+rewriteReturn(ctx.getChild(4), forList, tupleAttr)+"}</"+ctx.getChild(7)+">";
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(1).getText().equals(",")){
-			return rewriteReturn(ctx.getChild(0), tupleAttr)+","+rewriteReturn(ctx.getChild(2), tupleAttr);
+			return rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr);
 		}
 		if (str.startsWith("$")){
 			int ind = str.indexOf("/");
+			String tag="";
+			int ind2;
+			for (ParseTree var : forList){
+				if (var.getText().startsWith(str)){
+					tag = var.getChild(2).getText();
+					ind2 = tag.indexOf("/");
+					if (ind2>=0){
+						tag = tag.substring(ind2);
+					}
+				}
+			}
+			String result="";
 			if (ind<0){
 				tupleAttr.add(str);
+				result = "$tuple/"+str.substring(1)+tag;
 			}
 			else{
 				tupleAttr.add(str.substring(0, ind));
+				result = "$tuple/"+str.substring(1,ind)+tag+"/"+str.substring(ind);
 			}
-			return "$tuple/"+str.substring(1);
+			
+			return result;
 		}
 		if (str.startsWith("doc") || str.startsWith("document")){
 			return str;

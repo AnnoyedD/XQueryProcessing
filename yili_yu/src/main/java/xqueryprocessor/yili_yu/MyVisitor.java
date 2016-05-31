@@ -37,13 +37,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) {
-		 System.out.println("visitXqJoin " + ctx.getText());
+		 //System.out.println("visitXqJoin " + ctx.getText());
 		// System.out.println(ctx.getChild(1).getText());
 		ArrayList<Node> res =  visit(ctx.getChild(1));
-		 System.out.println("return visitXqJoin ");
-		for(Node r: res){
-			print(XMLTreefunction.getChildren(r), "v");
-		}
+		//System.out.println("return visitXqJoin ");
+		//for(Node r: res){
+		//	print(XMLTreefunction.getChildren(r), "v");
+		//}
 		return res;
 	}
 
@@ -120,7 +120,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) {
-		System.out.println("visitXqImpJoin " + ctx.getText());
+		//System.out.println("visitXqImpJoin " + ctx.getText());
 		ArrayList<Node> result = new ArrayList<Node>();
 
 		ArrayList<Node> leftTuples = visit(ctx.getChild(0));
@@ -207,13 +207,12 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 			}
 		}
 		// print(result, "result");
-		for (Node r : result) {
-			Node first = r.getFirstChild().getNextSibling();
-			Node second = first.getNextSibling().getNextSibling();
-			System.out.println("Impjoin result "+first.getNodeName() + " " + first.getTextContent() + " " + second.getNodeName() + " "
-					+ second.getTextContent());
-		}
-		System.out.println("result " + result.size());
+		//for (Node r : result) {
+		//	for (Node c : XMLTreefunction.getChildren(r)){
+		//		System.out.println("Impjoin result "+c.getNodeName());
+		//	}
+		//}
+		//System.out.println("result " + result.size());
 		
 		return result;
 	}
@@ -221,11 +220,11 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	@Override
 	public ArrayList<Node> visitIndexing(@NotNull XQueryParser.IndexingContext ctx) {
 		// return visitChildren(ctx);
-		System.out.println(" Indexing");
+		//System.out.println(" Indexing");
 		ArrayList<Node> result = new ArrayList<Node>();
 		List<String> items = Arrays.asList(ctx.getText().split("\\s*,\\s*"));
 		for (String s : items) {
-			System.out.println(s);
+			//System.out.println(s);
 			Node n = XMLTreefunction.makeText(s, inDoc);
 			result.add(n);
 
@@ -234,7 +233,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	}
 
 	public void generateResult(ArrayList<Node> result) {
-		System.out.println("generate result " + result.size());
+		//System.out.println("generate result " + result.size());
 		outDoc.appendChild(result.get(0));
 		try {
 
@@ -338,7 +337,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqFLWR(@NotNull XQueryParser.XqFLWRContext ctx) {
-		//System.out.println("visitXqFLWR");
+		//System.out.println("visitXqFLWR"+ctx.getText());
 
 		ParseTree res = ctx.getChild(ctx.getChildCount() - 1);
 		values.put(res, new ArrayList<Node>());
@@ -348,14 +347,15 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		ArrayList<Node> result = values.get(res);
 		values.removeFrom(res);
 		if (result.size() == 0)
-			System.out.println("visitXqFLWR is empty");
-		 System.out.println("return visitXqFLWR "+result.size());
 			for(Node r: result){
 				System.out.println(r.getNodeName());
 				for(Node c: XMLTreefunction.getChildren(r)){
 					System.out.println(c.getNodeName());
 					for(Node cc: XMLTreefunction.getChildren(c)){
 						System.out.println(cc.getNodeName());
+						for(Node ccc: XMLTreefunction.getChildren(cc)){
+							System.out.println(ccc.getNodeName());
+						}
 					}
 				}
 			}
@@ -401,12 +401,11 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitVarBind(@NotNull XQueryParser.VarBindContext ctx) {
-		// System.out.println("visitVarBind");
+		//System.out.println("visitVarBind"+ctx.getText());
 
 		ArrayList<Node> result = visit(ctx.getChild(2));
 
 		String key = ctx.getChild(0).getText();
-		// System.out.println("Variable binding: "+key);
 
 		ParseTree parent = ctx.getParent();
 		int childCount = parent.getChildCount();
@@ -854,9 +853,9 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 	@Override
 	public ArrayList<Node> visitXqConcat(@NotNull XQueryParser.XqConcatContext ctx) {
-		// System.out.println("visitXqConcat"+ctx.getText());
 		ArrayList<Node> result = visit(ctx.getChild(0));
-		result.addAll(visit(ctx.getChild(2)));
+		ArrayList<Node> result2 = visit(ctx.getChild(2));
+		result.addAll(result2);
 		return result;
 	}
 

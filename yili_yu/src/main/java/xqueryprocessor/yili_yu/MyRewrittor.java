@@ -167,9 +167,6 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
 			return checkReturn(ctx.getChild(1));
 		}
-		if (ctx.getChildCount()==5 && ctx.getChild(0).getText().equals("(") && ctx.getChild(2).getText().equals(",")){
-			return checkReturn(ctx.getChild(1)) && checkReturn(ctx.getChild(3));
-		}
 		if (ctx.getText().startsWith("$") 
 				|| ctx.getText().startsWith("doc") 
 				|| ctx.getText().startsWith("document")){
@@ -184,13 +181,10 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			return "<"+ctx.getChild(1)+">{"+rewriteReturn(ctx.getChild(4), forList, tupleAttr)+"}</"+ctx.getChild(7)+">";
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(1).getText().equals(",")){
-			return "("+rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr)+")";
+			return rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr);
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
 			return "("+rewriteReturn(ctx.getChild(1), forList, tupleAttr)+")";
-		}
-		if (ctx.getChildCount()==5 && ctx.getChild(0).getText().equals("(") && ctx.getChild(2).getText().equals(",")){
-			return "("+rewriteReturn(ctx.getChild(1), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(3), forList, tupleAttr)+")";
 		}
 		if (str.startsWith("$")){
 			int ind = str.indexOf("/");

@@ -59,6 +59,14 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	T visitFRp(@NotNull XQueryParser.FRpContext ctx);
 
 	/**
+	 * Visit a parse tree produced by the {@code xqParenConcat}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
+
+	/**
 	 * Visit a parse tree produced by the {@code xqSlash}
 	 * labeled alternative in {@link XQueryParser#xq}.
 	 * @param ctx the parse tree

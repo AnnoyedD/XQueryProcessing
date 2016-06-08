@@ -42,7 +42,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondValEqual(@NotNull XQueryParser.CondValEqualContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -50,7 +50,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { return visitChildren(ctx); }
+	@Override public String visitWhereClause(@NotNull XQueryParser.WhereClauseContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -58,8 +58,10 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { return null; }
 
+	@Override public String visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { return null; }
+	
 	/**
 	 * {@inheritDoc}
 	 *
@@ -103,7 +105,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			return result;
 		}
 		
-		return ctx.getText(); 
+		return null; 
 	}
 	
 	private boolean checkFor(ParseTree ctx, ArrayList<ParseTree> forList){
@@ -124,9 +126,6 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 				ctx.getText().startsWith("empty") ||
 				ctx.getText().startsWith("some")){
 			return false;
-		}
-		if (ctx.getText().startsWith("(")){
-			return checkCond(ctx.getChild(1), condList, tupleAttr);
 		}
 		if (ctx.getChild(1).getText().equals("==") ||
 				ctx.getChild(1).getText().equals("is") ||
@@ -149,8 +148,13 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			}
 			return true;
 		}
-		
-		return checkCond(ctx.getChild(0), condList, tupleAttr) && checkCond(ctx.getChild(2), condList, tupleAttr);
+		if (ctx.getChild(1).getText().equals("and")){
+			return checkCond(ctx.getChild(0), condList, tupleAttr) && checkCond(ctx.getChild(2), condList, tupleAttr);
+		}
+		if (ctx.getText().startsWith("(")){
+			return checkCond(ctx.getChild(1), condList, tupleAttr);
+		}	
+		return false;
 	}
 
 	private boolean checkReturn(ParseTree ctx){
@@ -165,6 +169,9 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		if (ctx.getChildCount()==3 && ctx.getChild(1).getText().equals(",")){
 			return checkReturn(ctx.getChild(0)) && checkReturn(ctx.getChild(2));
 		}
+		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
+			return checkReturn(ctx.getChild(1));
+		}
 		return false;
 	}
 	
@@ -176,14 +183,26 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		if (ctx.getChildCount()==3 && ctx.getChild(1).getText().equals(",")){
 			return rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr);
 		}
+		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
+			return "("+rewriteReturn(ctx.getChild(1), forList, tupleAttr)+")";
+		}
 		if (str.startsWith("$")){
 			int ind = str.indexOf("/");
+			String attr = "";
+			if (ind>=0){
+				attr = str.substring(0, ind);
+			}
+			else{
+				attr = str;
+			}
+			tupleAttr.add(attr);
+			
 			String tag="";
 			int ind2;
 			for (ParseTree var : forList){
-				if (var.getText().startsWith(str)){
+				if (var.getText().startsWith(attr)){
 					tag = var.getChild(2).getText();
-					ind2 = tag.indexOf("/");
+					ind2 = tag.lastIndexOf("/");
 					if (ind2>=0){
 						tag = tag.substring(ind2);
 					}
@@ -191,12 +210,10 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			}
 			String result="";
 			if (ind<0){
-				tupleAttr.add(str);
-				result = "$tuple/"+str.substring(1)+tag;
+				result = "$tuple/"+attr.substring(1)+tag;
 			}
 			else{
-				tupleAttr.add(str.substring(0, ind));
-				result = "$tuple/"+str.substring(1,ind)+tag+"/"+str.substring(ind);
+				result = "$tuple/"+attr.substring(1)+tag+str.substring(ind);
 			}
 			
 			return result;
@@ -411,7 +428,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpDotDot(@NotNull XQueryParser.RpDotDotContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -419,7 +436,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFRp(@NotNull XQueryParser.FRpContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFRp(@NotNull XQueryParser.FRpContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -427,7 +444,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -435,7 +452,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitVarBind(@NotNull XQueryParser.VarBindContext ctx) { return visitChildren(ctx); }
+	@Override public String visitVarBind(@NotNull XQueryParser.VarBindContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -443,7 +460,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx) { return visitChildren(ctx); }
+	@Override public String visitSomeClause(@NotNull XQueryParser.SomeClauseContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -451,7 +468,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitApSlash(@NotNull XQueryParser.ApSlashContext ctx) { return visitChildren(ctx); }
+	@Override public String visitApSlash(@NotNull XQueryParser.ApSlashContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -459,7 +476,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpDot(@NotNull XQueryParser.RpDotContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpDot(@NotNull XQueryParser.RpDotContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -467,7 +484,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpText(@NotNull XQueryParser.RpTextContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpText(@NotNull XQueryParser.RpTextContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -475,8 +492,10 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) { 
-		return "<"+ctx.getChild(1).getText()+">{"+visit(ctx.getChild(4))+"}</"+ctx.getChild(7)+">";
+	@Override public String visitXqTagName(@NotNull XQueryParser.XqTagNameContext ctx) {
+		String res = visit(ctx.getChild(4));
+		if (res==null) return null;
+		return "<"+ctx.getChild(1).getText()+">{"+res+"}</"+ctx.getChild(7)+">";
 	}
 	
 
@@ -486,7 +505,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitLetClause(@NotNull XQueryParser.LetClauseContext ctx) { return visitChildren(ctx); }
+	@Override public String visitLetClause(@NotNull XQueryParser.LetClauseContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -494,7 +513,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpConcat(@NotNull XQueryParser.RpConcatContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpConcat(@NotNull XQueryParser.RpConcatContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -502,7 +521,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFIdEqual(@NotNull XQueryParser.FIdEqualContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -510,7 +529,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondOr(@NotNull XQueryParser.CondOrContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondOr(@NotNull XQueryParser.CondOrContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -518,7 +537,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpAttr(@NotNull XQueryParser.RpAttrContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpAttr(@NotNull XQueryParser.RpAttrContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -526,7 +545,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondEmpty(@NotNull XQueryParser.CondEmptyContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -534,7 +553,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqVar(@NotNull XQueryParser.XqVarContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqVar(@NotNull XQueryParser.XqVarContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -542,7 +561,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqJoin(@NotNull XQueryParser.XqJoinContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -550,7 +569,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFNot(@NotNull XQueryParser.FNotContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFNot(@NotNull XQueryParser.FNotContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -558,7 +577,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondSomeSatis(@NotNull XQueryParser.CondSomeSatisContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -566,7 +585,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitIndexing(@NotNull XQueryParser.IndexingContext ctx) { return visitChildren(ctx); }
+	@Override public String visitIndexing(@NotNull XQueryParser.IndexingContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -574,7 +593,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondIdEqual(@NotNull XQueryParser.CondIdEqualContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -582,7 +601,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFParen(@NotNull XQueryParser.FParenContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFParen(@NotNull XQueryParser.FParenContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -590,7 +609,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFOr(@NotNull XQueryParser.FOrContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFOr(@NotNull XQueryParser.FOrContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -598,7 +617,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFValEqual(@NotNull XQueryParser.FValEqualContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFValEqual(@NotNull XQueryParser.FValEqualContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -606,7 +625,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpWildcard(@NotNull XQueryParser.RpWildcardContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -614,7 +633,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqLet(@NotNull XQueryParser.XqLetContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqLet(@NotNull XQueryParser.XqLetContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -622,7 +641,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqStringConstant(@NotNull XQueryParser.XqStringConstantContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -630,7 +649,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx) { return visitChildren(ctx); }
+	@Override public String visitLetVarBind(@NotNull XQueryParser.LetVarBindContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -638,7 +657,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqAp(@NotNull XQueryParser.XqApContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqAp(@NotNull XQueryParser.XqApContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -646,7 +665,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqImpJoin(@NotNull XQueryParser.XqImpJoinContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -654,7 +673,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { return visitChildren(ctx); }
+	@Override public String visitReturnClause(@NotNull XQueryParser.ReturnClauseContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -662,7 +681,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondParenExpr(@NotNull XQueryParser.CondParenExprContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -670,7 +689,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpSlash(@NotNull XQueryParser.RpSlashContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpSlash(@NotNull XQueryParser.RpSlashContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -678,7 +697,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqSlashSlash(@NotNull XQueryParser.XqSlashSlashContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -686,12 +705,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitForClause(@NotNull XQueryParser.ForClauseContext ctx) { 
-		
-		
-		return visitChildren(ctx); 
-	
-	}
+	@Override public String visitForClause(@NotNull XQueryParser.ForClauseContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -699,7 +713,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpTagName(@NotNull XQueryParser.RpTagNameContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpTagName(@NotNull XQueryParser.RpTagNameContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -707,7 +721,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondAnd(@NotNull XQueryParser.CondAndContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondAnd(@NotNull XQueryParser.CondAndContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -715,7 +729,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpFilter(@NotNull XQueryParser.RpFilterContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpFilter(@NotNull XQueryParser.RpFilterContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -723,7 +737,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitXqConcat(@NotNull XQueryParser.XqConcatContext ctx) { return visitChildren(ctx); }
+	@Override public String visitXqConcat(@NotNull XQueryParser.XqConcatContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -731,7 +745,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) { return visitChildren(ctx); }
+	@Override public String visitRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -739,7 +753,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitCondNot(@NotNull XQueryParser.CondNotContext ctx) { return visitChildren(ctx); }
+	@Override public String visitCondNot(@NotNull XQueryParser.CondNotContext ctx) { return null; }
 
 	/**
 	 * {@inheritDoc}
@@ -747,5 +761,5 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public String visitFAnd(@NotNull XQueryParser.FAndContext ctx) { return visitChildren(ctx); }
+	@Override public String visitFAnd(@NotNull XQueryParser.FAndContext ctx) { return null; }
 }

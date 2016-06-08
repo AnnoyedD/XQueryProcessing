@@ -85,6 +85,19 @@ public interface XQueryListener extends ParseTreeListener {
 	void exitFRp(@NotNull XQueryParser.FRpContext ctx);
 
 	/**
+	 * Enter a parse tree produced by the {@code xqParenConcat}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void enterXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code xqParenConcat}
+	 * labeled alternative in {@link XQueryParser#xq}.
+	 * @param ctx the parse tree
+	 */
+	void exitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
+
+	/**
 	 * Enter a parse tree produced by the {@code xqSlash}
 	 * labeled alternative in {@link XQueryParser#xq}.
 	 * @param ctx the parse tree

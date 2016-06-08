@@ -46,7 +46,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		//}
 		return res;
 	}
-
+	
 	private HashMap<Integer, List<Node>> getHashMap(ArrayList<Node> leftTuples, ArrayList<Integer> left_attr_index) {
 		HashMap<Integer, List<Node>> map = new HashMap<Integer, List<Node>>();
 		for (Node tuple : leftTuples) {
@@ -855,6 +855,13 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	public ArrayList<Node> visitXqConcat(@NotNull XQueryParser.XqConcatContext ctx) {
 		ArrayList<Node> result = visit(ctx.getChild(0));
 		ArrayList<Node> result2 = visit(ctx.getChild(2));
+		result.addAll(result2);
+		return result;
+	}
+	
+	@Override public ArrayList<Node> visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { 
+		ArrayList<Node> result = visit(ctx.getChild(1));
+		ArrayList<Node> result2 = visit(ctx.getChild(3));
 		result.addAll(result2);
 		return result;
 	}

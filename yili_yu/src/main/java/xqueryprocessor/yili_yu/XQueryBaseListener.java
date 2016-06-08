@@ -95,6 +95,19 @@ public class XQueryBaseListener implements XQueryListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterXqSlash(@NotNull XQueryParser.XqSlashContext ctx) { }
 	/**
 	 * {@inheritDoc}

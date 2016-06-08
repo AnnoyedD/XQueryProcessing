@@ -97,7 +97,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			
 			for (int i=1; i<root.childCount; i++){
 				secondFor = rewriteFor(plan[i], forList, condList, tupleAttr);
-				joinAttr = generateJoinAttr(plan[i], plan, condList);
+				joinAttr = generateJoinAttr(i, plan, condList);
 				result = "join(\n"+result+",\n\n"+secondFor+",\n\n"+joinAttr+")";
 			}
 			
@@ -387,10 +387,11 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		return result;
 	}
 	
-	private String generateJoinAttr(int ind, int[] plan, ArrayList<ParseTree> condList){
+	private String generateJoinAttr(int index, int[] plan, ArrayList<ParseTree> condList){
 		String left = "", right = "";
 		String leftVar, rightVar;
 		VarNode leftNode, rightNode;
+		int ind = plan[index];
 		for (ParseTree cond : condList){
 			leftVar = cond.getChild(0).getText();
 			rightVar = cond.getChild(2).getText();
@@ -404,7 +405,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 				if (leftNode.label==ind || rightNode.label!=ind){
 					continue;
 				}
-				for (int i=0; i<ind; i++){
+				for (int i=0; i<index; i++){
 					if (plan[i]==leftNode.label){
 						if (left.length()==0){
 							left += leftVar.substring(1);

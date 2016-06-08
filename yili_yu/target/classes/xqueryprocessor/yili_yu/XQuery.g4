@@ -6,6 +6,7 @@ xq
   | StringConstant			                                     #xqStringConstant
   | ap                                                           #xqAp
   | '(' xq ')'                                                   #xqParenExpr
+  | '(' left=xq ',' right=xq ')'								 #xqParenConcat
   | left=xq ',' right=xq                                         #xqConcat
   | xq '/' rp                                       			 #xqSlash
   | xq '//' rp													 #xqSlashSlash
@@ -16,7 +17,7 @@ xq
   ;
   
 xqImpJoin
-  : xq ':' xq ':' '[' indexing ']' ':' '[' indexing ']' 
+  : xq ',' xq ',' '[' indexing ']' ',' '[' indexing ']' 
   ;
   
 indexing

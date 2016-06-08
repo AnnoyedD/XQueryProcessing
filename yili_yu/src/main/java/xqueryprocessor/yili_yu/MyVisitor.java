@@ -48,17 +48,21 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	}
 	
 	private HashMap<Integer, List<Node>> getHashMap(ArrayList<Node> leftTuples, ArrayList<Integer> left_attr_index) {
+		System.out.println("getHashMap");
 		HashMap<Integer, List<Node>> map = new HashMap<Integer, List<Node>>();
 		for (Node tuple : leftTuples) {
-			// combine all key attributes together into key
+		//	System.out.println("combine all key attributes together into key");
 
 			String lkey = "";
 			ArrayList<Node> children = XMLTreefunction.getChildren(tuple);
+			System.out.println(left_attr_index.size());
 			for (int attr : left_attr_index) {
-				// System.out.println(attr+" attr");
+			    System.out.println(attr+" attr");
 				Node attrNode = children.get(attr);
 				//text content of attrNode
 				lkey += attrNode.getTextContent();
+				System.out.println(lkey);
+				lkey+=XMLTreefunction.getChildren(attrNode).size();
 				//children of attrNode
 				for(Node c: XMLTreefunction.getChildren(attrNode)){
 					lkey+=c.getNodeName();
@@ -78,6 +82,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				map.put(key, value);
 			}
 		}
+		System.out.println("map.keySet().size()"+map.keySet().size());
 		return map;
 	}
 
@@ -85,23 +90,33 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		//System.out.println("getAttributesIndex ");
 		ArrayList<Integer> left_index = new ArrayList<Integer>();
 		ArrayList<Node> sampleChildren = XMLTreefunction.getChildren(tuple);
-		// System.out.println("sampleChildren.size() "+sampleChildren.size());
+	   System.out.println("sampleChildren.size() "+sampleChildren.size());
 		for (int i = 0; i < left_attributes.size(); i++) {
 			String left_att = left_attributes.get(i).getTextContent();
 			for (int c = 0; c < sampleChildren.size(); c++) {
-				// System.out.println("getAttributesIndex
-				// "+sampleChildren.get(c).getNodeName()+" "+left_att);
+				 System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
 				if (sampleChildren.get(c).getNodeName().equals(left_att)) {
 					left_index.add(c);
 					break;
 				}
 			}
 		}
-		// for(int i: left_index){
-		// System.out.print("index "+i);
-		// }
-		// System.out.println();
+		 for(int i: left_index){
+		 System.out.print("index "+i);
+		 }
+		 System.out.println();
 		return left_index;
+	}
+	
+	private int findLeftRight(Node tuple, String left_att){
+		ArrayList<Node> sampleChildren = XMLTreefunction.getChildren(tuple);
+		for (int c = 0; c < sampleChildren.size(); c++) {
+			 System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
+			if (sampleChildren.get(c).getNodeName().equals(left_att)) {
+				return -1;
+			}
+		}
+		return 1;
 	}
 
 	private void print(ArrayList<Node> list, String name) {
@@ -140,8 +155,16 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 		// index of each attr's position in children of a sample tuple
 
-		ArrayList<Integer> left_index = getAttributesIndex(left_attributes, leftTuples.get(0));
-		ArrayList<Integer> right_index = getAttributesIndex(right_attributes, rightTuples.get(0));
+		int leftFlag = findLeftRight(leftTuples.get(0), left_attributes.get(0).getTextContent());
+		ArrayList<Integer> left_index = new ArrayList<Integer>();
+		ArrayList<Integer> right_index = new ArrayList<Integer>();
+		if(leftFlag == -1){
+		 left_index = getAttributesIndex(left_attributes, leftTuples.get(0));
+		 right_index = getAttributesIndex(right_attributes, rightTuples.get(0));
+		}else{
+			left_index = getAttributesIndex(right_attributes, leftTuples.get(0));
+			right_index = getAttributesIndex(left_attributes, rightTuples.get(0));
+		}
 
 		// key is the combinations of all minor keys
 		HashMap<Integer, List<Node>> leftMap = getHashMap(leftTuples, left_index);
@@ -156,6 +179,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				Node attrNode = children.get(attr);
 				//text content of attrNode
 				key += attrNode.getTextContent();
+				key+=XMLTreefunction.getChildren(attrNode).size();
 				//children of attrNode
 				for(Node c: XMLTreefunction.getChildren(attrNode)){
 					key+=c.getNodeName();
@@ -168,7 +192,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 			if (leftMap.containsKey(rkey)) {
 				// System.out.println("left map contains key");
-				// System.out.println("contains rkey "+rkey);
+				 System.out.println("contains rkey "+rkey);
 				List<Node> values = leftMap.get(rkey);
 				// join each n in values with rTuple;
 				// add their children together
@@ -206,15 +230,17 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				}
 			}
 		}
-		// print(result, "result");
-		//for (Node r : result) {
-		//	for (Node c : XMLTreefunction.getChildren(r)){
-		//		System.out.println("Impjoin result "+c.getNodeName());
-		//	}
-		//}
-		//System.out.println("result " + result.size());
+		 print(result, "result");
+		for (Node r : result) {
+			System.out.print(r.getNodeName()+" ");
+			for (Node c : XMLTreefunction.getChildren(r)){
+				System.out.print("Impjoin result "+c.getNodeName());
+			}
+			System.out.println();
+		}
+		System.out.println("result " + result.size());
 		
-		return result;
+		return XMLTreefunction.unique(result);
 	}
 
 	@Override

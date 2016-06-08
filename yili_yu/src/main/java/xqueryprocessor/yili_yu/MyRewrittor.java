@@ -60,7 +60,7 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	 */
 	@Override public String visitXqParenExpr(@NotNull XQueryParser.XqParenExprContext ctx) { return null; }
 
-	@Override public String visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { return null; }
+	//@Override public String visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { return null; }
 	
 	/**
 	 * {@inheritDoc}
@@ -158,11 +158,6 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 	}
 
 	private boolean checkReturn(ParseTree ctx){
-		if (ctx.getText().startsWith("$") 
-				|| ctx.getText().startsWith("doc") 
-				|| ctx.getText().startsWith("document")){
-			return true;
-		}
 		if (ctx.getChildCount()==9){
 			return checkReturn(ctx.getChild(4));
 		}
@@ -171,6 +166,14 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
 			return checkReturn(ctx.getChild(1));
+		}
+		if (ctx.getChildCount()==5 && ctx.getChild(0).getText().equals("(") && ctx.getChild(2).getText().equals(",")){
+			return checkReturn(ctx.getChild(1)) && checkReturn(ctx.getChild(3));
+		}
+		if (ctx.getText().startsWith("$") 
+				|| ctx.getText().startsWith("doc") 
+				|| ctx.getText().startsWith("document")){
+			return true;
 		}
 		return false;
 	}
@@ -181,10 +184,13 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			return "<"+ctx.getChild(1)+">{"+rewriteReturn(ctx.getChild(4), forList, tupleAttr)+"}</"+ctx.getChild(7)+">";
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(1).getText().equals(",")){
-			return rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr);
+			return "("+rewriteReturn(ctx.getChild(0), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(2), forList, tupleAttr)+")";
 		}
 		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
 			return "("+rewriteReturn(ctx.getChild(1), forList, tupleAttr)+")";
+		}
+		if (ctx.getChildCount()==5 && ctx.getChild(0).getText().equals("(") && ctx.getChild(2).getText().equals(",")){
+			return "("+rewriteReturn(ctx.getChild(1), forList, tupleAttr)+", "+rewriteReturn(ctx.getChild(3), forList, tupleAttr)+")";
 		}
 		if (str.startsWith("$")){
 			int ind = str.indexOf("/");
@@ -210,16 +216,16 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 			}
 			String result="";
 			if (ind<0){
-				result = "$tuple/"+attr.substring(1)+tag;
+				result = "($tuple/"+attr.substring(1)+tag+")";
 			}
 			else{
-				result = "$tuple/"+attr.substring(1)+tag+str.substring(ind);
+				result = "($tuple/"+attr.substring(1)+tag+str.substring(ind)+")";
 			}
 			
 			return result;
 		}
 		if (str.startsWith("doc") || str.startsWith("document")){
-			return str;
+			return "("+str+")";
 		}
 		return ctx.getText();
 	}

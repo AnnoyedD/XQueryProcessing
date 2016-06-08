@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
@@ -83,19 +83,6 @@ public interface XQueryListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFRp(@NotNull XQueryParser.FRpContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code xqParenConcat}
-	 * labeled alternative in {@link XQueryParser#xq}.
-	 * @param ctx the parse tree
-	 */
-	void enterXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code xqParenConcat}
-	 * labeled alternative in {@link XQueryParser#xq}.
-	 * @param ctx the parse tree
-	 */
-	void exitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
 
 	/**
 	 * Enter a parse tree produced by the {@code xqSlash}

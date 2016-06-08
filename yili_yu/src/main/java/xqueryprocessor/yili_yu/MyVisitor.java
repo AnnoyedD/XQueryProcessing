@@ -48,20 +48,20 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 	}
 	
 	private HashMap<Integer, List<Node>> getHashMap(ArrayList<Node> leftTuples, ArrayList<Integer> left_attr_index) {
-		System.out.println("getHashMap");
+		//System.out.println("getHashMap");
 		HashMap<Integer, List<Node>> map = new HashMap<Integer, List<Node>>();
 		for (Node tuple : leftTuples) {
 		//	System.out.println("combine all key attributes together into key");
 
 			String lkey = "";
 			ArrayList<Node> children = XMLTreefunction.getChildren(tuple);
-			System.out.println(left_attr_index.size());
+			//System.out.println(left_attr_index.size());
 			for (int attr : left_attr_index) {
-			    System.out.println(attr+" attr");
+			    //System.out.println(attr+" attr");
 				Node attrNode = children.get(attr);
 				//text content of attrNode
 				lkey += attrNode.getTextContent();
-				System.out.println(lkey);
+				//System.out.println(lkey);
 				lkey+=XMLTreefunction.getChildren(attrNode).size();
 				//children of attrNode
 				for(Node c: XMLTreefunction.getChildren(attrNode)){
@@ -82,7 +82,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 				map.put(key, value);
 			}
 		}
-		System.out.println("map.keySet().size()"+map.keySet().size());
+		//System.out.println("map.keySet().size()"+map.keySet().size());
 		return map;
 	}
 
@@ -90,28 +90,28 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		//System.out.println("getAttributesIndex ");
 		ArrayList<Integer> left_index = new ArrayList<Integer>();
 		ArrayList<Node> sampleChildren = XMLTreefunction.getChildren(tuple);
-	   System.out.println("sampleChildren.size() "+sampleChildren.size());
+	   //System.out.println("sampleChildren.size() "+sampleChildren.size());
 		for (int i = 0; i < left_attributes.size(); i++) {
 			String left_att = left_attributes.get(i).getTextContent();
 			for (int c = 0; c < sampleChildren.size(); c++) {
-				 System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
+				// System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
 				if (sampleChildren.get(c).getNodeName().equals(left_att)) {
 					left_index.add(c);
 					break;
 				}
 			}
 		}
-		 for(int i: left_index){
+		 /*for(int i: left_index){
 		 System.out.print("index "+i);
 		 }
-		 System.out.println();
+		 System.out.println();*/
 		return left_index;
 	}
 	
 	private int findLeftRight(Node tuple, String left_att){
 		ArrayList<Node> sampleChildren = XMLTreefunction.getChildren(tuple);
 		for (int c = 0; c < sampleChildren.size(); c++) {
-			 System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
+			// System.out.println("getAttributesIndex"+sampleChildren.get(c).getNodeName()+" "+left_att);
 			if (sampleChildren.get(c).getNodeName().equals(left_att)) {
 				return -1;
 			}
@@ -192,7 +192,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 
 			if (leftMap.containsKey(rkey)) {
 				// System.out.println("left map contains key");
-				 System.out.println("contains rkey "+rkey);
+				// System.out.println("contains rkey "+rkey);
 				List<Node> values = leftMap.get(rkey);
 				// join each n in values with rTuple;
 				// add their children together
@@ -229,7 +229,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 					}
 				}
 			}
-		}
+		}/*
 		 print(result, "result");
 		for (Node r : result) {
 			System.out.print(r.getNodeName()+" ");
@@ -239,7 +239,7 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 			System.out.println();
 		}
 		System.out.println("result " + result.size());
-		
+		*/
 		return XMLTreefunction.unique(result);
 	}
 
@@ -882,15 +882,16 @@ public class MyVisitor extends XQueryBaseVisitor<ArrayList<Node>> {
 		ArrayList<Node> result = visit(ctx.getChild(0));
 		ArrayList<Node> result2 = visit(ctx.getChild(2));
 		result.addAll(result2);
+		//System.out.println(ctx.getText()+"==="+result.size());
 		return result;
 	}
 	
-	@Override public ArrayList<Node> visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { 
+	/*@Override public ArrayList<Node> visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx) { 
 		ArrayList<Node> result = visit(ctx.getChild(1));
 		ArrayList<Node> result2 = visit(ctx.getChild(3));
 		result.addAll(result2);
 		return result;
-	}
+	}*/
 
 	@Override
 	public ArrayList<Node> visitRpParenExpr(@NotNull XQueryParser.RpParenExprContext ctx) {

@@ -1,4 +1,4 @@
-// Generated from xqueryprocessor/yili_yu/XQuery.g4 by ANTLR 4.3
+// Generated from xqueryprocessor\yili_yu\XQuery.g4 by ANTLR 4.3
 package xqueryprocessor.yili_yu;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
@@ -57,14 +57,6 @@ public interface XQueryVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFRp(@NotNull XQueryParser.FRpContext ctx);
-
-	/**
-	 * Visit a parse tree produced by the {@code xqParenConcat}
-	 * labeled alternative in {@link XQueryParser#xq}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitXqParenConcat(@NotNull XQueryParser.XqParenConcatContext ctx);
 
 	/**
 	 * Visit a parse tree produced by the {@code xqSlash}

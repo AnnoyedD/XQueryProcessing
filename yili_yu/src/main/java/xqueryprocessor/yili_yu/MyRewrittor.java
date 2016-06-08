@@ -167,7 +167,8 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		if (ctx.getChildCount()==3 && ctx.getChild(0).getText().equals("(")){
 			return checkReturn(ctx.getChild(1));
 		}
-		if (ctx.getText().startsWith("$") 
+		if (ctx.getText().startsWith("\"") 
+				|| ctx.getText().startsWith("$") 
 				|| ctx.getText().startsWith("doc") 
 				|| ctx.getText().startsWith("document")){
 			return true;
@@ -221,6 +222,10 @@ public class  MyRewrittor extends XQueryBaseVisitor<String> {
 		if (str.startsWith("doc") || str.startsWith("document")){
 			return "("+str+")";
 		}
+		if (str.startsWith("\"")){
+			return str;
+		}
+		
 		return ctx.getText();
 	}
 	
